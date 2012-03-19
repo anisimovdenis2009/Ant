@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.app.ant"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="1" 
+    android:padding="5dp"
+    android:id="@+id/planDetails"
+    >
+		<LinearLayout
+		   android:orientation="horizontal"
+		   android:layout_width="fill_parent"
+		   android:layout_height="wrap_content"	   
+		 >	   
+		 	<TextView
+			android:id="@+id/textDialogTitle"  
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="#FFFFFF"
+			android:textStyle="bold"
+			android:text="@string/report_day_summaries_sale_plans"
+		   	android:paddingBottom="10dip"
+			/>			
+		</LinearLayout>
+		
+	   	<LinearLayout
+		android:id="@+id/filtersPlacement"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="0"
+	    android:gravity="center_vertical"
+	    style="@style/ToolPanel"
+	    >
+			<LinearLayout 
+			android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:id="@+id/switchMonthDay"
+		    style="@style/CustomButton"
+		    android:clickable="true"
+	        android:gravity="center_vertical"
+		    >
+					<TextView
+					android:id="@+id/textSwitchMonth"  
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"			
+					android:textColor="#FFFFFF"
+					android:textStyle="bold"
+					android:maxLines="1"
+					android:text="@string/plan_details_switch_month"
+					android:gravity="center_vertical|center_horizontal"
+					android:textSize="11dp"
+					/>
+					
+					<TextView
+					android:id="@+id/textSwitchDay"  
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"			
+					android:textColor="#FFFFFF"
+					android:textStyle="bold"
+					android:maxLines="1"
+					android:text="@string/plan_details_switch_day"
+					android:gravity="center_vertical|center_horizontal"
+					android:textSize="11dp"
+					/>
+			</LinearLayout>
+	    
+	    
+	   		<ImageButton
+	   		style="@style/CustomButton"
+			android:id="@+id/buttonPrevItemGroup"
+	   		android:layout_width="45dp" 
+	   		android:layout_height="match_parent"
+	   		android:src="@drawable/arrow_left_simplified"
+	   		/>	    
+	    		
+	   		<TextView
+	   		style="@style/CustomButton"
+			android:id="@+id/textItemGroup"  
+			android:layout_width="fill_parent" 
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:textColor="#FFFFFFFF"
+			android:text=""
+			android:layout_gravity="center_vertical"
+			/>
+			
+	   		<ImageButton
+	   		style="@style/CustomButton"
+			android:id="@+id/buttonNextItemGroup"
+	   		android:layout_width="45dp"  
+	   		android:layout_height="match_parent"
+	   		android:src="@drawable/arrow_right_simplified"
+	   		/>
+	   		
+			<LinearLayout 
+			android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:id="@+id/salePlansSwitchUnit"
+		    style="@style/CustomButton" 
+		    >
+					<TextView
+					android:id="@+id/textSwitchMSU"  
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"			
+					android:textColor="#FFFFFF"
+					android:textStyle="bold"
+					android:maxLines="1"
+					android:text="@string/report_day_summaries_msu"
+					android:gravity="center_vertical|center_horizontal"
+					android:textSize="11dp"
+					/>
+					
+					<TextView
+					android:id="@+id/textSwitchHryvnas"  
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"			
+					android:textColor="#FFFFFF"
+					android:textStyle="bold"
+					android:maxLines="1"
+					android:text="@string/report_day_summaries_hryvnas"
+					android:gravity="center_vertical|center_horizontal"
+					android:textSize="11dp"
+					/>
+			</LinearLayout>
+		</LinearLayout>		   
+    
+		<com.app.ant.app.Controls.DataGrid	
+			android:id="@+id/dataGrid"
+			android:background="@drawable/blue"
+		   	android:layout_width="fill_parent"
+		   	android:layout_height="wrap_content"
+		   	android:scrollbarAlwaysDrawVerticalTrack="true"
+		   	android:scrollbarAlwaysDrawHorizontalTrack="true"
+		   	android:scrollbarSize = "20dip"
+		   	android:scrollbars="vertical"  
+		   	app:text="Black" 
+		   	app:textColor="#ffffffff"
+		   	android:layout_weight="1" 
+		/>
+    
+    	<!-- This list is always empty and its purpose is only to extend width of the dialog 
+    	(it enlarges the width more efficiently than other elements)-->
+    	<ExpandableListView  
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="#FFFFFFFF"
+        />    
+
+</LinearLayout>

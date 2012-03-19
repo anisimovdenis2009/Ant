@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.app.ant"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="1" 
+    android:padding="5dp"
+    android:id="@+id/docSaleSelectColumns"
+    android:background="#FFFFFFFF"
+    >
+    
+    	<ListView android:id="@+id/columnList" 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+    	android:background="#FFFFFFFF"
+    	/>
+    
+		<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    >
+	   		<Button
+			android:id="@+id/buttonColumnsReset"
+	   		android:layout_width="wrap_content" 
+	   		android:layout_height="wrap_content"
+	   		android:layout_weight="1" 
+	   		android:text="@string/doc_sale_selectColumns_reset"
+	   		android:visibility="gone"
+	   		/>	   		
+	   		
+		</LinearLayout>    
+
+</LinearLayout>

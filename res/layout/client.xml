@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res/com.app.ant"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+        >
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/header_background"
+            android:paddingLeft="5dip"
+            >
+        <ImageView
+                android:paddingRight="12dip"
+                android:paddingTop="7dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/address_icon"
+                android:layout_gravity="center_vertical"/>
+
+        <TextView
+                android:id="@+id/textClientName"
+                android:paddingTop="2dip"
+                android:paddingLeft="5dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:layout_weight="1"
+                />
+        <!--
+             <ImageButton
+             style="@style/CustomButton"
+          android:id="@+id/buttonBack"
+             android:layout_width="wrap_content"
+             android:layout_height="45dp"
+             android:src="@drawable/back_arrow"
+             android:gravity="center_vertical"
+             />
+               -->
+    </LinearLayout>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Entity ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:paddingTop="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/form_background"
+
+            >
+        <ScrollView
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/custom_button_light"
+                    android:padding="0dip"
+                    >
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~ Address ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:padding="0dip"
+                        android:background="@drawable/custom_button_light"
+                        >
+                    <ImageView
+                            android:id="@+id/addrPic"
+                            android:paddingTop="3dip"
+                            android:paddingLeft="3dip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/home_small"
+                            android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/client_addr_addrName"
+                            android:layout_toRightOf="@+id/addrPic"
+                            android:padding="4dip"
+                            />
+
+                <!--    <Button
+                       android:id="@+id/buttonEditAddr"
+                       style="?android:attr/buttonStyleSmall"
+                       android:layout_width="wrap_content"
+                       android:layout_height="32dp"
+                       android:layout_marginTop="4dp"
+                       android:layout_alignParentRight="true"
+                       android:drawableLeft="@drawable/doc_edit_small"
+                       android:layout_centerVertical="true"/> -->
+
+           </RelativeLayout>
+
+           <TextView
+                   android:id="@+id/textAddrName"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="1dip"
+                   android:layout_marginRight="1dip"
+                   android:layout_marginBottom="1dip"
+                   android:background="#FFFFFF"
+                   android:padding="3dp"
+                   android:text="text"
+                   />
+
+           <!-- ~~~~~~~~~~~~~~~~~~~~~ Reg data ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:padding="0dip"
+                        android:background="@drawable/custom_button_light"
+                        >
+                    <ImageView
+                            android:id="@+id/regDataPic"
+                            android:paddingTop="3dip"
+                            android:paddingLeft="3dip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/stamp"
+                            android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/client_addr_header_registrationData"
+                            android:layout_toRightOf="@+id/regDataPic"
+                            android:padding="4dip"
+                            />
+
+                    <!--   <Button
+                 android:id="@+id/buttonEditRegData"
+                 style="?android:attr/buttonStyleSmall"
+                 android:layout_width="wrap_content"
+                 android:layout_height="32dp"
+                 android:layout_marginTop="4dp"
+                   android:layout_alignParentRight="true"
+                   android:drawableLeft="@drawable/doc_edit_small"
+                   android:layout_centerVertical="true"/> -->
+
+                </RelativeLayout>
+
+
+                <!--TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text=""
+                /-->
+
+                <!--TextView
+                               android:layout_width="fill_parent"
+                               android:layout_height="wrap_content"
+                               android:text="@string/client_bankInfo"
+                               android:textStyle="bold"
+                               android:paddingBottom="5dip"
+                            /-->
+
+                <!-- TextView
+                            android:id="@+id/textBankInfo"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:lines = "3"
+                            android:background="#202020"
+                            /-->
+
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                             android:layout_width="fill_parent"
+                             android:layout_height="wrap_content"
+                             android:background="#FFFFFF"
+                             android:layout_marginLeft="1dip"
+                             android:layout_marginRight="1dip"
+                             android:paddingRight="3dp"
+                        >
+                    <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <ImageView
+                                android:padding="3dip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_vertical"
+                                android:src="@drawable/bullet"/>
+
+                        <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/client_license"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                />
+
+                        <TextView
+                                android:id="@+id/textLicense"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                />
+                    </TableRow>
+
+                    <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <ImageView
+                                android:padding="3dip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_vertical"
+                                android:src="@drawable/bullet"/>
+
+                        <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/client_regDate"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                />
+
+                        <TextView
+                                android:id="@+id/textRegDate"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                />
+                    </TableRow>
+                    <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <ImageView
+                                android:padding="3dip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_vertical"
+                                android:src="@drawable/bullet"/>
+
+                        <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/client_regCode"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                />
+
+                        <TextView
+                                android:id="@+id/textRegCode"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                />
+                    </TableRow>
+                    <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <ImageView
+                                android:padding="3dip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_vertical"
+                                android:src="@drawable/bullet"/>
+
+                        <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/client_codeVAT"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                />
+
+                        <TextView
+                                android:id="@+id/textCodeVAT"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                />
+                    </TableRow>
+                    <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <ImageView
+                                android:padding="3dip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:src="@drawable/bullet"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/client_addr_numbLicAlc"
+                                android:maxLines="1"
+                                android:textStyle="bold"
+                                />
+
+                        <TextView
+                                android:id="@+id/textAddrNumbLicAlc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                />
+                    </TableRow>
+
+                    <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <ImageView
+                                android:padding="3dip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:src="@drawable/bullet"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/client_addr_endDate"
+                                android:maxLines="1"
+                                android:textStyle="bold"
+                                />
+
+                        <TextView
+                                android:id="@+id/textAddrEndDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                />
+                    </TableRow>
+
+                </TableLayout>
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~Условия доставки~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="0dip"
+                        android:background="@drawable/custom_button_light"
+                        >
+                    <ImageView
+                            android:paddingTop="3dip"
+                            android:paddingLeft="3dip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/car" android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/client_addr_header_deliveryConditions"
+                            android:padding="4dip"
+                            />
+                </LinearLayout>
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                             android:layout_width="fill_parent"
+                             android:layout_height="wrap_content"
+                             android:background="#FFFFFF"
+                             android:layout_marginLeft="1dip"
+                             android:layout_marginRight="1dip"
+                        >
+                    <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <ImageView
+                                android:padding="3dip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:src="@drawable/bullet"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/client_addr_deliveryDays"
+                                android:maxLines="1"
+                                android:textStyle="bold"
+                                />
+
+                        <TextView
+                                android:id="@+id/textAddrDeliveryDays"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                />
+                    </TableRow>
+
+                    <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <ImageView
+                                android:padding="3dip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:src="@drawable/bullet"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/client_addr_channelType"
+                                android:maxLines="1"
+                                android:textStyle="bold"
+                                />
+
+                        <TextView
+                                android:id="@+id/textAddrChannelType"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                />
+                    </TableRow>
+                </TableLayout>
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~Address classification~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:padding="0dip"
+                        android:background="@drawable/custom_button_light"
+                        >
+                    <ImageView
+                            android:id="@+id/addrTypePic"
+                            android:paddingTop="3dip"
+                            android:paddingLeft="3dip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/attributes"
+                            android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/client_addr_header_attributes"
+                            android:layout_toRightOf="@+id/addrTypePic"
+                            android:padding="4dip"
+                            />
+
+                <!--   <Button
+                        android:id="@+id/buttonEditAddrType"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_alignParentRight="true"
+                        android:drawableLeft="@drawable/doc_edit_small"
+                        android:layout_centerVertical="true"/> -->
+
+            </RelativeLayout>
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:background="#FFFFFF"
+                         android:layout_marginLeft="1dip"
+                         android:layout_marginRight="1dip"
+                         android:id="@+id/attributesTable">
+
+            </TableLayout>
+
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~Данные по золоту~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="0dip"
+                        android:id="@+id/client_golden_data_header"
+                        android:background="@drawable/custom_button_light"
+                        >
+                    <ImageView
+                            android:paddingTop="3dip"
+                            android:paddingLeft="3dip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/gold" android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Данные по золотой программе"
+                            android:padding="4dip"
+                            />
+                </LinearLayout>
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                             android:layout_width="fill_parent"
+                             android:layout_height="wrap_content"
+                             android:background="#FFFFFF"
+                             android:id="@+id/client_golden_data_entity"
+                             android:layout_marginLeft="1dip"
+                             android:layout_marginRight="1dip"
+                             android:paddingRight="5dp"
+                        >
+                    <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <ImageView
+                                android:padding="3dip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:src="@drawable/bullet"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ОПД план"
+                                android:maxLines="1"
+                                android:textStyle="bold"
+                                />
+
+                        <TextView
+                                android:id="@+id/textOPDPlan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                />
+                    </TableRow>
+
+                    <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <ImageView
+                                android:padding="3dip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:src="@drawable/bullet"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ОПД факт"
+                                android:maxLines="1"
+                                android:textStyle="bold"
+                                />
+
+                        <TextView
+                                android:id="@+id/textOPDFact"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                />
+                    </TableRow>
+
+                    <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <ImageView
+                                android:padding="3dip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:src="@drawable/bullet"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Лист А план"
+                                android:maxLines="1"
+                                android:textStyle="bold"
+                                />
+
+                        <TextView
+                                android:id="@+id/textListAPlan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                />
+                    </TableRow>
+                    <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <ImageView
+                                android:padding="3dip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:src="@drawable/bullet"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Лист А факт"
+                                android:maxLines="1"
+                                android:textStyle="bold"
+                                />
+
+                        <TextView
+                                android:id="@+id/textListAFact"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                />
+                    </TableRow>
+                    <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <ImageView
+                                android:padding="3dip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:src="@drawable/bullet"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Лист А докупить"
+                                android:maxLines="1"
+                                android:textStyle="bold"
+                                />
+
+                        <TextView
+                                android:id="@+id/textListAdd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                />
+                    </TableRow>
+
+                    <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <ImageView
+                                android:padding="3dip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:src="@drawable/bullet"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Дата договора"
+                                android:maxLines="1"
+                                android:textStyle="bold"
+                                />
+
+                        <TextView
+                                android:id="@+id/textContractDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                />
+                    </TableRow>
+                    <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <ImageView
+                                android:padding="3dip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:src="@drawable/bullet"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Дата Welcome скидки"
+                                android:maxLines="1"
+                                android:textStyle="bold"
+                                />
+
+                        <TextView
+                                android:id="@+id/textWellcomeDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                />
+                    </TableRow>
+                    <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <ImageView
+                                android:padding="3dip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:src="@drawable/bullet"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Дата нач. действия скидки"
+                                android:maxLines="1"
+                                android:textStyle="bold"
+                                />
+
+                        <TextView
+                                android:id="@+id/textWellcomeBeginDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                />
+                    </TableRow>
+                    <TableRow
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <ImageView
+                                android:padding="3dip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:src="@drawable/bullet"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Дата оконч. действия скидки"
+                                android:maxLines="1"
+                                android:textStyle="bold"
+                                />
+
+                        <TextView
+                                android:id="@+id/textWellcomeEndDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                />
+                    </TableRow>
+
+                    <TableRow
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <ImageView
+                                android:padding="3dip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:src="@drawable/bullet"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Скидка %"
+                                android:maxLines="1"
+                                android:textStyle="bold"
+                                />
+
+                        <TextView
+                                android:id="@+id/textWellcomeDiscount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                />
+                    </TableRow>
+                </TableLayout>
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~ GPS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <RelativeLayout
+                        android:id="@+id/informationLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:padding="0dp"
+                        android:background="@drawable/custom_button_light"
+                        >
+                    <ImageView
+                            android:id="@+id/gpsPic"
+                            android:paddingTop="3dip"
+                            android:paddingLeft="3dip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/gps_icon"
+                            android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                            android:id="@+id/gpsLabel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/client_addr_header_gps"
+                            android:layout_toRightOf="@+id/gpsPic"
+                            android:padding="4dip"
+                            />
+
+                    <Button
+                            android:id="@+id/buttonShowMap"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_alignParentRight="true"
+                            android:drawableLeft="@drawable/map_icon"
+                            android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                             android:layout_width="fill_parent"
+                             android:layout_height="wrap_content"
+                             android:background="#FFFFFF"
+                             android:layout_marginLeft="1dip"
+                             android:layout_marginRight="1dip"
+                             android:id="@+id/attributesTable">
+
+                    <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:textStyle="bold"
+                                android:text="@string/client_addr_gps_lat"
+                                android:padding="4dip"
+                                />
+                        <TextView
+                                android:id="@+id/textLat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="0.0000000"
+                                android:padding="4dip"
+                                />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:textStyle="bold"
+                                android:text="@string/client_addr_gps_long"
+                                android:padding="4dip"
+                                />
+
+                        <TextView
+                                android:id="@+id/textLong"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="0.0000000"
+                                android:padding="4dip"
+                                />
+                    </TableRow>
+                </TableLayout>
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~ Contacts ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <RelativeLayout
+                        android:id="@+id/columnContactLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:padding="0dp"
+                        android:background="@drawable/custom_button_light"
+                        >
+                    <ImageView
+                            android:id="@+id/ContactsPic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/small_contacts"
+                            android:layout_marginLeft="5dp"
+                            android:layout_centerVertical="true"/>
+
+                    <TextView
+                            android:id="@+id/ContactsLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/client_addr_contacts"
+                            android:padding="3dip"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/ContactsPic"/>
+
+                    <Button
+                            android:id="@+id/btnContactAdd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:drawableLeft="@drawable/contact_add"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="4dp"
+                            style="?android:attr/buttonStyleSmall"/>
+
+                </RelativeLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                              android:layout_width="fill_parent"
+                              android:layout_height="wrap_content"
+                              android:background="#FFFFFF"
+                              android:layout_marginLeft="1dip"
+                              android:layout_marginRight="1dip"
+                              android:id="@+id/contactsLayout"
+                              android:orientation="vertical"/>
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~ Additional info ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <RelativeLayout
+                        android:id="@+id/informationLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:padding="0dp"
+                        android:background="@drawable/custom_button_light"
+                        >
+                    <ImageView
+                            android:id="@+id/informPic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/inform_icon"
+                            android:layout_marginLeft="5dp"
+                            android:layout_centerVertical="true"/>
+
+                    <TextView
+                            android:id="@+id/informLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/client_addr_header_other"
+                            android:padding="3dip"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/informPic"/>
+
+                </RelativeLayout>
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                             android:layout_width="fill_parent"
+                             android:layout_height="wrap_content"
+                             android:background="#FFFFFF"
+                             android:layout_marginLeft="1dip"
+                             android:layout_marginRight="1dip"
+                             android:layout_marginBottom="1dip"
+                             android:id="@+id/otherInformationTable">
+                    <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:textStyle="bold"
+                                android:text="@string/client_addr_ERPID_address"
+                                />
+
+                        <TextView
+                                android:id="@+id/textERPIDAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                />
+                    </TableRow>
+                    <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:textStyle="bold"
+                                android:text="@string/client_addr_ERPID_client"
+                                />
+                        <TextView
+                                android:id="@+id/textERPIDClient"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                />
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Just to make empty horizontal strip ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/ToolPanel"
+            android:layout_gravity="bottom"
+            android:layout_weight="0"
+            android:padding="0dip"
+            android:textSize="5sp"
+            />
+
+    <!-- 	<LinearLayout  -->
+    <!-- 	android:layout_width="fill_parent" -->
+    <!-- 	android:layout_height="wrap_content" -->
+    <!-- 	android:orientation="vertical" -->
+    <!-- 	android:padding="5dp" -->
+    <!-- 	style="@style/ToolPanel" -->
+    <!-- 	android:layout_gravity="bottom" -->
+    <!-- 	> -->
+
+    <!-- 		<Button -->
+    <!-- 		android:id="@+id/buttonShowMap" -->
+    <!-- 		style="@style/CustomButton" -->
+    <!-- 		android:layout_width="fill_parent"  -->
+    <!-- 	  	android:layout_height="wrap_content"  -->
+    <!-- 	  	android:text="@string/client_addr_displayMap" -->
+    <!-- 	  	android:drawableLeft="@drawable/address_icon" -->
+    <!-- 	  	/>     -->
+
+    <!-- 	</LinearLayout> -->
+
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <LinearLayout style="@style/StepButtonPlacement" android:id="@+id/stepButtonPlacement"/>
+    <LinearLayout style="@style/TabsPlacement" android:id="@+id/tabsPlacement"/>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+</LinearLayout>

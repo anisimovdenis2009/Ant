@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >    
+	   	<ImageView android:id="@+id/imgMarkExpanded"
+		   	android:layout_width="wrap_content" 
+		   	android:layout_height="wrap_content"
+		   	android:src="@drawable/expander_ic_maximized"/>
+		   	
+	   	<ImageView android:id="@+id/imgMarkCollapsed"
+		   	android:layout_width="wrap_content" 
+		   	android:layout_height="wrap_content"
+		   	android:src="@drawable/expander_ic_minimized"/>		   	    
+    
+	    <!--TextView android:id="@+id/textPadding"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:paddingLeft="50dip"
+	    /-->
+
+	    <TextView android:id="@+id/textGroupName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textColor="#FF000000"
+	        android:background="#FFFFFFFF"
+	        android:paddingLeft="5dip"
+		    android:paddingTop="10dip"
+		    android:paddingBottom="10dip"	        
+	    />
+	    
+		<LinearLayout
+		android:id="@+id/summaryLayout"
+	    android:orientation="horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:visibility="gone"
+	    >
+	        <TextView android:id="@+id/textValue"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#FF000000"
+		        android:background="#FFFFFFFF"
+			    android:paddingTop="10dip"
+			    android:paddingBottom="10dip"	        
+		    />
+	    
+		    <TextView android:id="@+id/textFulfilled"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#FF000000"
+		        android:background="#FFFFFFFF"
+		        android:paddingLeft="10dip"
+			    android:paddingTop="10dip"
+			    android:paddingBottom="10dip"
+			    android:minWidth="70dip"
+			    android:gravity="right"
+		    />	    
+
+		    <TextView android:id="@+id/textPercent"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="#FFFFFFFF"
+		        android:paddingLeft="10dip"
+			    android:paddingTop="10dip"
+			    android:paddingBottom="10dip"
+			    android:minWidth="60dip"
+			    android:gravity="right"
+			    android:textColor="#FF0000A0"
+		    />	    
+	    </LinearLayout>
+	    
+</LinearLayout>

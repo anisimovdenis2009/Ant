@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.app.ant"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="1" 
+    android:padding="5dp"
+    android:id="@+id/docSaleSelectGroup"
+    >
+		<LinearLayout
+		   android:orientation="horizontal"
+		   android:layout_width="fill_parent"
+		   android:layout_height="wrap_content"	   
+		 >	   
+		 	<TextView
+			android:id="@+id/textDialogTitle"  
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="#FFFFFF"
+			android:textStyle="bold"
+			android:text="@string/form_title_selectItemGroup"
+		   	android:paddingBottom="10dip"
+		   	android:layout_weight="1"
+			/>
+			
+		   	<LinearLayout
+		    android:orientation="vertical"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+	        android:clickable="true"	        
+	        android:gravity="center_vertical"
+	        android:id="@+id/switchDictionary"	    
+		    >	    
+				<TextView
+				android:id="@+id/textCategories"  
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"			
+				android:textColor="#FFFFFF"
+				android:textStyle="bold"
+				android:maxLines="1"
+				android:text="@string/doc_sale_select_group_categories"
+				android:gravity="center_vertical|center_horizontal"
+				android:textSize="11dp"
+				/>
+				
+				<TextView
+				android:id="@+id/textChannels"  
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"			
+				android:textColor="#FFFFFF"
+				android:textStyle="bold"
+				android:maxLines="1"
+				android:text="@string/doc_sale_select_group_sectors"
+				android:gravity="center_vertical|center_horizontal"
+				android:textSize="11dp"
+				/>
+			
+			</LinearLayout>
+					
+		</LinearLayout>   
+    
+    	<!--ExpandableListView android:id="@+id/docSaleSelectGroupExpandableList" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="#FFFFFFFF"
+        /-->    
+
+		<ListView android:id="@+id/docSaleSelectGroupList" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:paddingTop="8dip"
+	    android:background="#FFFFFFFF"
+	    />
+
+</LinearLayout>

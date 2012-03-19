@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.app.ant"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="1" 
+    android:padding="5dp"
+    android:id="@+id/printInvoiceForm"
+    >
+
+    <ScrollView 
+   	android:orientation="vertical"
+   	android:layout_width="match_parent"
+   	android:layout_height="match_parent"
+   	android:layout_weight="1">
+    	    	
+   		<LinearLayout 
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1">
+   		   	
+	   		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:stretchColumns="1">
+			    
+				<TextView android:text="@string/printer_doc_type" android:textSize="15dp" android:padding="3dip" android:background="#FFFFFFFF" />
+				
+			    <TableRow>  
+			    	<RadioGroup
+					   android:layout_width="fill_parent"
+					   android:layout_height="wrap_content"
+					   android:orientation="horizontal">
+					   <RadioButton
+					    android:id="@+id/print_bill_option"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="@string/printer_bill"
+					    android:textColor="#FFFFFFFF" />
+					   <RadioButton
+					    android:id="@+id/print_invoice_option"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="@string/printer_invoice"
+					    android:textColor="#FFFFFFFF"/>
+					 </RadioGroup>    
+			    </TableRow>		
+			    <TextView android:text="@string/printer_formI" android:textSize="15dp" android:padding="3dip" android:background="#FFFFFFFF" />       
+
+				<TableRow>
+	 				<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					    android:orientation="horizontal"
+					    android:layout_width="fill_parent"
+					    android:layout_height="fill_parent">
+			   				<CheckBox android:text="@string/printer_withVAT" 
+			   					android:textColor="#FFFFFFFF"   					
+								android:id="@+id/print_withVAT_I"
+								android:layout_width="wrap_content" 
+								android:layout_height="wrap_content"
+								android:checked="false"
+								/>
+							<CheckBox android:text="@string/printer_WOVAT" 
+								android:textColor="#FFFFFFFF"
+								android:id="@+id/print_WOVAT_I"													
+								android:layout_width="wrap_content" 
+								android:layout_height="wrap_content"
+								android:checked="false"
+								/> 
+			    	</LinearLayout>
+			    </TableRow>
+			    
+			    <TextView android:text="@string/printer_formII" android:textSize="15dp" android:padding="3dip" android:background="#FFFFFFFF" />
+			    
+				<TableRow>
+	 				<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					    android:orientation="horizontal"
+					    android:layout_width="fill_parent"
+					    android:layout_height="fill_parent">
+			   				<CheckBox android:text="@string/printer_withVAT" 
+			   					android:textColor="#FFFFFFFF"   					
+								android:id="@+id/print_withVAT_II"
+								android:layout_width="wrap_content" 
+								android:layout_height="wrap_content"
+								android:checked="false"
+								/>
+							<CheckBox android:text="@string/printer_WOVAT" 
+								android:textColor="#FFFFFFFF"
+								android:id="@+id/print_WOVAT_II"													
+								android:layout_width="wrap_content" 
+								android:layout_height="wrap_content"
+								android:checked="false"
+								/> 
+			    	</LinearLayout>
+			    </TableRow>			    
+			    
+			</TableLayout>
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

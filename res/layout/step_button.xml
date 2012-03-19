@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.app.ant"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="1" 
+    android:id="@+id/stepButtonLayout"
+    >
+    
+	<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+        
+	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"    
+	    android:background="@drawable/blue"    
+	    android:id="@+id/selectionLayout">					
+		</LinearLayout>
+
+	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:paddingTop="3dip">
+	    	    
+			<ImageButton
+			style="@style/CustomButton"		 
+			android:id="@+id/buttonStep"
+			android:layout_gravity="center_vertical" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" />
+						
+		</LinearLayout>
+		
+	</FrameLayout>
+	
+   	<TextView 
+   	android:id="@+id/textStep"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="10dp"
+    android:gravity="center"
+    android:textColor="#FFFFFF"     
+    />
+    
+    <!-- android:visibility = "gone" -->	
+	
+</LinearLayout>

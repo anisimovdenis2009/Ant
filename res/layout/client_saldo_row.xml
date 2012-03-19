@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.app.ant"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="1" 
+    android:id="@+id/saldoRow"
+    >
+    
+        <TableRow    		
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:id="@+id/saldoTableRow"
+    	>    
+   	    	<ImageView
+   	    	android:id="@+id/bulletImage"
+			android:padding="3dip"
+			android:layout_width="wrap_content" 
+			android:layout_height="fill_parent"
+			android:gravity="center_vertical"
+			android:src="@drawable/bullet"/>
+    	
+			<TextView
+			android:id="@+id/saldoName"
+		   	android:layout_width="fill_parent" 
+		   	android:layout_height="wrap_content" 
+		   	android:text="@string/client_sumDebt"
+		   	android:textStyle="bold"
+		   	android:paddingRight="10dip"
+		   	android:layout_weight="1"
+		    />	
+
+		   	<TextView
+			android:id="@+id/saldoValue"  
+   			android:layout_width="fill_parent" 
+   			android:layout_height="wrap_content"
+   			android:layout_weight="1"
+   			android:gravity="right" 
+   			/>
+   		</TableRow>					    	    	
+</LinearLayout>

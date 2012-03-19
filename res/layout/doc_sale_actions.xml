@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.app.ant"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="1" 
+    android:padding="5dp"
+    android:id="@+id/docSaleActions"
+    >
+    
+		<LinearLayout
+		   android:orientation="horizontal"
+		   android:layout_width="fill_parent"
+		   android:layout_height="wrap_content"	   
+		 >	   
+		 	<TextView
+			android:id="@+id/textDialogTitle"  
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="#FFFFFF"
+			android:textStyle="bold"
+			android:text="@string/form_title_actions"
+		   	android:paddingBottom="10dip"
+		   	android:layout_weight="1"
+			/>		
+		</LinearLayout>
+		
+		<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    >		   
+
+			<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical"
+		    android:layout_weight="1" 
+		    android:padding="5dp"
+		    >
+    
+
+		   		<Button
+				android:id="@+id/buttonSelectColumns"
+		   		android:layout_width="fill_parent" 
+		   		android:layout_height="wrap_content" 
+		   		android:text="@string/doc_sale_actions_selectColumns"
+		   		/>
+		    
+		   		<Button
+				android:id="@+id/buttonUpdateDocDiscounts"
+		   		android:layout_width="fill_parent" 
+		   		android:layout_height="wrap_content" 
+		   		android:text="@string/doc_sale_actions_updateDiscounts"
+		   		/>
+		   		
+		   		<Button
+				android:id="@+id/buttonCalcPredictOrders"
+		   		android:layout_width="fill_parent" 
+		   		android:layout_height="wrap_content" 
+		   		android:text="@string/doc_sale_actions_calcPredictOrders"
+		   		/>
+		
+			   	<LinearLayout
+			    android:orientation="horizontal"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center_vertical"    
+			    >
+		
+			   		<Button
+					android:id="@+id/buttonCopyItoII"
+			   		android:layout_width="wrap_content" 
+			   		android:layout_height="wrap_content" 
+			   		android:text="@string/doc_sale_actions_docCopyItoII"
+			   		android:layout_weight="1"
+			   		/>
+			   		
+			   		<Button
+					android:id="@+id/buttonCopyIItoI"
+			   		android:layout_width="wrap_content" 
+			   		android:layout_height="wrap_content" 
+			   		android:text="@string/doc_sale_actions_docCopyIItoI"
+			   		android:layout_weight="1"
+			   		/>
+			   		
+			   	</LinearLayout>	
+		   		
+		   		<Button
+				android:id="@+id/buttonDocComplete"
+		   		android:layout_width="fill_parent" 
+		   		android:layout_height="wrap_content" 
+		   		android:text="@string/doc_sale_actions_docComplete"
+		   		/>
+		   		
+		   		<Button
+				android:id="@+id/buttonDocPrint"
+		   		android:layout_width="fill_parent" 
+		   		android:layout_height="wrap_content" 
+		   		android:text="@string/doc_sale_actions_docPrint"
+		   		android:visibility="gone"
+		   		/>
+		   		
+		   	</LinearLayout>
+	</ScrollView>
+</LinearLayout>

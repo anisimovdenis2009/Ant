@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.app.ant"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="1" 
+    android:padding="5dp"
+    android:id="@+id/qualificationProgress"
+    >
+		<LinearLayout
+		   android:orientation="horizontal"
+		   android:layout_width="fill_parent"
+		   android:layout_height="wrap_content"	   
+		 >	   
+		 	<TextView
+			android:id="@+id/textDialogTitle"  
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="#FFFFFF"
+			android:textStyle="bold"
+			android:text="@string/qualification_progress_title"
+		   	android:paddingBottom="10dip"
+			/>						
+		</LinearLayout>
+
+	    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:background="#FFFFFF"
+    	android:layout_marginLeft="1dip"
+    	android:layout_marginRight="1dip"
+    	android:id="@+id/progressTable"	    	
+	   	>
+		</TableLayout>
+		
+	 	<TextView
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		/>						
+		
+	    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:background="#FFFFFF"
+    	android:layout_marginLeft="1dip"
+    	android:layout_marginRight="1dip"
+    	android:id="@+id/targetTable"	    	
+	   	>
+		</TableLayout>
+		
+    	<!-- This list is always empty and its purpose is only to extend width of the dialog 
+    	(it enlarges the width more efficiently than other elements)-->
+    	<ExpandableListView  
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="#FFFFFFFF"
+        />    
+		
+</LinearLayout>

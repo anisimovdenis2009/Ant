@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.app.ant"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="1" 
+    android:padding="3dp"
+    android:id="@+id/infoPanelSaldo"
+    >
+    
+ 		    <TableLayout 
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		   	>
+		   	
+		   		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		        <TableRow
+		        	android:id="@+id/saldoStatsRow1"    		
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:gravity="center_vertical"
+		    	>
+		    		<LinearLayout 
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal"
+				    android:layout_weight="1"
+					>
+					
+						<TextView
+					   	android:layout_width="wrap_content" 
+					   	android:layout_height="wrap_content" 
+						android:text="@string/debtor_list_column_header_saldo"
+					   	android:textStyle="bold"
+					   	android:textColor="@color/white"
+					   	android:textSize="10dp"
+					   	android:maxLines="1"
+					    />	
+	
+					   	<TextView
+						android:id="@+id/textSaldo"  
+		    			android:layout_width="wrap_content" 
+		    			android:layout_height="wrap_content"
+		    			android:layout_weight="1"
+		    			android:gravity="right" 
+		    			android:textColor="@color/white"
+		    			android:paddingRight="3dp"
+		    			android:maxLines="1"
+		    			/>
+		    		</LinearLayout>	
+	    			
+					<TextView android:layout_width="1dp" android:paddingTop="1dip" android:paddingRight="3dip" android:paddingLeft="3dip" android:background="#FFFFFFFF" />
+					
+					<LinearLayout 
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal"
+				    android:layout_weight="1"
+					>
+					
+						<TextView
+					   	android:layout_width="wrap_content" 
+					   	android:layout_height="wrap_content" 
+					   	android:text="@string/debtor_list_column_header_overdue"
+					   	android:textStyle="bold"
+					   	android:paddingLeft="3dp"
+					   	android:textColor="@color/white"
+					   	android:textSize="10dp"
+					   	android:maxLines="1"
+					    />	
+	
+					   	<TextView
+						android:id="@+id/textOverdue"  
+		    			android:layout_width="wrap_content" 
+		    			android:layout_height="wrap_content"
+		    			android:layout_weight="1"
+		    			android:gravity="right"
+		    			android:textColor="@color/white" 
+		    			android:paddingRight="3dp"
+		    			android:maxLines="1"
+		    			/>
+	    			</LinearLayout>
+	    			
+ 	    							    	    	
+		    	</TableRow>
+
+		   		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		        <TableRow
+		        	android:id="@+id/saldoStatsRow2"    		
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:gravity="center_vertical"
+		    	>
+		    		<LinearLayout 
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal"
+				    android:layout_weight="1"
+					>
+					
+						<TextView
+					   	android:layout_width="wrap_content" 
+					   	android:layout_height="wrap_content" 
+						android:text="@string/debtor_list_column_header_today"
+					   	android:textStyle="bold"
+					   	android:textColor="@color/white"
+					   	android:textSize="10dp"
+					   	android:maxLines="1"
+					    />	
+	
+					   	<TextView
+						android:id="@+id/textToday"  
+		    			android:layout_width="wrap_content" 
+		    			android:layout_height="wrap_content"
+		    			android:layout_weight="1"
+		    			android:gravity="right" 
+		    			android:textColor="@color/white"
+		    			android:paddingRight="3dp"
+		    			android:maxLines="1"
+		    			/>
+		    		</LinearLayout>	
+	    			
+					<TextView android:layout_width="1dp" android:paddingTop="1dip" android:paddingRight="3dip" android:paddingLeft="3dip" android:background="#FFFFFFFF" />
+					
+					<LinearLayout 
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal"
+				    android:layout_weight="1"
+					>
+					
+						<TextView
+					   	android:layout_width="wrap_content" 
+					   	android:layout_height="wrap_content" 
+					   	android:text="@string/debtor_list_column_header_paid"
+					   	android:textStyle="bold"
+					   	android:paddingLeft="3dp"
+					   	android:textColor="@color/white"
+					   	android:textSize="10dp"
+					   	android:maxLines="1"
+					    />	
+	
+					   	<TextView
+						android:id="@+id/textPaid"  
+		    			android:layout_width="wrap_content" 
+		    			android:layout_height="wrap_content"
+		    			android:layout_weight="1"
+		    			android:gravity="right"
+		    			android:textColor="@color/white" 
+		    			android:paddingRight="3dp"
+		    			android:maxLines="1"
+		    			/>
+	    			</LinearLayout>
+	    			
+ 	    							    	    	
+		    	</TableRow>
+
+		   		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	</TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.app.ant"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  android:id="@+id/salaryRow">
+  
+	<TableRow    		
+   		android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+   		android:id="@+id/salaryTableRow" 
+   	>
+  		<TextView
+	   	android:id="@+id/salary_sum_title"
+	   	android:layout_width="fill_parent" 
+	   	android:layout_height="wrap_content"
+	   	android:layout_weight="1"
+	   	android:text="TOTAL"		
+	   	android:paddingLeft="4dip"
+	    />			
+	    <TextView
+	   	android:id="@+id/salary_sum_month"
+	   	android:layout_width="fill_parent" 
+	   	android:layout_height="wrap_content"
+	   	android:layout_weight="1"
+	   	android:text="0 руб"
+	   	android:gravity="right"
+	   	android:paddingRight="4dip" 
+	    />
+	    
+	    <TextView
+	   	android:id="@+id/salary_sum_day"
+	   	android:layout_width="fill_parent"
+	   	android:layout_height="wrap_content"
+	   	android:layout_weight="1"
+	   	android:text="0 руб"
+	   	android:gravity="right"
+	   	android:paddingRight="4dip"
+	    />
+	</TableRow>
+  
+</LinearLayout>

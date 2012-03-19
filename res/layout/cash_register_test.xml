@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/form_background"
+    >
+    
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   	<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp" 
+    android:background = "@drawable/header_background"
+    android:paddingLeft="5dip"
+    >
+    	<!--ImageView
+		android:paddingRight="12dip"
+		android:paddingTop="7dip"
+	   	android:layout_width="wrap_content" 
+	   	android:layout_height="wrap_content"
+	   	android:src="@drawable/address_icon"/-->
+        
+  		<TextView
+		android:paddingTop="2dip"
+		android:paddingLeft="5dip"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:textColor="#FFFFFF"
+		android:textStyle="bold"
+		android:textSize="13dp"
+    	android:layout_weight="1"
+    	android:text="@string/form_title_cash_register"
+		/>
+	</LinearLayout>
+    
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Entity ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    
+	<ScrollView 
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+		    >
+
+				<Button
+			    android:id="@+id/buttonXReport"
+			    style="@style/CustomButton"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="left|center_vertical"
+			    android:text="@string/cash_reg_XReport" />
+
+				<Button
+			    android:id="@+id/buttonMoneyOut"
+			    style="@style/CustomButton"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="left|center_vertical"
+			    android:text="@string/cash_reg_moneyOut" />
+
+		   		<Button
+		   		style="@style/CustomButton"
+				android:id="@+id/buttonCheckoutTape"
+		   		android:layout_width="fill_parent" 
+		   		android:layout_height="wrap_content"
+		   		android:gravity="left|center_vertical" 
+		   		android:text="@string/cash_reg_checkoutTape"		   		
+		   		/>
+
+		   		<Button
+		   		style="@style/CustomButton"
+				android:id="@+id/buttonCheckoutTape1"
+		   		android:layout_width="fill_parent" 
+		   		android:layout_height="wrap_content"
+		   		android:gravity="left|center_vertical" 
+		   		android:text="@string/cash_reg_checkoutTape1"
+		   		/>
+		   		
+		   		<Button
+		   		style="@style/CustomButton"
+				android:id="@+id/buttonZReport"
+		   		android:layout_width="fill_parent" 
+		   		android:layout_height="wrap_content"
+		   		android:gravity="left|center_vertical" 
+		   		android:text="@string/cash_reg_ZReport"
+		   		/>
+		   		
+		   		<Button
+		   		style="@style/CustomButton"
+				android:id="@+id/buttonCloseCheckoutTape"
+		   		android:layout_width="fill_parent" 
+		   		android:layout_height="wrap_content"
+		   		android:gravity="left|center_vertical" 
+		   		android:text="@string/cash_reg_closeCheckoutTape"
+		   		/>
+		   		
+		   		<Button
+		   		style="@style/CustomButton"
+				android:id="@+id/buttonSelectDevice"
+		   		android:layout_width="fill_parent" 
+		   		android:layout_height="wrap_content"
+		   		android:gravity="left|center_vertical" 
+		   		android:text="@string/cash_reg_selectDevice"
+		   		/>
+		   		
+		   		<Button
+		   		style="@style/CustomButton"
+				android:id="@+id/buttonPeriodicReport"
+		   		android:layout_width="fill_parent" 
+		   		android:layout_height="wrap_content"
+		   		android:gravity="left|center_vertical" 
+		   		android:text="@string/cash_reg_periodicReport"		   		
+		   		/>
+		   		
+		   		<Button
+		   		style="@style/CustomButton"
+				android:id="@+id/buttonAbortFiscal"
+		   		android:layout_width="fill_parent" 
+		   		android:layout_height="wrap_content"
+		   		android:gravity="left|center_vertical" 
+		   		android:text="@string/cash_reg_abortFiscal"
+		   		/>
+		   		
+		   		<Button
+		   		style="@style/CustomButton"
+				android:id="@+id/buttonMoneyIn"
+		   		android:layout_width="fill_parent" 
+		   		android:layout_height="wrap_content"
+		   		android:gravity="left|center_vertical" 
+		   		android:text="@string/cash_reg_moneyIn"
+		   		/>
+		   		
+		   		<Button
+		   		style="@style/CustomButton"
+				android:id="@+id/buttonPrintFiscalCheck"
+		   		android:layout_width="fill_parent" 
+		   		android:layout_height="wrap_content"
+		   		android:gravity="left|center_vertical" 
+		   		android:text="@string/cash_reg_printFiscalCheck"
+		   		/>
+    
+		   		<Button
+		   		style="@style/CustomButton"
+				android:id="@+id/buttonVersion"
+		   		android:layout_width="fill_parent" 
+		   		android:layout_height="wrap_content"
+		   		android:gravity="left|center_vertical" 
+		   		android:text="@string/cash_reg_getVersion"
+		   		/>
+
+		   		<Button
+		   		style="@style/CustomButton"
+				android:id="@+id/buttonPrintNonFiscal"
+		   		android:layout_width="fill_parent" 
+		   		android:layout_height="wrap_content"
+		   		android:gravity="left|center_vertical" 
+		   		android:text="@string/cash_reg_printNonFiscalCheck"
+		   		/>
+
+		   		<Button
+		   		style="@style/CustomButton"
+				android:id="@+id/buttonDepartmentsReport"
+		   		android:layout_width="fill_parent" 
+		   		android:layout_height="wrap_content"
+		   		android:gravity="left|center_vertical" 
+		   		android:text="@string/cash_reg_departmentsReport"
+		   		/>
+
+		   		<Button
+		   		style="@style/CustomButton"
+				android:id="@+id/buttonOperatorsReport"
+		   		android:layout_width="fill_parent" 
+		   		android:layout_height="wrap_content"
+		   		android:gravity="left|center_vertical" 
+		   		android:text="@string/cash_reg_operatorsReport"
+		   		/>
+
+		   		<Button
+		   		style="@style/CustomButton"
+				android:id="@+id/buttonRestartDevice"
+		   		android:layout_width="fill_parent" 
+		   		android:layout_height="wrap_content"
+		   		android:gravity="left|center_vertical" 
+		   		android:text="@string/cash_reg_restartDevice"
+		   		/>
+
+		   		<Button
+		   		style="@style/CustomButton"
+				android:id="@+id/buttonReadDate"
+		   		android:layout_width="fill_parent" 
+		   		android:layout_height="wrap_content"
+		   		android:gravity="left|center_vertical" 
+		   		android:text="@string/cash_reg_readDate"
+		   		/>
+		   		
+		</LinearLayout>
+	</ScrollView>		   				   		
+</LinearLayout>

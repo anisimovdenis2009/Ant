@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.app.ant"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    >
+    
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   	<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background = "@drawable/header_background"
+    android:paddingLeft="5dip"
+    >
+    	<ImageView
+    	android:id="@+id/imgCaption"
+		android:paddingRight="5dp"
+		android:paddingTop="3dp"
+		android:paddingBottom="2dp"		
+	   	android:layout_width="wrap_content" 
+	   	android:layout_height="wrap_content"
+	   	android:src="@drawable/day_summaries"	   	
+	   	/>
+    
+  		<TextView
+		android:id="@+id/textCaption"  
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:textColor="#FFFFFF"
+		android:textStyle="bold"
+		android:text="@string/form_title_report_day_summaries"
+    	android:paddingBottom="10dip"
+    	android:layout_weight="1"
+		/>
+		
+   		<ImageButton
+   		style="@style/CustomButton"
+		android:id="@+id/buttonNextStep"
+   		android:layout_width="45dp" 
+   		android:layout_height="45dp" 
+   		android:src="@drawable/arrow_right"
+   		android:visibility="gone"
+   		/>	   		
+<!-- 		
+   		<ImageButton
+   		style="@style/CustomButton"
+		android:id="@+id/buttonBack"
+   		android:layout_width="wrap_content" 
+   		android:layout_height="45dp" 
+   		android:src="@drawable/back_arrow"
+   		android:gravity="center_vertical"
+   		/>	
+		 -->	
+	</LinearLayout>
+	
+	    
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Entity ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
+	<ScrollView 
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:id="@+id/viewGroupSummariesAndPlans">
+   	    	    
+	<LinearLayout 
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:paddingLeft="3dip"
+    android:paddingRight="3dip"
+    android:paddingTop="3dip"
+    android:background="@drawable/form_background"
+    >   
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Totals, debts, salary ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    	
+	<LinearLayout 
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@drawable/custom_button_light"
+    android:paddingLeft="0dip"
+    android:paddingRight="0dip"
+    android:paddingTop="0dip"
+    android:paddingBottom="1dip"
+    android:id="@+id/viewGroupSummaries"
+    >   
+		    	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Totals ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		    	<LinearLayout 
+				android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical" 
+			    android:background="@drawable/custom_button_light"
+			    android:padding="0dip"
+			    android:id="@+id/totalsLayout"
+			    >    	    	
+						<TextView
+					   	android:layout_width="fill_parent" 
+					   	android:layout_height="wrap_content"
+					   	android:textAppearance="?android:attr/textAppearanceMedium" 
+					   	android:text="@string/report_day_summaries_totals"
+					   	android:background="@drawable/custom_button_light"
+					   	android:padding="4dip"
+					    />
+					    	
+					    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					    	android:layout_width="fill_parent"
+					    	android:layout_height="wrap_content"
+					    	android:background="#FFFFFF"
+					    	android:layout_marginLeft="1dip"
+					    	android:layout_marginRight="1dip"
+					   	>
+	
+					        <TableRow    		
+				    		android:layout_width="fill_parent"
+				    		android:layout_height="wrap_content"
+					    	>
+				    	    	<ImageView
+								android:padding="3dip"
+	   							android:layout_width="wrap_content" 
+	   							android:layout_height="fill_parent"
+	   							android:gravity="center_vertical"
+	   							android:src="@drawable/bullet"/>
+					    	
+								<TextView
+							   	android:layout_width="fill_parent" 
+							   	android:layout_height="wrap_content" 
+							   	android:text="@string/report_day_summaries_sum"
+							   	android:textStyle="bold"
+							   	android:paddingRight="10dip"
+							   	android:layout_weight="1"
+							    />	
+			
+							   	<TextView
+								android:id="@+id/textSum"  
+				    			android:layout_width="fill_parent" 
+				    			android:layout_height="wrap_content"
+				    			android:layout_weight="1"
+				    			android:gravity="right" 
+				    			/>				    	    	
+					    	</TableRow>
+					    	
+					        <TableRow    		
+					    		android:layout_width="fill_parent"
+					    		android:layout_height="wrap_content"
+					    	>
+				    	    	<ImageView
+								android:padding="3dip"
+	   							android:layout_width="wrap_content" 
+	   							android:layout_height="fill_parent"
+	   							android:gravity="center_vertical"
+	   							android:src="@drawable/bullet"/>
+					    	
+								<TextView
+							   	android:layout_width="fill_parent" 
+							   	android:layout_height="wrap_content" 
+							   	android:text="@string/report_day_summaries_docCount"
+							   	android:textStyle="bold"
+							   	android:paddingRight="10dip"
+							   	android:layout_weight="1"
+							    />	
+			
+							   	<TextView
+								android:id="@+id/textDocCount"  
+				    			android:layout_width="fill_parent" 
+				    			android:layout_height="wrap_content"
+				    			android:layout_weight="1"
+				    			android:gravity="right" 
+				    			/>				    	    	
+					    	</TableRow>
+					    	
+					    	
+					        <TableRow    		
+					    		android:layout_width="fill_parent"
+					    		android:layout_height="wrap_content"				    		
+					    	>
+					    	   	<ImageView
+								android:padding="3dip"
+	   							android:layout_width="wrap_content" 
+	   							android:layout_height="fill_parent"
+	   							android:gravity="center_vertical"
+	   							android:src="@drawable/bullet"/>
+					    	
+								<TextView
+							   	android:layout_width="fill_parent" 
+							   	android:layout_height="wrap_content" 
+							   	android:text="@string/report_day_summaries_orders"
+							   	android:textStyle="bold"
+							   	android:paddingRight="10dip"
+							   	android:layout_weight="1"
+							    />					   	    	
+			
+							   	<TextView
+								android:id="@+id/textOrders"  
+				    			android:layout_width="fill_parent" 
+				    			android:layout_height="wrap_content"
+				    			android:layout_weight="1"
+				    			android:gravity="right" 
+				    			/>				    	    	
+					    	</TableRow>
+					    	<TableRow    		
+					    		android:layout_width="fill_parent"
+					    		android:layout_height="wrap_content"
+					    	>
+					    	   	<ImageView
+								android:padding="3dip"
+	   							android:layout_width="wrap_content" 
+	   							android:layout_height="fill_parent"
+	   							android:gravity="center_vertical"
+	   							android:src="@drawable/bullet"/>
+					    	
+								<TextView
+							   	android:layout_width="fill_parent" 
+							   	android:layout_height="wrap_content" 
+							   	android:text="@string/report_day_summaries_msu"
+							   	android:textStyle="bold"
+							   	android:paddingRight="10dip"
+							   	android:layout_weight="1"
+							    />					   	    	
+			
+							   	<TextView
+								android:id="@+id/textMSU"  
+				    			android:layout_width="fill_parent" 
+				    			android:layout_height="wrap_content"
+				    			android:layout_weight="1"
+				    			android:gravity="right" 
+				    			/>				    	    	
+					    	</TableRow>
+						</TableLayout>
+				</LinearLayout>
+				
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Debts ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+				<TextView
+			   	android:layout_width="fill_parent" 
+			   	android:layout_height="wrap_content"
+			   	android:textAppearance="?android:attr/textAppearanceMedium" 
+			   	android:text="@string/report_day_summaries_debts"
+			   	android:background="@drawable/custom_button_light"
+			   	android:padding="4dip"
+			    />			
+				
+			    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:background="#FFFFFF"
+		    	android:layout_marginLeft="1dip"
+		    	android:layout_marginRight="1dip"
+		    	android:id="@+id/debtsTable"	    	
+			   	>
+				</TableLayout>
+						
+						
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Salary ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->		        
+		    	<LinearLayout 
+				android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical" 
+			    android:background="@drawable/custom_button_light"
+			    android:padding="0dip"
+			    android:id="@+id/salaryLayout"
+			    >    	    	
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content"
+				   	android:textAppearance="?android:attr/textAppearanceMedium" 
+				   	android:text="@string/report_day_summaries_salary"
+				   	android:background="@drawable/custom_button_light"
+				   	android:padding="4dip"
+				    />
+			    
+				    <TableLayout 
+				    	android:layout_width="fill_parent"
+				    	android:layout_height="wrap_content"
+				    	android:background="#FFFFFF"
+				    	android:layout_marginLeft="1dip"
+				    	android:layout_marginRight="1dip"
+				    	android:id="@+id/report_day_summaries_salary_table"
+				   	>
+
+						<TextView android:padding="3dip" android:background="#FF000000" android:layout_height="2dp" />
+						<TableRow    		
+				    		android:layout_width="fill_parent"
+				    		android:layout_height="wrap_content"
+				    	>
+			    			<TextView
+						   	android:id="@+id/report_day_summaries_salary_sum_title"
+						   	android:layout_width="fill_parent"
+						   	android:layout_height="wrap_content"
+						   	android:layout_weight="1"
+						   	android:text="@string/report_day_summaries_total_salary"
+						   	android:textStyle="bold"
+						   	android:paddingLeft="4dip"
+						   	android:background="#FFFFFF"
+						    />			
+						    <TextView
+						   	android:id="@+id/report_day_summaries_salary_sum"
+						   	android:layout_width="fill_parent" 
+						   	android:layout_height="wrap_content"
+						   	android:layout_weight="1"
+						   	android:text="@string/zero_money"		
+						   	android:textStyle="bold"   	
+						   	android:gravity="right"
+						   	android:paddingRight="4dip"
+						   	android:background="#FFFFFF"
+						    />
+						    <TextView
+						   	android:id="@+id/report_day_summaries_salary_sum_day"
+						   	android:layout_width="fill_parent" 
+						   	android:layout_height="wrap_content"
+						   	android:layout_weight="1"
+						   	android:text="@string/zero_money"		
+						   	android:textStyle="bold"   	
+						   	android:gravity="right"
+						   	android:paddingRight="4dip"
+						   	android:background="#FFFFFF"
+						    />
+						</TableRow>
+						<TableRow    		
+				    		android:layout_width="fill_parent"
+				    		android:layout_height="wrap_content"
+				    		android:visibility="gone"
+				    	>
+			    			<TextView
+						   	android:id="@+id/report_day_summaries_salary_sum_plus_salary_rate_title"
+						   	android:layout_width="fill_parent"
+						   	android:layout_height="wrap_content"
+						   	android:layout_weight="1"
+						   	android:text="@string/report_day_summaries_total_salary_plus_salary_rate"
+						   	android:textStyle="bold"
+						   	android:paddingLeft="4dip"
+						   	android:background="#FFFFFF"
+						    />			
+						    <TextView
+						   	android:id="@+id/report_day_summaries_salary_sum_plus_salary_rate"
+						   	android:layout_width="fill_parent" 
+						   	android:layout_height="wrap_content"
+						   	android:layout_weight="1"
+						   	android:text="@string/zero_money"		
+						   	android:textStyle="bold"   							   	
+						   	android:gravity="right"
+						   	android:paddingRight="4dip"
+						   	android:background="#FFFFFF"
+						    />
+						</TableRow>
+						<TableRow    		
+				    		android:layout_width="fill_parent"
+				    		android:layout_height="wrap_content"
+				    	>
+			    			<TextView
+						   	android:layout_width="fill_parent"
+						   	android:layout_height="wrap_content"
+						   	android:layout_weight="1"
+						   	android:text="@string/report_day_summaries_salary_prognosis_title"
+						   	android:textStyle="bold"
+						   	android:paddingLeft="4dip"
+						   	android:background="#FFFFFF"
+						    />			
+						    <TextView
+						   	android:id="@+id/report_day_summaries_salary_prognosis"
+						   	android:layout_width="fill_parent" 
+						   	android:layout_height="wrap_content"
+						   	android:layout_weight="1"
+						   	android:text="@string/zero_money"		
+						   	android:textStyle="bold"   							   	
+						   	android:gravity="right"
+						   	android:paddingRight="4dip"
+						   	android:background="#FFFFFF"
+						    />
+						</TableRow>						
+					</TableLayout>					    
+				</LinearLayout>		
+				
+    </LinearLayout>
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Plans ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<LinearLayout 
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/custom_button_light"
+    android:paddingLeft="0dip"
+    android:paddingRight="0dip"
+    android:paddingTop="0dip"
+    android:paddingBottom="1dip"
+    android:id="@+id/viewGroupPlans"
+    android:visibility="gone"
+    >
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Visit plans ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+				<TextView
+			   	android:layout_width="fill_parent" 
+			   	android:layout_height="wrap_content"
+			   	android:textAppearance="?android:attr/textAppearanceMedium" 
+			   	android:text="@string/report_day_summaries_plan_visits"
+			   	android:background="@drawable/custom_button_light"
+			   	android:padding="4dip"
+			   	android:id="@+id/visitPlansLabel"
+			    />				
+				
+			    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:background="#FFFFFF"
+		    	android:layout_marginLeft="1dip"
+		    	android:layout_marginRight="1dip"
+		    	android:id="@+id/visitPlansTable"	    	
+			   	>
+				</TableLayout>				
+				
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Plans ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+				<TextView
+			   	android:layout_width="fill_parent" 
+			   	android:layout_height="wrap_content"
+			   	android:textAppearance="?android:attr/textAppearanceMedium" 
+			   	android:text="@string/report_day_summaries_plans"
+			   	android:background="@drawable/custom_button_light"
+			   	android:padding="4dip"
+			   	android:id="@+id/plansLabel"
+			    />			
+				
+			    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:background="#FFFFFF"
+		    	android:layout_marginLeft="1dip"
+		    	android:layout_marginRight="1dip"
+		    	android:id="@+id/plansTable"	    	
+			   	>
+				</TableLayout>
+
+		        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Sale plans ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		    	<LinearLayout 
+				android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" 
+			    android:background="@drawable/custom_button_light"
+			    android:id="@+id/salePlansLayout"
+			    android:padding="0dip"
+			    >  	    	
+					<TextView
+				   	android:layout_width="wrap_content" 
+				   	android:layout_height="wrap_content"
+				   	android:textAppearance="?android:attr/textAppearanceMedium" 
+				   	android:text="@string/report_day_summaries_sale_plans"
+				   	android:padding="4dip"
+				   	android:layout_weight="1"
+				    />		
+				    
+					<LinearLayout 
+					android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:orientation="vertical"
+				    android:id="@+id/salePlansSwitchUnit" 
+				    >
+							<TextView
+							android:id="@+id/textSwitchMSU"  
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content"			
+							android:textColor="#FFFFFF"
+							android:textStyle="bold"
+							android:maxLines="1"
+							android:text="@string/report_day_summaries_msu"
+							android:gravity="center_vertical|center_horizontal"
+							android:textSize="11dp"
+							/>
+							
+							<TextView
+							android:id="@+id/textSwitchHryvnas"  
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content"			
+							android:textColor="#FFFFFF"
+							android:textStyle="bold"
+							android:maxLines="1"
+							android:text="@string/report_day_summaries_hryvnas"
+							android:gravity="center_vertical|center_horizontal"
+							android:textSize="11dp"
+							/>
+					</LinearLayout>
+					
+				    <Button
+					android:id="@+id/buttonPlanDetails"
+					style="?android:attr/buttonStyleSmall"
+					android:layout_width="wrap_content" 
+					android:layout_height="32dp" 
+					android:layout_marginTop="4dp"
+				  	android:layout_centerVertical="true"
+				  	android:text="@string/ellipsis"
+				  	/>					
+					
+				</LinearLayout>
+												
+			    <TableLayout
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:background="#FFFFFF"
+		    	android:layout_marginLeft="1dip"
+		    	android:layout_marginRight="1dip"
+		    	android:id="@+id/salePlansTable"	    	
+			   	>
+				</TableLayout>
+				
+    </LinearLayout>    
+	
+    </LinearLayout>
+	</ScrollView>	    
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Item list ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+   	<ExpandableListView android:id="@+id/itemGroupSummariesExpandableList" 
+       android:layout_width="fill_parent" 
+       android:layout_height="fill_parent"
+       android:layout_weight="1"
+       android:background="#FFFFFFFF"
+       android:visibility="gone"
+       />
+       
+  	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Document list ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->   
+       
+	<LinearLayout 
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:orientation="vertical" 
+    android:background="@drawable/form_background"
+    android:id="@+id/viewGroupDocumentSummaries"
+    android:visibility="gone"
+    >
+		<Spinner
+		android:id="@+id/spnDocTypes"  
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:textColor="#FFFFFFFF"
+		android:background="@drawable/custom_button"
+		/>
+
+		<com.app.ant.app.Controls.DataGrid	
+			android:id="@+id/dataGridDocList"
+		   	android:layout_width="match_parent"
+		   	android:layout_height="wrap_content"
+		   	android:scrollbarAlwaysDrawVerticalTrack="true"
+		   	android:scrollbarAlwaysDrawHorizontalTrack="true"
+		   	android:scrollbarSize = "20dip"
+		   	android:scrollbars="vertical"  
+		   	app:text="Black" 
+		   	app:textColor="#ffffffff"
+		   	android:layout_weight="1" 
+		/>
+
+		<LinearLayout 
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" 
+	    android:id="@+id/viewGroupDocumentSummariesTotals"
+	    android:background="@drawable/custom_button"
+	    >
+				<TextView
+			   	android:layout_width="wrap_content" 
+			   	android:layout_height="wrap_content" 
+			   	android:text="@string/report_day_summaries_orders"
+			   	android:textStyle="bold"
+			   	android:paddingRight="10dip"
+			   	android:layout_weight="1"
+			   	android:textColor="#FFFFFF"
+			    />					   	    	
+
+			   	<TextView
+				android:id="@+id/textDocsOrders"  
+    			android:layout_width="wrap_content" 
+    			android:layout_height="wrap_content"
+    			android:layout_weight="1"
+    			android:gravity="right" 
+    			android:paddingRight="10dip"
+    			android:textColor="#FFFFFF"
+    			/>
+    			
+				<TextView
+			   	android:layout_width="wrap_content" 
+			   	android:layout_height="wrap_content" 
+			   	android:text="@string/report_day_summaries_msu"
+			   	android:textStyle="bold"
+			   	android:paddingRight="10dip"
+			   	android:layout_weight="1"
+			   	android:textColor="#FFFFFF"
+			    />					   	    	
+
+			   	<TextView
+				android:id="@+id/textDocsMSU"  
+    			android:layout_width="wrap_content" 
+    			android:layout_height="wrap_content"
+    			android:layout_weight="1"
+    			android:gravity="right"
+    			android:paddingRight="10dip"
+    			android:textColor="#FFFFFF" 
+    			/>
+    			
+				<TextView
+			   	android:layout_width="wrap_content" 
+			   	android:layout_height="wrap_content" 
+			   	android:text="@string/report_day_summaries_sum"
+			   	android:textStyle="bold"
+			   	android:paddingRight="10dip"
+			   	android:layout_weight="1"
+			   	android:textColor="#FFFFFF"
+			    />	
+
+			   	<TextView
+				android:id="@+id/textDocsSum"  
+    			android:layout_width="wrap_content" 
+    			android:layout_height="wrap_content"
+    			android:layout_weight="1"
+    			android:gravity="right"
+    			android:textColor="#FFFFFF" 
+    			/>
+    	</LinearLayout>
+    	
+    </LinearLayout>       
+    
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Just to make empty horizontal strip ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+	<TextView
+   	android:layout_width="fill_parent" 
+   	android:layout_height="wrap_content" 
+   	android:text=""
+   	style="@style/ToolPanel"
+   	android:layout_gravity="bottom"
+   	android:layout_weight="0"
+   	android:padding = "0dip"
+   	android:textSize="5sp"   	
+    />    
+					      	
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<LinearLayout style="@style/TabsPlacement"  android:id="@+id/tabsPlacement" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+</LinearLayout>

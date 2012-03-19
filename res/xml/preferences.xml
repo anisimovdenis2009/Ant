@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<!--CheckBoxPreference
+		android:key="@string/preferences_grid_row_height_key"
+		android:title="@string/preferences_grid_row_height_title"
+		android:summary="@string/preferences_grid_row_height_summary"
+		/-->
+
+	<PreferenceCategory android:title="@string/preferences_grid_category_name">
+		
+		<EditTextPreference
+			android:key="@string/preferences_grid_row_height_key"
+			android:title="@string/preferences_grid_row_height_title"
+			android:summary="@string/preferences_grid_row_height_summary"
+			android:defaultValue="40"
+			android:dialogTitle="@string/preferences_grid_row_height_dialog_title"
+			android:inputType="number"
+			/>
+	
+		<EditTextPreference
+			android:key="@string/preferences_grid_text_size_key"
+			android:title="@string/preferences_grid_text_size_title"
+			android:summary="@string/preferences_grid_text_size_summary"
+			android:defaultValue="16"
+			android:dialogTitle="@string/preferences_grid_text_size_dialog_title"
+			android:inputType="number"
+			/>	
+	
+		<EditTextPreference
+			android:key="@string/preferences_grid_fling_velocity_key"
+			android:title="@string/preferences_grid_fling_velocity_title"
+			android:summary="@string/preferences_grid_fling_velocity_summary"
+			android:defaultValue="15"
+			android:dialogTitle="@string/preferences_grid_fling_velocity_dialog_title"
+			android:inputType="number"
+			/>
+    
+	</PreferenceCategory>		
+    
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+	<PreferenceCategory android:title="@string/preferences_cetegory_name_lang">
+		<ListPreference
+					   android:key="@string/preference_key_lang"
+					   android:title="@string/preference_title_lang"
+					   android:summary="@string/preference_summary_lang"
+					   android:entries="@array/entries_lang"
+					   android:entryValues="@array/entryvalues_lang"
+					   android:dialogTitle="@string/preference_dialog_title_lang" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/preferences_cetegory_name_document_form">
+		<CheckBoxPreference android:defaultValue="true" android:key="@string/preference_key_document_quick_keyboard_key" android:title="@string/preference_title_document_quick_keyboard" android:summary="@string/preference_summary_document_quick_keyboard"></CheckBoxPreference>
+	</PreferenceCategory>
+</PreferenceScreen>

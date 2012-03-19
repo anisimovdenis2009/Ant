@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/galaxy"
+              android:orientation="vertical">
+
+    <TableLayout android:layout_height="wrap_content"
+                 android:layout_width="fill_parent"
+                 android:paddingLeft="10dip"
+                 android:paddingTop="200dip"
+                 android:background="@android:color/transparent"
+                 xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TableRow android:paddingBottom="20dip" android:paddingLeft="50dip">
+            <ImageButton android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/start_view_client_card"
+                         android:background="@android:color/transparent"
+                         android:src="@drawable/credit_card_selector"
+                    />
+        </TableRow>
+        <TableRow android:paddingBottom="20dip" android:paddingLeft="50dip">
+            <ImageButton android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/start_view_credit_ask"
+                         android:background="@android:color/transparent"
+                         android:src="@drawable/credit_ask_selector"
+                    />
+        </TableRow>
+
+        <TableRow android:paddingBottom="20dip" android:paddingLeft="50dip">
+            <ImageButton android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/start_view_inkassat"
+                         android:background="@android:color/transparent"
+                         android:src="@drawable/inkassat"
+                    />
+        </TableRow>
+        <TableRow android:paddingBottom="20dip" android:paddingLeft="50dip">
+            <ImageButton android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/start_view_request_review"
+                         android:background="@android:color/transparent"
+                         android:src="@drawable/request_review"
+                    />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

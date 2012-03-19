@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.app.ant"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="1" 
+    android:id="@+id/plansRow"
+    >
+    
+        <TableRow    		
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:id="@+id/plansTableRow"    		
+    	>    
+    	    	<ImageView
+				android:padding="3dip"
+				android:id="@+id/imgBullet"
+				android:layout_width="wrap_content" 
+				android:layout_height="fill_parent"
+				android:gravity="center_vertical"
+				android:src="@drawable/bullet"/>
+	    	
+				<TextView
+			   	android:layout_width="fill_parent" 
+			   	android:layout_height="wrap_content" 
+			   	android:id="@+id/textPlanName"
+			   	android:textStyle="bold"
+			   	android:paddingRight="10dip"
+			   	android:layout_weight="1"
+			   	android:maxLines="1"
+			    />	
+
+			   	<TextView
+				android:id="@+id/textPlanValue"  
+    			android:layout_width="fill_parent" 
+    			android:layout_height="wrap_content"
+    			android:layout_weight="1"
+    			android:gravity="right"
+    			android:text="0" 
+    			android:maxLines="1"
+    			/>
+    			
+			   	<TextView
+				android:id="@+id/textPlanFulfilled"  
+    			android:layout_width="fill_parent" 
+    			android:layout_height="wrap_content"
+    			android:layout_weight="1"
+    			android:gravity="right"
+		        android:paddingLeft="10dip"
+			    android:minWidth="70dip"
+			    android:text="0"
+			    android:maxLines="1"			    			 
+    			/>				    	 
+
+			   	<TextView
+				android:id="@+id/textPlanPercent"  
+    			android:layout_width="fill_parent" 
+    			android:layout_height="wrap_content"
+    			android:layout_weight="1"
+    			android:gravity="right"
+		        android:paddingLeft="10dip"
+			    android:minWidth="60dip"
+			    android:text="0 %"
+			    android:paddingRight="3dp"
+				android:textColor="#FF0000A0"
+				android:maxLines="1"			    			    			    			 
+    			/>				    	 
+   		</TableRow>					    	    	
+</LinearLayout>

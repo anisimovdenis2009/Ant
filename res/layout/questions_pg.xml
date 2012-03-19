@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:orientation="vertical"
+              android:layout_height="fill_parent">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="20dp" android:text="Вопрос" android:paddingLeft="5dp" android:layout_weight = "1"/>
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="20dp" android:text="Ответ" android:gravity= "left" android:layout_weight = "1"/>
+    </LinearLayout>
+    <ListView android:layout_width="fill_parent" android:layout_height="wrap_content"
+              android:id="@+id/questions_pg_list_view"/>
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+              android:id="@+id/questions_pg_description" android:gravity="bottom" android:layout_weight = "1"/>
+
+</LinearLayout>

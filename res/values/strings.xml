@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ant</string>
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+    <string name="form_title_login">Авторизация</string>
+	<string name="form_title_clientList">Ant</string>
+    <string name="form_title_client">Клиент</string>
+    <string name="form_title_contacts">Контакты</string>
+    <string name="form_title_remnants">Остатки</string>
+    <string name="form_title_docSale">Заказ</string>
+    <string name="form_title_preferences">Настройки</string>
+    <string name="form_title_docList">Список документов</string>
+    <string name="form_title_docPayment">Оплата</string>
+    <string name="form_title_item">Информация о товаре</string>
+    <string name="form_title_statistics">Статистика</string>
+    <string name="form_title_actions">Действия</string>
+    <string name="form_title_itemList">Товары</string>
+    <string name="form_title_synchronization">Синхронизация</string>
+    <string name="form_title_selectColumns">Выберите колонки</string>
+    <string name="form_title_selectItemGroup">Выберите группу</string>
+    <string name="form_title_selectPrice">Выберите прайс</string>
+    <string name="form_title_visit">Визит</string>        
+    <string name="form_title_aims">Цели на визит</string>
+    <string name="form_title_comments">Комментарии</string>
+    <string name="form_title_report_day_summaries">Итоги дня</string>
+    <string name="form_title_report_visit_summaries">Итоги визита</string>
+    <string name="form_title_document">Документ</string>
+    <string name="form_title_plans">Планы</string>
+    <string name="form_title_debts">Долги</string>
+    <string name="form_title_debtNotification">Уведомление о долге</string>
+    <string name="form_title_GPS">GPS</string>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="dialog_base_ok">Ok</string>
+    <string name="dialog_base_yes">Да</string>
+    <string name="dialog_base_cancel">Отмена</string>
+	<string name="dialog_base_exceptionOnCreateDialog">Ошибка создания диалога</string>    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <string name="aim1">Презентовать акцию «Золотой кейс»</string>
+    <string name="aim2">Провести презентацию новых продуктов</string>
+    <string name="aim3">Ознакомить с новыми торговыми условиями</string>
+    <string name="aim4">Выполнить сторчек</string>
+    <string name="aims_total">Итого:</string>   
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<string name="menu_synchronization">Синхронизация</string>
+	<string name="menu_preferences">Настройки</string>
+	<string name="menu_items">Товары</string>
+	<string name="menu_address_book">Адресная книга</string>
+	<string name="menu_day_summaries">План/Факт</string>
+	<string name="menu_backup_db">Резервировать данные</string>
+	<string name="menu_day_plans">Планы</string>
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="tab_address">Адрес</string>    
+    <string name="tab_analytics">Аналитика</string>
+    <string name="tab_docList">Документы</string>
+    <string name="tab_visit">Визит</string>
+    <string name="tab_docSale">Продажа</string>
+    <string name="tab_strore_check">Доли полок</string>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="login_password">Введите пароль:</string>
+    <string name="login_sample_saler">Иванов И.И.</string>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <string name="client_list_route">Марш</string>
+    <string name="client_list_routeDate">Дата маршрута:</string>
+    <string name="client_list_debt">Долг</string>
+    <string name="client_list_client_debt">Долг:</string>
+    <string name="client_list_fitler1">АБВ</string>
+    <string name="client_list_fitler2">ГДЕ</string>
+    <string name="client_list_fitler3">ЖЗИ</string>
+    <string name="client_list_fitler4">ЙКЛ</string>
+    <string name="client_list_fitler5">МНО</string>
+    <string name="client_list_fitler6">123</string>
+    <string name="client_list_fitler7">ПРС</string>
+    <string name="client_list_fitler8">ТУФ</string>
+    <string name="client_list_fitler9">ХЦЧ</string>
+    <string name="client_list_fitler10">ШЩЫ</string>
+    <string name="client_list_fitler11">ЭЮЯ</string>
+    <string name="client_list_fitler12">..</string>
+    
+    <string name="client_list_showPlansHeader">Подтверждение</string>
+    <string name="client_list_showPlans">Посмотреть планы на день?</string>
+    
+    <string name="client_list_exitAppHeader">Подтверждение</string>
+    <string name="client_list_exitAppMessage">Выйти из приложения?</string>
+    <string name="client_list_exitAppOk">Да</string>
+    <string name="client_list_exitAppCancel">Отмена</string>
+        
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+    <string name="visit_step_client">Клиент</string>
+    <string name="visit_step_contacts">Контакты</string>
+    <string name="visit_step_docHeader">Документ</string>
+    <string name="visit_step_remnants">Остатки</string>
+    <string name="visit_step_docSale">Заказ</string>
+    <string name="visit_step_exit">Завершить</string>
+    <string name="visit_step_newDocSale">Новый</string>
+    <string name="visit_step_docSaleList">Док-ты</string>
+    <string name="visit_step_docPayment">Оплата</string>
+    <string name="visit_step_startVisit">Начать визит</string>
+    <string name="visit_step_endVisit">Завершить визит</string>
+    <string name="visit_step_visit">Визит</string>
+    <string name="visit_step_dpsm">DPSM</string>    
+    <string name="visit_step_debt">Долги</string>
+    <string name="visit_step_debtNotification">Уведомление о долге</string>
+    <string name="visit_step_visit_summaries">Итоги визита</string>
+    <string name="visit_step_day_summaries">Итоги дня</string>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="visit_warning">Предупреждение</string>
+    <string name="visit_start_visit_warning">Пожалуйста, сперва начните визит</string>
+    <string name="visit_warning_ok">Ок</string>
+    <string name="visit_end_visit_warning">Завершить визит?</string>
+    <string name="visit_start_visit_confirm_title">Подтверждение</string>
+    <string name="visit_select_visit_type_title">Выберите тип визита</string>
+    <string name="visit_start_visit_confirm">Начать визит?</string>
+    <string name="visit_start_visit_yes">Да</string>
+    <string name="visit_start_visit_select">Выбрать</string>
+    <string name="visit_start_visit_cancel">Отмена</string> 
+    <string name="visit_inefficient_visit_warning">Документы не созданы в текущем визите. Укажите причину.</string> 
+    <string name="visit_storecheck_pg_warning">Необходимо заполнить и сохранить анкету в шаге Сторчек PG</string>      
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="client_tab_debt">Долг</string>
+    <string name="client_tab_contract">Договор</string>
+    <string name="client_tab_additional">Дополнение</string>
+    <string name="client_tab_requisites">Реквизиты</string>
+    <string name="client_tab_address">Адрес</string>
+    <string name="client_tab_contacts">Контакты</string>
+    
+    <string name="client_sumDebt">Долг:</string>
+    <string name="client_sumDebtToday">Забрать сегодня:</string>
+    <string name="client_saldo">Долг по клиенту:</string>
+    <string name="client_sumDebtResp">Просрочено по клиенту:</string>    
+    <string name="client_allowedCredit">Допустимый кредит:</string>
+    <string name="client_respCredit">Просроченный кредит:</string>
+    <string name="client_comments">Примечания:</string>
+    
+    <string name="client_namePrint">Полное наименование:</string>
+    <string name="client_contract">Договор:</string>
+    <string name="client_contract_num">№</string>
+    <string name="client_contract_from">від</string>
+    <string name="client_resp1">Отсрочка I:</string>
+    <string name="client_resp2">II:</string>
+    <string name="client_discount">Скидка:</string>
+    <string name="client_priceName">Прайс:</string>
+    
+    <string name="client_namePrint2">Альтернативное наименование:</string>
+    <string name="client_id">Внутренний код АДВ:</string>
+    
+    <string name="client_bankInfo">Счет:</string>
+    <string name="client_license">Свидетельство №:</string>
+    <string name="client_regDate">Дата регистрации:</string>
+    <string name="client_regCode">Код ЕДРПОУ:</string>
+    <string name="client_codeVAT">Код плат. НДС:</string>
+    
+    <string name="client_addr_salePoint">Торговая точка</string>
+    <string name="client_addr_addrName">Адрес</string>
+    <string name="client_addr_region">Регион:</string>
+    <string name="client_addr_workTime">Режим:</string>
+    <string name="client_addr_phone">Тел.:</string>
+    <string name="client_addr_additional">Дополнительно</string>
+    <string name="client_addr_comment">Комментарий:</string>
+    <string name="client_addr_deliveryDays">Дни доставки:</string>
+    <string name="client_addr_channelType">Канал продаж:</string>
+    <string name="client_addr_license">Лицензия</string>
+    <string name="client_addr_numbLicAlc">Номер алк. лиц.:</string>
+    <string name="client_addr_endDate">Действ. до:</string>
+    <string name="client_addr_contacts">Контакты</string>
+    <string name="client_addr_contact">Контакт:</string>
+    <string name="client_addr_add_contact">Новый</string>
+    <string name="client_addr_exceptionCreateForm">Ошибка отображения формы</string>
+    <string name="client_addr_exceptionShowMap">Невозможно отобразить карту</string>
+    
+    <string name="client_addr_header_debt">Долги</string>
+    <string name="client_addr_header_registrationData">Регистрационные данные</string>
+    <string name="client_addr_header_deliveryConditions">Условия доставки</string>
+    <string name="client_addr_displayMap">Показать на карте</string>
+    
+    <string name="contact_delete_yes">Да</string>
+    <string name="contact_delete_no">Нет</string>    
+    <string name="contact_delete_confirm_title">Подтверждение</string>
+    <string name="contact_delete_confirm">Удалить контакт?</string>
+    
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="addr_contact_header">Контактные данные:</string>
+    <string name="addr_contact_person">ФИО:</string>
+    <string name="addr_contact_position">Должность:</string>
+    <string name="addr_contact_phone">Телефон:</string>
+    <string name="addr_contact_email">E-mail:</string>
+    <string name="addr_contact_dateOfBirth">Дата рождения:</string>
+    <string name="addr_contact_needs">Потребности:</string>
+    <string name="addr_contact_hobbies">Увлечения:</string>
+    <string name="addr_contact_comment">Примечание:</string>
+    <string name="addr_contact_decides">Принимает решения</string>
+    <string name="addr_contact_USD">Действующий</string>
+    <string name="addr_contact_save">Сохранить</string>
+    <string name="addr_contact_cancel">Отмена</string>
+    
+    <string name="addr_contact_exceptionOnDelete">Ошибка при удалении контакта</string>
+    <string name="addr_contact_exceptionOnEdit">Ошибка редактирования контакта</string>
+    <string name="addr_contact_exceptionOnNew">Ошибка при создании контакта</string>    
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="document_docType_claim">Заказ</string>
+    <string name="document_docType_sale">Продажа</string>
+    <string name="document_docType_payment">Оплата</string>
+    <string name="document_docType_remnants">Остатки</string>
+    <string name="document_docType_sdo">С-до</string>
+    <string name="document_docType_psdo">П с-до</string>
+    <string name="document_docType_debtNotification">Уведомление о долге</string>
+    <string name="document_docType_unknown">Не определен</string>
+    
+    <string name="document_alertChoiceSave">Сохранить</string>
+    <string name="document_alertChoiceYes">Да</string>
+    <string name="document_alertChoiceNo">Нет</string>
+    <string name="document_alertChoiceCancel">Отмена</string>    
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="document_docState_new">Черновик</string>
+    <string name="document_docState_previous">Предыдущий</string>
+    <string name="document_docState_closed">Закрыт</string>
+    <string name="document_docState_sent">Отправлен</string>
+    <string name="document_docState_finished">Завершен</string>
+    <string name="document_docState_deleted">Удален</string>
+    <string name="document_docState_unknown">Не определено</string>
+    
+    <string name="document_exceptionOnCreateDialog">Ошибка создания диалога</string>
+	<string name="document_exceptionDisplay">Ошибка отображения документа</string>
+	        
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="doc_sale_header_date">Дата отгрузки:</string>
+    <string name="doc_sale_header_docType">Тип:</string>
+    <string name="doc_sale_header_address">Адрес:</string>    
+    <string name="doc_sale_header_price">Цена:</string>
+    <string name="doc_sale_header_wellcome">Wellcome скидка:</string>
+    <string name="doc_sale_header_comments">Примечания:</string>
+    <string name="doc_sale_header_comments1">I</string>
+    <string name="doc_sale_header_comments2">II</string>
+    <string name="doc_sale_header_datePrefix">от</string>
+    <string name="doc_sale_header_comments2_1">Прим. I</string>
+    <string name="doc_sale_header_comments2_2">Прим. II</string>
+    <string name="doc_sale_header_title">Введите данные</string>
+    <string name="doc_sale_header_exception_create">Ошибка создания диалога</string>
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<string name="doc_sale_column_header_image">Пометка</string>
+    <string name="doc_sale_column_header_name">Наименование</string>
+    <string name="doc_sale_column_header_predictedOrder">РЗ</string>
+    <string name="doc_sale_column_header_discountI">%I</string>
+    <string name="doc_sale_column_header_discountII">%II</string>
+    <string name="doc_sale_column_header_K1">КI</string>
+    <string name="doc_sale_column_header_K2">КII</string>    
+    <string name="doc_sale_column_header_priceI">ЦенаI</string>
+    <string name="doc_sale_column_header_priceII">ЦенаII</string>
+    <string name="doc_sale_column_header_weightPriceI">Вес.ценаI</string>
+    <string name="doc_sale_column_header_weightPriceII">Вес.ценаII</string>    
+    <string name="doc_sale_column_header_prevDate">ПД</string>
+    <string name="doc_sale_column_header_prevQuantity">П1</string>
+    <string name="doc_sale_column_header_prevQuantity2">П2</string>
+    <string name="doc_sale_column_header_quantity">Скл.</string>
+    <string name="doc_sale_column_header_curRemnant">Ост.</string>
+    <string name="doc_sale_column_header_minOrderQNT">Мин.зак</string>
+    <string name="doc_sale_column_header_totalI">TotalI</string>
+    <string name="doc_sale_column_header_totalII">TotalII</string>
+    <string name="doc_sale_column_header_totalAll">TotalAll</string>
+    <string name="doc_sale_column_header_sortID">SortID</string>
+    <string name="doc_sale_column_header_rowSumI">СуммаI</string>
+    <string name="doc_sale_column_header_rowSumII">СуммаII</string>
+    
+    
+    <string name="doc_sale_filter_quantity">К-во</string>
+    <string name="doc_sale_booking">Заказ</string>
+    <string name="doc_sale_filter_dialog">Выберите ассортимент</string>
+    <string name="doc_sale_filter_sector">Сектор</string>
+    <string name="doc_sale_filter_category">Категория</string>
+    <string name="doc_sale_filter_brand">Бренд</string>
+    <string name="doc_sale_filter_all">Весь товар</string>
+    <string name="doc_sale_filter_stock">Склад</string>
+    <string name="doc_sale_adjasment">Смежные</string>
+    <string name="doc_sale_filter_all_item_groups">Все</string>
+    <string name="doc_sale_progressMessage">"Выполненяется..."</string>
+    
+    <string name="doc_sale_button_stats">Стат.</string>
+    <string name="doc_sale_button_form_delivery">Оплата</string>
+
+    <string name="doc_sale_button_actions">Дейст.</string>
+    <string name="doc_sale_moveFormsHeader">Внимание!</string>
+    <string name="doc_sale_moveFormsMessageItoII">"Переместить с I-й формы во II-ю?"</string>
+    <string name="doc_sale_moveFormsMessageIItoI">"Переместить со II-й формы в I-ю?"</string>
+    <string name="doc_sale_moveFormsChoiceOk">"Переместить"</string>
+    <string name="doc_sale_moveFormsChoiceCancel">"Отмена"</string>
+    
+    <string name="doc_sale_exceptionOnCreate">Ошибка создания окна документа</string>
+    <string name="doc_sale_exceptionOnCreateDialog">Ошибка создания диалога</string>
+    <string name="doc_sale_exceptionFinish">Ошибка закрытия документа</string>
+    <string name="doc_sale_saveWarning">Возможна ошибка сохранения документа, пожалуйста проверьте документ</string>    
+    <string name="doc_sale_exceptionDisplay">Ошибка отображения документа</string>
+    <string name="doc_sale_exceptionInput">Ошибка ввода данных</string>
+    <string name="doc_sale_exceptionEditColumns">Ошибка редактирования колонок</string>
+    <string name="doc_sale_exceptionAction">Ошибка выполнения</string>
+    
+    <string name="doc_sale_limitation">Ограничение</string>
+    <string name="doc_sale_warning">Предупреждение</string>
+    <string name="doc_sale_maxDiscount">Максимальная скидка: %f</string>
+    <string name="doc_sale_maxDiscountNPositions">Максимальная скидка установлена для %d позиций</string>
+    <string name="doc_sale_denyEditDiscount">Вам запрещено менять скидки в документе. Обратитесь к ИТ-менеджеру!</string>
+    <string name="doc_sale_discountExceeds100">Скидка должна быть менее 100%</string>
+    <string name="doc_sale_ordersExceedsQuantity">Заказываемое количество больше реально существующего</string>
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="doc_sale_stat_sum">Сумма:</string>
+    <string name="doc_sale_stat_sumI">Сумма I:</string>
+    <string name="doc_sale_stat_sumII">Сумма II:</string>
+    <string name="doc_sale_stat_sumVAT">НДС:</string>
+    <string name="doc_sale_stat_sumWoVAT">б/НДС:</string>
+    
+    <string name="doc_sale_stat_cases">Кейсов:</string>
+    <string name="doc_sale_stat_pallettes">Палетт:</string>
+    <string name="doc_sale_stat_units">Единиц:</string>
+    
+    <string name="doc_sale_stat_sumSUF">Сумма SUF:</string>
+    <string name="doc_sale_stat_sumFUF">Сумма FUF:</string>
+    
+    <string name="doc_sale_stat_orderItems">Позиций:</string>
+    <string name="doc_sale_stat_formItems">Позиций на форме:</string>
+    <string name="doc_sale_stat_allItems">Позиций всего:</string>
+    <string name="doc_sale_stat_remnantsEntered">Введено:</string>
+    <string name="doc_sale_stat_MSU">MSU:</string>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="doc_sale_actions_selectColumns">Выбрать колонки</string>
+    <string name="doc_sale_actions_updateDiscounts">Обновить скидки</string>
+    <string name="doc_sale_actions_calcPredictOrders">Расчет рек. заказа</string>
+    <string name="doc_sale_actions_calcPredictColumnI">В колонку КI</string>
+    <string name="doc_sale_actions_calcPredictColumnII">В колонку КII</string>
+    <string name="doc_sale_actions_docCopyItoII">Переместить с I в II</string>
+    <string name="doc_sale_actions_docCopyIItoI">Переместить с II в I</string>
+    <string name="doc_sale_actions_docComplete">Завершить документ</string>
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="doc_sale_selectColumns_reset">Сбросить</string>
+    <string name="doc_sale_selectColumns_up">Вверх</string>
+    <string name="doc_sale_selectColumns_down">Вниз</string>
+    <string name="doc_sale_selectColumns_column">Колонка</string>
+    <string name="doc_sale_selectColumns_width">Ширина</string>
+    <string name="doc_sale_selectColumns_visible">Видимая</string>
+    <string name="doc_sale_selectColumns_cancel">Отменить</string>
+    <string name="doc_sale_selectColumns_ok">Ok</string>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="doc_sale_select_group_categories">Категории</string>
+    <string name="doc_sale_select_group_sectors">Секторы</string>
+    <string name="doc_sale_select_group_cancel">Отменить</string>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="doc_sale_select_price_cancel">Отменить</string>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="doc_sale_comments_cancel">Отменить</string>    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="doc_sale_calc_title">Введите значение</string>
+    <string name="doc_sale_calc_titleRespite">Введите отсрочку</string>
+    <string name="doc_sale_calc_titleDiscountI">Введите скидку по ф.I</string>
+    <string name="doc_sale_calc_titleDiscountII">Введите скидку по ф.II</string>
+    <string name="doc_sale_calc_titleOrdersI">Введите количество по ф.I</string>
+    <string name="doc_sale_calc_titleOrdersII">Введите количество по ф.II</string>
+    <string name="doc_sale_calc_titleRemnant">Введите остаток</string>
+    <string name="doc_sale_calc_titleDocSum">Введите сумму документа</string>
+    
+    <string name="doc_sale_calc_applyToAll">все</string>
+    <string name="doc_sale_calc_ok">Ok</string>
+    <string name="doc_sale_calc_cancel">Отменить</string>
+    <string name="doc_sale_calc_inputError">Ошибка ввода данных</string>
+                    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+    <string name="doc_list_column_header_date">Дата</string>
+    <string name="doc_list_column_header_respite">Отсрочка</string>
+    <string name="doc_list_column_header_respiteLeft">Просрочено</string>
+    <string name="doc_list_column_header_sumAll">Сумма</string>
+    <string name="doc_list_column_header_sumFree">Неоплачено</string>
+    <string name="doc_list_column_header_salerInfo">Сейлс</string>
+    <string name="doc_list_column_header_docType">Тип</string>
+    <string name="doc_list_column_header_docState">Статус</string>
+    
+    <string name="doc_list_column_header_client">Клиент</string>
+    <string name="doc_list_column_header_address">Адрес</string>
+    <string name="doc_list_column_header_sumWithVAT">Сумма с НДС</string>
+    <string name="doc_list_column_header_sumWoVAT">Сумма без НДС</string>    
+    <string name="doc_list_column_header_docNumber">Номер</string>
+    <string name="doc_list_column_header_created">Создан</string>
+    <string name="doc_list_column_header_comment">Примечание</string>
+    
+    <string name="doc_list_button_editDoc">Открыть</string>
+    <string name="doc_list_button_deleteDoc">Удалить</string>
+    <string name="doc_list_button_payment">Оплата</string>
+    <string name="doc_list_button_printDoc">Печать</string>
+    <string name="doc_list_button_discount">Скидки</string>
+    <string name="doc_list_button_debtNotification">Уведомить</string>
+    <string name="doc_list_warning">Предупреждение</string>
+    <string name="doc_list_warningSaveBeforeEdit">Завершите работу с текущим документом перед редактированием нового</string>
+    <string name="doc_list_warningSaveBeforeCreate">Завершите работу с текущим документом перед созданием документа </string>
+    <string name="doc_list_warningDeleteDocument">Документ будет удален. Удалить документ?</string>
+    
+    
+    <string name="doc_list_exceptionOnDelete">Ошибка при удалении документа</string>
+    <string name="doc_list_exceptionOnEdit">Ошибка редактирования документа</string>
+    <string name="doc_list_exceptionOnPayment">Ошибка при создании документа "Оплата"</string>
+    <string name="doc_list_exceptionOnDebtNotification">Ошибка при создании документа "Уведомление о долге"</string>
+    
+    <string name="doc_list_limitation">Ограничение</string>
+    <string name="doc_list_errorDeleteClosedDoc">Невозможно удалить закрытый документ</string>
+    <string name="doc_list_alertChoiceDelete">Удалить</string>
+    
+    <string name="doc_list_allAddresses">Все адреса</string>
+    <string name="doc_list_unpaid">Неопл.</string>
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+    <string name="doc_payment_num">Оплата №:</string>
+    <string name="doc_payment_date">Дата:</string>
+    <string name="doc_payment_sum">Сумма:</string>
+    <string name="doc_payment_blankNo">Бланк №:</string>
+    <string name="doc_payment_complete">Завершить</string>
+    <string name="doc_payment_comments">Примечания:</string>
+    <string name="doc_payment_alertFinishTitle">Сохранение документа</string>
+    <string name="doc_payment_alertFinish">Документ не сохранен, данные будут потеряны. Сохранить документ?</string>
+    <string name="doc_payment_alertChoiceOk">Ok</string>  
+    <string name="doc_payment_alertCannotFinish">Не удается сохранить документ</string>
+    <string name="doc_payment_errorSumExceedsUnpaid">Ограничение: нельзя указывать сумму больше неоплаченной</string>
+    <string name="doc_payment_errorFullBlackDocPayments">Ограничение: документы по второй форме должны быть оплачены полностью</string>
+    <string name="doc_payment_errorBlankNoEmpty">Ограничение: запрещено завершать оплату без заполнения поля \'Бланк №\'</string>
+    <string name="doc_payment_alertWarning">Внимание!</string>
+    <string name="doc_payment_warningBlankNoEmpty">Предупреждение: поле \'Бланк №\' не заполнено</string>
+    <string name="doc_payment_exceptionOnCreate">Ошибка создания окна документа</string>
+    <string name="doc_payment_exceptionOnCreateDialog">Ошибка создания диалога</string>
+    <string name="doc_payment_exceptionFinish">Ошибка закрытия документа</string>
+
+	<string name="doc_debt_notification_calc_titleDebtSum">Введите сумму долга</string>
+	<string name="doc_debt_notification_calc_titlePromisedSum">Введите сумму возвращаемого долга</string>
+	<string name="doc_debt_notification_contact">Контакт</string>
+	<string name="doc_debt_notification_debtSum">Ознакомлен с долгом </string>
+	<string name="doc_debt_notification_date">Забрать </string>
+	<string name="doc_debt_notification_promisedSum">Сумму </string>
+	<string name="doc_debt_notification_comments">Примечания:</string>
+	<string name="doc_list_newContact">Новый контакт</string>  
+	<string name="doc_debt_notification_exceptionOnCreate">Ошибка создания окна документа</string>
+    <string name="doc_debt_notification_exceptionOnCreateDialog">Ошибка создания диалога</string>    
+    <string name="doc_debt_notification_exceptionFinish">Ошибка закрытия документа</string>
+    <string name="doc_debt_notification_alertFinishTitle">Сохранение документа</string>
+    <string name="doc_debt_notification_alertFinish">Документ не сохранен, данные будут потеряны. Сохранить документ?</string>    
+        
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="calendar_month_january">январь</string>
+    <string name="calendar_month_february">февраль</string>
+    <string name="calendar_month_march">март</string>
+    <string name="calendar_month_april">фпрель</string>
+    <string name="calendar_month_may">май</string>
+    <string name="calendar_month_june">июнь</string>
+    <string name="calendar_month_july">июль</string>
+    <string name="calendar_month_august">август</string>
+    <string name="calendar_month_september">сентябрь</string>
+    <string name="calendar_month_october">октябрь</string>
+    <string name="calendar_month_november">ноябрь</string>
+    <string name="calendar_month_december">декабрь</string>
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<string name="preferences_grid_row_height_key">gridRowHeight</string>
+	<string name="preferences_grid_row_height_title">Высота строки грида</string>
+	<string name="preferences_grid_row_height_summary">Используется при отображении информации на гриде (по умолчанию 40)</string>
+	<string name="preferences_grid_row_height_dialog_title">Введите высоту строки грида</string>
+	
+	<string name="preferences_grid_text_size_key">gridTextSize</string>
+	<string name="preferences_grid_text_size_title">Размер шрифта грида</string>
+	<string name="preferences_grid_text_size_summary">Используется при отображении информации на гриде (по умолчанию 16)</string>
+	<string name="preferences_grid_text_size_dialog_title">Введите размер шрифта грида</string>
+	
+	<string name="preferences_grid_fling_velocity_key">gridFlingVelocity</string>
+	<string name="preferences_grid_fling_velocity_title">Скорость скроллинга грида</string>
+	<string name="preferences_grid_fling_velocity_summary">Используется при скроллинге информации на гриде (по умолчанию 15)</string>
+	<string name="preferences_grid_fling_velocity_dialog_title">Введите скорость скроллинга грида</string>
+	
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="item_ext">Емкость:</string>
+    <string name="item_license">Код лиц.:</string>
+    <string name="item_cashName">Касс. код:</string>
+    <string name="item_perPall">В палетте:</string>
+    <string name="item_perCase">В кейсе:</string>
+    <string name="item_volume">Объем:</string>
+    <string name="item_unitWeight">Вес:</string>
+    <string name="item_quantity">Наличие:</string>
+    <string name="item_unitName">Ед. изм.:</string>
+    <string name="item_keepTime">Срок хр.:</string>
+    <string name="item_VATID">НДС(%):</string>
+    <string name="item_unitNameValue">шт.</string>
+    <string name="item_kilograms">кг.</string>
+    <string name="item_month">мес.</string>
+    <string name="item_EAN">EAN:</string>
+    <string name="item_extracode">Вн. код:</string>    
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<string name="item_list_exceptionOnCreate">Ошибка создания окна документа</string>
+	<string name="item_list_exceptionItemInfo">Ошибка отображения информации о товаре</string>
+
+    <string name="item_list_filter_stock">Склад</string>
+    <string name="item_list_column_header_id">Код</string>
+    <string name="item_list_column_header_name">Наименование</string>
+    <string name="item_list_column_header_stock">Ост.</string>
+    <string name="item_list_column_header_price">Цена</string>
+    <string name="item_list_column_header_minPrice">Мин.цена</string>    
+    <string name="item_list_column_header_EAN">Сканкод</string>
+    <string name="item_list_column_header_sortID">SortID</string>
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="sync_send_data">Отправить данные</string>
+    <string name="sync_receive_data">Принять данные</string>
+   	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   	
+   	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   	<string name="report_day_summaries_totals">Итоги</string>
+   	<string name="report_day_summaries_visit_count">Визитов</string>
+   	<string name="report_day_summaries_effective_visit_count">Эффективных визитов</string>
+   	<string name="report_day_summaries_sum">Сумма</string>
+   	<string name="report_day_summaries_docCount">Кол-во документов</string>
+   	<string name="report_day_summaries_orders">Единиц товара</string>
+   	<string name="report_day_summaries_msu">MSU</string>
+   	<string name="report_day_summaries_items">Товары</string>
+   	<string name="report_day_summaries_documents">Документы</string>
+   	<string name="report_day_summaries_ordersSuffix">шт.</string>
+   	<string name="report_day_summaries_sumSuffix"> руб.</string>
+   	<string name="report_day_summaries_MSUSuffix">MSU</string>
+   	<string name="report_day_summaries_itemFormTitle">Итоги по группе</string>
+   	<string name="report_day_summaries_exceptionPrepareReport">Ошибка формирования отчета</string>
+   	<string name="report_day_summaries_docTypeAll">Все</string>
+   	<string name="report_day_summaries_plan_visits">Планы визитов</string>
+   	<string name="report_day_summaries_plans">Планы</string>
+   	<string name="report_day_summaries_debts">Долги</string>
+   	<string name="report_day_summaries_plan">План</string>
+   	<string name="report_day_summaries_salary">Зарплата</string>
+   	<string name="report_day_summaries_initiatives">Продажа инициатив</string>
+   	<string name="report_day_summaries_powerSKU">Продажа Power SKU</string>
+	<string name="report_day_summaries_filling">Насыщаемость</string>
+   	<string name="report_day_summaries_filling_month">Насыщаемость мес.</string>
+   	<string name="report_day_summaries_filling_day">Насыщаемость дн.</string>
+   	<string name="report_day_summaries_golden">План по золотым точкам</string>
+   	<string name="report_day_summaries_debt">Общие</string>
+   	<string name="report_day_summaries_debt_expired">Просроченные</string>
+   	<string name="report_day_summaries_debt_seven_days">Оплатить в 7 дней</string>
+   	<string name="gps_warning">Предупреждение</string>
+   	<string name="gps_warning_text">Для работы с программой следует включить GPS</string>
+   	<string name="gps_warning_ok">Включить</string>
+   	<string name="gps_warning_cancel">Выйти</string>
+   	
+   	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   	
+<string name="sync_success">Синхронизация прошла успешно!</string>
+<string name="sync_falied">Синхронизация не выполнена!</string>
+<string name="sync_server_url_col_name">ServerUrl</string>
+<string name="sync_server_name_col_name">ServerName</string>
+<string name="sync_syncronize">Синхронизация</string>
+<string name="sync_cancel">Отмена</string>
+<string name="sync_recieve_full">все</string>
+<string name="sync_recieve_incr">новые</string>
+<string name="sync_recieve_select">остатки</string>
+<string name="sync_send_full">все</string>
+<string name="sync_send_incr">новые</string>
+<string name="sync_device_id">DEVICE ID : </string>
+<string name="sync_update_version">Обновить версию</string>
+<string name="app_info">v 1.0</string>
+<string name="inputpopup_backspace">&lt;-</string>
+<string name="sync_no_network">Сеть не доступна!</string>
+<string name="sync_no_selection">А что собственно синхронизировать?</string>
+<string name="sync_connecting">Подключение ...</string>
+<string name="sync_transfer_data">Передача данных ...</string>
+<string name="sync_close_connection">Отключение ...</string>
+<string name="sync_db_creating">Создание временной базы данных ...</string>
+<string name="sync_db_version_is_falied">Версия БД не соответствует версии приложения! Необходимо обновить версию приложения и выполнить полную приемку данных!</string>
+<string name="sync_actual_version">Установлена актуальная версия для данного устройства!</string>
+<string name="sync_processing_data">Обработка данных ... </string>
+<string name="form_title_messages_proactive">Инициативное письмо</string>
+<string name="menu_messages">One Page</string>
+<string name="menu_feedback">Обратная связь</string>
+<string name="menu_about">О программе</string>
+<string name="form_title_feedback">Обратная связь</string>
+<string name="feedback_message">Текст сообщения:</string>
+<string name="feedback_theme">Тема:</string>
+<string name="feedback_send">Отправить</string>
+<string name="feedback_sent">Сообщение сохранено и будет отправлено при следующей синхронизации!</string>
+
+<string name="preferences_grid_category_name">Настройки грида</string>
+<string name="preferences_category_name_other">Другие</string>
+<string name="preferences_cetegory_name_sync">Синхронизация</string>
+<string name="preference_title_last_sync_date">Дата последней синхронизации</string>
+<string name="preference_key_last_sync_date">lastSyncDate</string>
+
+<string name="preference_key_last_sync_size_recieve">lastSyncSizeRecieve</string>
+<string name="preference_title_last_sync_size_recieve">Последняя закачка</string>
+<string name="preference_key_last_sync_size_send">lastSyncSizeSend</string>
+<string name="preference_title_last_sync_size_send">Последняя отправка</string>
+
+<string name="preference_key_month_sync_size_recieve">monthSyncSyzeRecieve</string>
+<string name="preference_title_month_sync_size_recieve">Закачано с начала месяца</string>
+<string name="preference_key_month_sync_size_send">monthSyncSyzeSend</string>
+<string name="preference_title_month_sync_size_send">Отправлено с начала месяца</string>
+<string name="sync_statistic">Статистика</string>
+<string name="sync_recieve_media_files">медиафайлы</string>
+
+<string name="preferences_cetegory_name_lang">Языковые настройки</string>
+<string name="preference_key_lang">lang</string>
+<string name="preference_title_lang">Язык</string>
+<string name="preference_dialog_title_lang">Выберите язык:</string>
+<string name="preference_summary_lang">Язык приложения.\nНеобходимо перезапустить приложение для принятия изменений.</string>
+<string name="form_title_analytics">Аналитика</string>
+
+<string name="form_title_about">О программе</string>
+
+<string name="preferences_cetegory_name_document_form">Настройки формы документов</string>
+<string name="preference_key_document_quick_keyboard_key">quickKeyb</string>
+<string name="preference_title_document_quick_keyboard">Быстрая клавиатура</string>
+<string name="preference_dialog_title_document_quick_keyboard">Использовать быструю клавиатуру</string>
+<string name="preference_summary_document_quick_keyboard">Использовать быструю клавиатуру</string>
+
+<string name="about_version">Версия: </string>
+<string name="about_device_id">ИД устройства: </string>
+<string name="about_saler_name">Торговый представитель: </string>
+<string name="about_history_of_changes">История изменений </string>
+
+<string name="currency_name"> руб. </string>
+
+<string name="report_day_summaries_total_salary">ИТОГО зарплата: </string>
+<string name="report_day_summaries_total_salary_plus_salary_rate">ИТОГО зарплата + ставка: </string>
+
+<string name="message_box_warning">Внимание!</string>
+<string name="message_box_error">Ошибка!</string>
+
+<string name="sync_documents_not_sended">Есть не отправленные документы!</string>
+<string name="sync_need_sync">Нужна синхронихация!</string>
+<string name="client_addr_header_attributes">Классификация</string>
+<string name="client_addr_header_gps">GPS координаты</string>
+<string name="client_addr_header_other">Дополнительная информация</string>
+
+<string name="client_addr_gps_long">Долгота:</string>
+<string name="client_addr_gps_lat">Широта:</string>
+
+<string name="receive_data_from_GPS">Определяется местоположение...</string>
+<string name="GPS_success">Местоположение определено</string>
+<string name="GPS_fail">Ошибка определения местоположения</string>
+
+<string name="client_addr_ERPID_address">Вн. код адреса:</string>
+<string name="client_addr_ERPID_client">Вн. код клиента:</string>
+
+    <!--  BluetoothSelectDeviceForm -->
+    <string name="bluetooth_scanning">Сканирование устройств...</string>
+    <string name="bluetooth_select_device">Выберите устройство</string>
+    <string name="bluetooth_none_paired">Отсутствуют соединения</string>
+    <string name="bluetooth_none_found">Устройства не найдены</string>
+    <string name="bluetooth_title_paired_devices">Соединения с устройствами</string>
+    <string name="bluetooth_title_other_devices">Остальные устройства</string>
+    <string name="bluetooth_button_scan">Поиск новых устройств</string>
+    
+    <string name="menu_cash_register">Кассовый аппарат</string>
+	<string name="preferences_cash_register_addr_key">cashRegisterAddr</string>
+	<string name="doc_payment_check">Чек</string>
+	<string name="doc_payment_money_in">Внесение денег в кассу</string>
+	<string name="doc_payment_money_out">Изъятие денег из кассы</string>
+    <string name="doc_payment_calc_title_moneyIn">Внесение денег в кассу</string>
+    <string name="doc_payment_calc_title_moneyOut">Изъятие денег из кассы</string>
+    <string name="form_title_cash_register">Касса</string>
+	<string name="doc_exceptionOnCreateDialog">Ошибка создания диалога</string>
+	
+	<string name="cash_reg_checkoutTape">3. Печать контрольной ленты</string>
+	<string name="cash_reg_checkoutTape1">4. Закрыть контрольную ленту</string>
+	<string name="cash_reg_ZReport">5. Печать Z-отчета</string>
+	<string name="cash_reg_closeCheckoutTape">6. Обнулить контрольную ленту</string>
+	<string name="cash_reg_selectDevice">Выбрать устройство</string>
+	<string name="cash_reg_periodicReport">Отчет за период</string>
+	<string name="cash_reg_XReport">1.Печать X-отчета</string>
+	<string name="cash_reg_abortFiscal">Аннулировать незакрытый чек</string>
+	<string name="cash_reg_moneyIn">Внесение денег в кассу</string>
+	<string name="cash_reg_moneyOut">2.Изъятие денег из кассы</string>
+	<string name="cash_reg_printFiscalCheck">Печать фискального чека</string>
+	<string name="cash_reg_getVersion">Версия ПО</string>
+	<string name="cash_reg_printNonFiscalCheck">Печать текста</string>
+	<string name="cash_reg_departmentsReport">Отчет по отделам</string>
+	<string name="cash_reg_operatorsReport">Отчет по операторам</string>
+	<string name="cash_reg_restartDevice">Перезапуск устройства</string>
+	<string name="cash_reg_readDate">Чтение даты и времени</string>
+	<string name="cash_reg_inProgress">Выполняется...</string>
+	<string name="clients_count">Клиентов: </string>
+	<string name="visits_count">Визитов:</string>
+
+	
+	<string name="preferences_printer_addr_key">printerAddr</string>
+	<string name="printer_client_name_replacement">Споживач</string>
+	<string name="printer_client_address_replacement">не визначено</string>	
+	<string name="printer_bill">Видаткова накладна</string>
+	<string name="printer_bill_client_role">Покупець</string>
+	<string name="printer_invoice">Рахунок-фактура</string>
+	<string name="printer_invoice_client_role">Платник</string>
+	<string name="printer_select">Выбрать принтер</string>
+	
+	<string name="printer_title">Выберите документы для печати</string>
+	<string name="printer_doc_type">Тип документа</string>
+	<string name="printer_formI">Форма I</string>
+	<string name="printer_formII">Форма II</string>
+	<string name="printer_withVAT">Товары с НДС</string>
+	<string name="printer_WOVAT">Товары без НДС</string>	
+	<string name="printer_print">Печать</string>	
+	<string name="printer_exception">Ошибка печати</string>	
+	<string name="doc_sale_actions_docPrint">Печатать документ</string>	
+	
+	<!--  Money to words -->
+	
+	<string name="money_words_zero_hryvnas">нуль гривень</string>
+	<string name="money_words_kopecks1">копійок</string>
+	<string name="money_words_kopecks2">копійка</string>
+	<string name="money_words_kopecks3">копійки</string>
+	
+	<string name="money_words_singular1">гривня</string>
+	<string name="money_words_singular2">тисяча</string>
+	<string name="money_words_singular3">мілліон</string>
+	
+	<string name="money_words_plural1">гривні</string>
+	<string name="money_words_plural2">тисячі</string>
+	<string name="money_words_plural3">мілліони</string>
+
+	<string name="money_words_accusative1">гривень</string>
+	<string name="money_words_accusative2">тисяч</string>
+	<string name="money_words_accusative3">мiллiонiв</string>
+
+	<string name="money_words_hundreds1">сто</string>
+	<string name="money_words_hundreds2">двiстi</string>
+	<string name="money_words_hundreds3">триста</string>
+	<string name="money_words_hundreds4">чотириста</string>
+	<string name="money_words_hundreds5">п\'ятсот</string>
+	<string name="money_words_hundreds6">шiстсот</string>
+	<string name="money_words_hundreds7">сiмсот</string>
+	<string name="money_words_hundreds8">вiсiмсот</string>
+	<string name="money_words_hundreds9">дев\'ятсот</string>
+
+	<string name="money_words_tens1">десять</string>
+	<string name="money_words_tens2">двадцять</string>
+	<string name="money_words_tens3">тридцять</string>
+	<string name="money_words_tens4">сорок</string>
+	<string name="money_words_tens5">п\'ятдесят</string>
+	<string name="money_words_tens6">шiстдесят</string>
+	<string name="money_words_tens7">сiмдесят</string>
+	<string name="money_words_tens8">вiсiмдесят</string>
+	<string name="money_words_tens9">дев\'яносто</string>
+	
+	<string name="money_words_teens1">одинадцять</string>
+	<string name="money_words_teens2">дванадцять</string>
+	<string name="money_words_teens3">тринадцять</string>
+	<string name="money_words_teens4">чотирнадцять</string>
+	<string name="money_words_teens5">п\'ятнадцять</string>
+	<string name="money_words_teens6">шiстнадцять</string>
+	<string name="money_words_teens7">сiмнадцять</string>
+	<string name="money_words_teens8">вiсiмнадцять</string>
+	<string name="money_words_teens9">дев\'ятнадцять</string>
+	
+	<string name="money_words_tallies1">одна</string>
+	<string name="money_words_tallies2">двi</string>
+	<string name="money_words_tallies3">три</string>
+	<string name="money_words_tallies4">чотири</string>
+	<string name="money_words_tallies5">п\'ять</string>
+	<string name="money_words_tallies6">шiсть</string>
+	<string name="money_words_tallies7">сiм</string>
+	<string name="money_words_tallies8">вiсiм</string>
+	<string name="money_words_tallies9">дев\'ять</string>
+	
+	<string name="report_day_summaries_sale_plans">Планы по продажам</string>	    
+	<string name="report_day_summaries_hryvnas">руб.</string>
+    <string name="addr_type_dlg_title">Тип точки</string>
+
+	<string name="itemizedoverlay_move_notification">Перемещение ТТ</string>	    
+	<string name="itemizedoverlay_move_notification_text">Нажмите кнопку внизу чтобы сохранить новое положение ТТ</string>
+
+    <string name="route_item_add">Добавить точку на маршрут</string>
+    <string name="route_item_date">Дата:</string>
+
+    <string name="route_item_delete_confirm_title">Подтверждение</string>
+    <string name="route_item_delete_confirm">Удалить точку с маршрута?</string>    
+
+	<string name="visit_select_visit_type">Пожалуйста, выберите один или несколько типов визита</string>
+	<string name="form_title_debtorList">Сальдовка</string>
+	<string name="menu_debtors">Сальдовка</string>
+	<string name="debtor_list_column_header_client">Клиент</string>
+	<string name="debtor_list_column_header_saldo">Сальдо</string>
+	<string name="debtor_list_column_header_overdue">Проср.</string>
+	<string name="debtor_list_column_header_today">Сегодня</string>
+	<string name="debtor_list_column_header_paid">Оплачено</string>
+	
+	<string name="visit_step_change_visit_type">Изменить тип визита</string>
+
+    <string name="route_item_move_confirm_title">Подтверждение</string>
+    <string name="route_item_move_confirm">Скопировать точку на другую дату маршрута?</string>
+    <string name="route_item_move_notify">Посещение скопировано на %s</string>
+    <string name="route_item_create_notify">Посещение добавлено на %s</string>
+    <string name="route_item_delete_notify">Посещение удалено</string>    
+    
+    <string name="debtor_list_details">Детали</string>
+    <string name="zero_money">0 руб</string>
+    <string name="report_day_summaries_salary_prognosis_title">Прогноз ЗП</string>
+    <string name="ellipsis"> ... </string>
+    
+    <string name="report_day_summaries_powerSKU_day">Продажа Power SKU дн</string>
+    <string name="report_day_summaries_general_distr_month">Цели по ОПД</string>
+    <string name="report_day_summaries_general_distr_day">Цели по ОПД дн</string>
+
+    <string name="plan_details_column_header_img">+</string>
+    <string name="plan_details_column_header_name">Клиент/адрес</string>
+    <string name="plan_details_column_header_plan">План</string>
+    <string name="plan_details_column_header_fact">Факт</string>
+    <string name="plan_details_column_header_percent">%</string>
+    
+    <string name="plan_details_switch_month">Месяц</string>
+    <string name="plan_details_switch_day">День</string>    
+    <string name="plan_details_item_group_all">Все группы</string>
+    
+    <string name="plan_header_plan">План</string>
+    <string name="plan_header_fact">Факт</string>
+    <string name="plan_header_percent">%</string>
+    
+	<string name="report_day_summaries_debt_today">Оплатить сегодня</string>    
+	
+	<string name="debtor_list_select_direction">Выберите направление</string>
+	
+	<string name="qualification_progress_OPD">ОПД</string>
+	<string name="qualification_progress_PowerSKU">Power SKU</string>
+	<string name="qualification_progress_ShelfShare">Доли на полках</string>
+	<string name="qualification_progress_title">Прохождение квалификации</string>
+	    
+    <string name="form_title_filtersSelect">Фильтровать по:</string>
+    <string name="filter_debt">Долг</string>
+    
+    <string name="cash_register_reportStartDate">Введите начальную дату отчета</string>
+    <string name="cash_register_reportEndDate">Введите завершающую дату отчета</string>
+    <string name="cash_register_dateErrorTooLow">Начальная дата не должна быть ранее 1997 года</string>
+    <string name="cash_register_dateErrorTooHigh">Завершающая дата не должна быть позднее 2020 года</string>
+    <string name="cash_register_dateErrorEndIsLess">Начальная дата должна быть меньше завершающей</string>    	    
+    <string name="cash_register_askShortReport">Печатать сокращенный или полный отчет?</string>
+    <string name="cash_register_shortReport">Сокращенный</string>
+    <string name="cash_register_fullReport">Полный</string>
+       
+    <string name="report_day_summaries_novelty">Продажа новинок</string>
+    
+    <string name="doc_sale_stat_plansDistr">План ОПД</string>
+    <string name="doc_sale_stat_plansPowerSKU">PowerSKU</string>
+
+    <string name="questionnaires_save">Сохранить</string>
+    <string name="questionnaires_postpone">Заполнить позже</string>
+    <string name="questionnaires_success">Анкета сохранена успешно!</string>
+    <string name="questionnaires_fail">Анкета не сохранена!!!</string>
+    <string name="questionnaires_storecheck">Стор-чек</string>
+    
+    <string name="report_day_summaries_salary_day_column_label">За день</string>
+    <string name="report_day_summaries_salary_month_column_label">На утро</string>    
+        
+    <string name="edit_addr_attribs">аттрибуты адреса</string>
+
+
+
+    <string name="inn">ИНН</string>
+    <string name="ogrn">ОГРН</string>
+    <string name="table_layout_1_client_card">Карточка лиента</string>
+    <string name="table_layout_1_credit_ask">Кредитная заявка</string>
+    <string name="table_layout_1_inkassat">Инкассация</string>
+    <string name="table_layout_1_reqeuest_review">Просмотр заявок</string>
+    <string name="table_layout_1_replic">Репликация</string>
+    <string name="table_layout_1_settings">Настройки</string>
+    <string name="table_layout_1_mobile_system">Optimum</string>
+    <string name="table_layout_1_database_refresh">Обновить базу КК</string>
+    <string name="table_layout_1_synchronizashion">Optimum(Синхр)</string>
+    <string name="table_layout_1_search">Поиск</string>
+    <string name="table_layout_1_quit">Выход</string>
+    <string name="button_add">Добавить контакт</string>
+
+
+    <string name="info_head">Мобильный клиент JDEdwards One World</string>
+    <string name="info_summary">Поддержка smt@alidi.ru </string>
+
+
+    <string-array name="Months">
+        <item>January</item>
+        <item>February</item>
+        <item>Marth</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+</resources>

@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ant</string>
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+    <string name="form_title_login">Login</string>
+	<string name="form_title_clientList">Ant</string>
+    <string name="form_title_client">Client</string>
+    <string name="form_title_contacts">Contacts</string>
+    <string name="form_title_remnants">Remnants</string>
+    <string name="form_title_docSale">Order</string>
+    <string name="form_title_preferences">Settings</string>
+    <string name="form_title_docList">Document list</string>
+    <string name="form_title_docPayment">Payment</string>
+    <string name="form_title_item">Product info</string>
+    <string name="form_title_statistics">Statistics</string>
+    <string name="form_title_actions">Tools</string>
+    <string name="form_title_itemList">Stock</string>
+    <string name="form_title_synchronization">Synchronization</string>
+    <string name="form_title_selectColumns">Select columns</string>
+    <string name="form_title_selectItemGroup">Select product group</string>
+    <string name="form_title_selectPrice">Select price</string>
+    <string name="form_title_visit">Visit</string>        
+    <string name="form_title_aims">Visit tasks</string>
+    <string name="form_title_comments">Comments</string>
+    <string name="form_title_report_day_summaries">Day summaries</string>
+    <string name="form_title_report_visit_summaries">Visit summaries</string>
+    <string name="form_title_document">Document</string>
+    <string name="form_title_plans">Plans</string>
+    <string name="form_title_debts">Debts</string>
+    <string name="form_title_debtNotification">Debt notification</string>
+    <string name="form_title_GPS">GPS</string>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="dialog_base_ok">Ok</string>
+    <string name="dialog_base_yes">Yes</string>
+    <string name="dialog_base_cancel">Cancel</string>
+	<string name="dialog_base_exceptionOnCreateDialog">Error creating dialog</string>    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <string name="aim1">Present «Golden case» action</string>
+    <string name="aim2">Hold presentation of new products</string>
+    <string name="aim3">Present new terms and conditions</string>
+    <string name="aim4">Perform store-check</string>
+    <string name="aims_total">Total:</string>   
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<string name="menu_synchronization">Synchronization</string>
+	<string name="menu_preferences">Settings</string>
+	<string name="menu_items">Stock</string>
+	<string name="menu_day_summaries">Plan/Fact</string>
+	<string name="menu_backup_db">Backup</string>
+	<string name="menu_day_plans">Plans</string>
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="tab_address">Address</string>    
+    <string name="tab_contacts">Contacts</string>
+    <string name="tab_docList">Documents</string>
+    <string name="tab_visit">Visit</string>
+    <string name="tab_docSale">Sale</string>
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="login_password">Input password:</string>
+    <string name="login_sample_saler">Johnson P.</string>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <string name="client_list_route">Route</string>
+    <string name="client_list_routeDate">Route date:</string>
+    <string name="client_list_debt">Debt</string>
+    <string name="client_list_client_debt">Debt</string>
+    <string name="client_list_fitler1">ABC</string>
+    <string name="client_list_fitler2">DEF</string>
+    <string name="client_list_fitler3">GHI</string>
+    <string name="client_list_fitler4">JKL</string>
+    <string name="client_list_fitler5">MNO</string>
+    <string name="client_list_fitler6">123</string>
+    <string name="client_list_fitler7">PQR</string>
+    <string name="client_list_fitler8">STU</string>
+    <string name="client_list_fitler9">VWX</string>
+    <string name="client_list_fitler10">YZ</string>
+    <string name="client_list_fitler11"></string>
+    <string name="client_list_fitler12">..</string>
+    
+    <string name="client_list_showPlansHeader">Confirmation</string>
+    <string name="client_list_showPlans">Display plans for a day?</string>
+    
+    <string name="client_list_exitAppHeader">Confirmation</string>
+    <string name="client_list_exitAppMessage">Exit application?</string>
+    <string name="client_list_exitAppOk">Yes</string>
+    <string name="client_list_exitAppCancel">Cancel</string>
+        
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+    <string name="visit_step_client">Client</string>
+    <string name="visit_step_contacts">Contacts</string>
+    <string name="visit_step_docHeader">Document</string>
+    <string name="visit_step_remnants">Remains</string>
+    <string name="visit_step_docSale">Order</string>
+    <string name="visit_step_exit">Finish</string>
+    <string name="visit_step_newDocSale">New</string>
+    <string name="visit_step_docSaleList">Documents</string>
+    <string name="visit_step_docPayment">Payment</string>
+    <string name="visit_step_startVisit">Start visit</string>
+    <string name="visit_step_endVisit">Finish visit</string>
+    <string name="visit_step_visit">Visit</string>
+    <string name="visit_step_dpsm">DPSM</string>    
+    <string name="visit_step_debt">Debts</string>
+    <string name="visit_step_debtNotification">Debt notification</string>
+    <string name="visit_step_visit_summaries">Visit summaries</string>
+    <string name="visit_step_day_summaries">Day summaries</string>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="visit_warning">Warning</string>
+    <string name="visit_start_visit_warning">Please, start visit at first</string>
+    <string name="visit_warning_ok">Ок</string>
+    <string name="visit_end_visit_warning">Finish the visit?</string>
+    <string name="visit_start_visit_confirm_title">Confirmation</string>
+    <string name="visit_select_visit_type_title">Select visit type</string>
+    <string name="visit_start_visit_confirm">Start visit?</string>
+    <string name="visit_start_visit_yes">Yes</string>
+    <string name="visit_start_visit_select">Select</string>
+    <string name="visit_start_visit_cancel">Cancel</string> 
+    <string name="visit_inefficient_visit_warning">Documents weren\'t created during visit. Please specify a reason.</string>      
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="client_tab_debt">Debt</string>
+    <string name="client_tab_contract">Contract</string>
+    <string name="client_tab_additional">Additional</string>
+    <string name="client_tab_requisites">Requisites</string>
+    <string name="client_tab_address">Address</string>
+    <string name="client_tab_contacts">Contacts</string>
+    
+    <string name="client_sumDebt">Debt:</string>
+    <string name="client_sumDebtToday">Take today:</string>
+    <string name="client_saldo">Client debt:</string>
+    <string name="client_sumDebtResp">Client overdue:</string>    
+    <string name="client_allowedCredit">Allowable credit:</string>
+    <string name="client_respCredit">Overdue credit:</string>
+    <string name="client_comments">Comments:</string>
+    
+    <string name="client_namePrint">Full name:</string>
+    <string name="client_contract">Contract:</string>
+    <string name="client_contract_num">№</string>
+    <string name="client_contract_from">from</string>
+    <string name="client_resp1">Respite I:</string>
+    <string name="client_resp2">II:</string>
+    <string name="client_discount">Discount:</string>
+    <string name="client_priceName">Price:</string>
+    
+    <string name="client_namePrint2">Alternative name:</string>
+    <string name="client_id">Internal code:</string>
+    
+    <string name="client_bankInfo">Account:</string>
+    <string name="client_license">License №:</string>
+    <string name="client_regDate">Registration date:</string>
+    <string name="client_regCode">Registration code:</string>
+    <string name="client_codeVAT">VAT code:</string>
+    
+    <string name="client_addr_salePoint">Sale outlet</string>
+    <string name="client_addr_addrName">Address</string>
+    <string name="client_addr_region">Region:</string>
+    <string name="client_addr_workTime">Working hours:</string>
+    <string name="client_addr_phone">Phone:</string>
+    <string name="client_addr_additional">Additional</string>
+    <string name="client_addr_comment">Comments:</string>
+    <string name="client_addr_deliveryDays">Delivery days:</string>
+    <string name="client_addr_channelType">Sales channel:</string>
+    <string name="client_addr_license">License</string>
+    <string name="client_addr_numbLicAlc">Alcohol license:</string>
+    <string name="client_addr_endDate">Valid until:</string>
+    <string name="client_addr_contacts">Contacts</string>
+    <string name="client_addr_contact">Contact:</string>
+    <string name="client_addr_add_contact">New</string>
+    <string name="client_addr_exceptionCreateForm">Error displaying dialog</string>
+    <string name="client_addr_exceptionShowMap">Cannot display map</string>
+    
+    <string name="client_addr_header_debt">Debts</string>
+    <string name="client_addr_header_registrationData">Registration data</string>
+    <string name="client_addr_header_deliveryConditions">Delivery terms</string>
+    <string name="client_addr_displayMap">Show on map</string>
+    
+    <string name="contact_delete_yes">Yes</string>
+    <string name="contact_delete_no">No</string>    
+    <string name="contact_delete_confirm_title">Confirmation</string>
+    <string name="contact_delete_confirm">Delete contact?</string>
+    
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="addr_contact_header">Contact details:</string>
+    <string name="addr_contact_person">Name:</string>
+    <string name="addr_contact_position">Position:</string>
+    <string name="addr_contact_phone">Phone:</string>
+    <string name="addr_contact_email">E-mail:</string>
+    <string name="addr_contact_dateOfBirth">Date of birth:</string>
+    <string name="addr_contact_needs">Needs:</string>
+    <string name="addr_contact_hobbies">Hobbies:</string>
+    <string name="addr_contact_comment">Comments:</string>
+    <string name="addr_contact_decides">Desides</string>
+    <string name="addr_contact_USD">Current</string>
+    <string name="addr_contact_save">Save</string>
+    <string name="addr_contact_cancel">Cancel</string>
+    
+    <string name="addr_contact_exceptionOnDelete">Error deleting contact</string>
+    <string name="addr_contact_exceptionOnEdit">Error editing contact</string>
+    <string name="addr_contact_exceptionOnNew">Error creating contact</string>    
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="document_docType_claim">Order</string>
+    <string name="document_docType_sale">Sale</string>
+    <string name="document_docType_payment">Payment</string>
+    <string name="document_docType_remnants">Remains</string>
+    <string name="document_docType_sdo">Balance</string>
+    <string name="document_docType_psdo">Prev. balance</string>
+    <string name="document_docType_debtNotification">Debt notification</string>
+    <string name="document_docType_unknown">Unknown</string>
+    
+    <string name="document_alertChoiceSave">Save</string>
+    <string name="document_alertChoiceYes">Yes</string>
+    <string name="document_alertChoiceNo">No</string>
+    <string name="document_alertChoiceCancel">Cancel</string>    
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="document_docState_new">Draft</string>
+    <string name="document_docState_previous">Previous</string>
+    <string name="document_docState_closed">Closed</string>
+    <string name="document_docState_sent">Delivered</string>
+    <string name="document_docState_finished">New</string>
+    <string name="document_docState_deleted">Deleted</string>
+    <string name="document_docState_unknown">Unknown</string>
+    
+    <string name="document_exceptionOnCreateDialog">Error creating dialog</string>
+	<string name="document_exceptionDisplay">Error displaying document</string>
+	        
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="doc_sale_header_date">Date:</string>    
+    <string name="doc_sale_header_docType">Type:</string>
+    <string name="doc_sale_header_address">Address:</string>    
+    <string name="doc_sale_header_price">Price:</string>
+    <string name="doc_sale_header_respite">Respite:</string>
+    <string name="doc_sale_header_comments">Comments:</string>
+    <string name="doc_sale_header_comments1">I</string>
+    <string name="doc_sale_header_comments2">II</string>
+    <string name="doc_sale_header_datePrefix">from</string>
+    <string name="doc_sale_header_comments2_1">Comment I</string>
+    <string name="doc_sale_header_comments2_2">Comment II</string>
+    <string name="doc_sale_header_title">Modify data</string>
+    <string name="doc_sale_header_exception_create">Error creating dialog</string>
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<string name="doc_sale_column_header_image">Пометка</string>
+    <string name="doc_sale_column_header_name">Наименование</string>
+    <string name="doc_sale_column_header_predictedOrder">РЗ</string>
+    <string name="doc_sale_column_header_discountI">%I</string>
+    <string name="doc_sale_column_header_discountII">%II</string>
+    <string name="doc_sale_column_header_K1">КI</string>
+    <string name="doc_sale_column_header_K2">КII</string>    
+    <string name="doc_sale_column_header_priceI">ЦенаI</string>
+    <string name="doc_sale_column_header_priceII">ЦенаII</string>
+    <string name="doc_sale_column_header_weightPriceI">Вес.ценаI</string>
+    <string name="doc_sale_column_header_weightPriceII">Вес.ценаII</string>    
+    <string name="doc_sale_column_header_prevDate">ПД</string>
+    <string name="doc_sale_column_header_prevQuantity">П1</string>
+    <string name="doc_sale_column_header_prevQuantity2">П2</string>
+    <string name="doc_sale_column_header_quantity">Скл.</string>
+    <string name="doc_sale_column_header_curRemnant">Ост.</string>
+    <string name="doc_sale_column_header_minOrderQNT">Мин.зак</string>
+    <string name="doc_sale_column_header_totalI">TotalI</string>
+    <string name="doc_sale_column_header_totalII">TotalII</string>
+    <string name="doc_sale_column_header_totalAll">TotalAll</string>
+    <string name="doc_sale_column_header_sortID">SortID</string>
+    <string name="doc_sale_column_header_rowSumI">СуммаI</string>
+    <string name="doc_sale_column_header_rowSumII">СуммаII</string>
+    
+    
+    <string name="doc_sale_filter_quantity">Qnt</string>
+    <string name="doc_sale_filter_stock">Stock</string>
+    <string name="doc_sale_filter_all_item_groups">All</string>
+    <string name="doc_sale_progressMessage">"Wait..."</string>
+    
+    <string name="doc_sale_button_stats">Stat.</string>
+    <string name="doc_sale_button_formI">I</string>
+    <string name="doc_sale_button_formII">II</string>
+    <string name="doc_sale_button_formUnknown">I + II</string>
+    <string name="doc_sale_button_actions">Act.</string>
+    <string name="doc_sale_moveFormsHeader">Warning</string>
+    <string name="doc_sale_moveFormsMessageItoII">"Move I-st form to II-nd?"</string>
+    <string name="doc_sale_moveFormsMessageIItoI">"Move II-nd form to I-st?"</string>
+    <string name="doc_sale_moveFormsChoiceOk">"Move"</string>
+    <string name="doc_sale_moveFormsChoiceCancel">"Cancel"</string>
+    
+    <string name="doc_sale_exceptionOnCreate">Error creating document dialog</string>
+    <string name="doc_sale_exceptionOnCreateDialog">Error creating dialog</string>
+    <string name="doc_sale_exceptionFinish">Error closing document</string>
+    <string name="doc_sale_saveWarning">Internal failure: data could be lost on saving. Please check document content.</string>    
+    <string name="doc_sale_exceptionDisplay">Error displaying document</string>
+    <string name="doc_sale_exceptionInput">Input error</string>
+    <string name="doc_sale_exceptionEditColumns">Error editing columns</string>
+    <string name="doc_sale_exceptionAction">Execution error</string>
+    
+    <string name="doc_sale_limitation">Limitation</string>
+    <string name="doc_sale_warning">Warning</string>
+    <string name="doc_sale_maxDiscount">Max. discount: %f</string>
+    <string name="doc_sale_maxDiscountNPositions">Max. discount is applied for %d items</string>
+    <string name="doc_sale_denyEditDiscount">You have no permission to change discounts. Contact your IT-manager.</string>
+    <string name="doc_sale_discountExceeds100">Discount value should not exceed 100%</string>
+    <string name="doc_sale_ordersExceedsQuantity">Ordered quantity exceeds warehouse stock</string>
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="doc_sale_stat_sum">Amount:</string>
+    <string name="doc_sale_stat_sumI">Amount I:</string>
+    <string name="doc_sale_stat_sumII">Amount II:</string>
+    <string name="doc_sale_stat_sumVAT">VAT:</string>
+    <string name="doc_sale_stat_sumWoVAT">W.o.VAT:</string>
+    
+    <string name="doc_sale_stat_cases">Cases:</string>
+    <string name="doc_sale_stat_pallettes">Pallets:</string>
+    <string name="doc_sale_stat_units">Units:</string>
+    
+    <string name="doc_sale_stat_sumSUF">SUF:</string>
+    <string name="doc_sale_stat_sumFUF">FUF:</string>
+    
+    <string name="doc_sale_stat_orderItems">Items:</string>
+    <string name="doc_sale_stat_allItems">Total items:</string>
+    <string name="doc_sale_stat_remnantsEntered">Filled in:</string>
+    <string name="doc_sale_stat_MSU">MSU:</string>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="doc_sale_actions_selectColumns">Select columns</string>
+    <string name="doc_sale_actions_updateDiscounts">Update discounts</string>
+    <string name="doc_sale_actions_calcPredictOrders">Calculate recommended order</string>
+    <string name="doc_sale_actions_calcPredictColumnI">To form I</string>
+    <string name="doc_sale_actions_calcPredictColumnII">To form II</string>
+    <string name="doc_sale_actions_docCopyItoII">Move from I to II</string>
+    <string name="doc_sale_actions_docCopyIItoI">Move from II to I</string>
+    <string name="doc_sale_actions_docComplete">Save document</string>
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="doc_sale_selectColumns_reset">Reset</string>
+    <string name="doc_sale_selectColumns_up">Up</string>
+    <string name="doc_sale_selectColumns_down">Down</string>
+    <string name="doc_sale_selectColumns_column">Column</string>
+    <string name="doc_sale_selectColumns_width">Width</string>
+    <string name="doc_sale_selectColumns_visible">Visible</string>
+    <string name="doc_sale_selectColumns_cancel">Cancel</string>
+    <string name="doc_sale_selectColumns_ok">Ok</string>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="doc_sale_select_group_cancel">Cancel</string>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="doc_sale_select_price_cancel">Cancel</string>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="doc_sale_comments_cancel">Cancel</string>    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="doc_sale_calc_title">Enter value</string>
+    <string name="doc_sale_calc_titleRespite">Enter respite</string>
+    <string name="doc_sale_calc_titleDiscountI">Enter discount I</string>
+    <string name="doc_sale_calc_titleDiscountII">Enter discount II</string>
+    <string name="doc_sale_calc_titleOrdersI">Enter quantity I</string>
+    <string name="doc_sale_calc_titleOrdersII">Enter quantity II</string>
+    <string name="doc_sale_calc_titleRemnant">Enter remain</string>
+    <string name="doc_sale_calc_titleDocSum">Enter document amount</string>
+    
+    <string name="doc_sale_calc_applyToAll">all</string>
+    <string name="doc_sale_calc_ok">Ok</string>
+    <string name="doc_sale_calc_cancel">Cancel</string>
+    <string name="doc_sale_calc_inputError">Input error</string>
+                    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+    <string name="doc_list_column_header_date">Date</string>
+    <string name="doc_list_column_header_respite">Respite</string>
+    <string name="doc_list_column_header_respiteLeft">Overdue</string>
+    <string name="doc_list_column_header_sumAll">Amount</string>
+    <string name="doc_list_column_header_sumFree">Unpaid</string>
+    <string name="doc_list_column_header_salerInfo">Sales</string>
+    <string name="doc_list_column_header_docType">Type</string>
+    <string name="doc_list_column_header_docState">State</string>
+    
+    <string name="doc_list_column_header_client">Client</string>
+    <string name="doc_list_column_header_address">Address</string>
+    <string name="doc_list_column_header_sumWithVAT">Amount with VAT</string>
+    <string name="doc_list_column_header_sumWoVAT">Amount w.o.VAT</string>    
+    <string name="doc_list_column_header_docNumber">ID</string>
+    <string name="doc_list_column_header_created">Created</string>
+    <string name="doc_list_column_header_comment">Comment</string>
+    
+    <string name="doc_list_button_editDoc">Open</string>
+    <string name="doc_list_button_deleteDoc">Delete</string>
+    <string name="doc_list_button_payment">Payment</string>
+    <string name="doc_list_button_printDoc">Print</string>
+    <string name="doc_list_button_discount">Discount</string>
+    <string name="doc_list_button_debtNotification">Notification</string>
+    <string name="doc_list_warning">Warning</string>
+    <string name="doc_list_warningSaveBeforeEdit">Finish current document before editing</string>
+    <string name="doc_list_warningSaveBeforeCreate">Finish current document before creating new </string>
+    <string name="doc_list_warningDeleteDocument">Delete document?</string>
+    
+    
+    <string name="doc_list_exceptionOnDelete">Error deleting document</string>
+    <string name="doc_list_exceptionOnEdit">Error editing document</string>
+    <string name="doc_list_exceptionOnPayment">Error creating Payment document</string>
+    <string name="doc_list_exceptionOnDebtNotification">Error creating Debt Notification document</string>
+    
+    <string name="doc_list_limitation">Limitation</string>
+    <string name="doc_list_errorDeleteClosedDoc">It is not allowed to delete closed document</string>
+    <string name="doc_list_alertChoiceDelete">Delete</string>
+    
+    <string name="doc_list_allAddresses">All addresses</string>
+    <string name="doc_list_unpaid">Unpaid</string>
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->    
+    <string name="doc_payment_num">Payment ID:</string>
+    <string name="doc_payment_date">Date:</string>
+    <string name="doc_payment_sum">Amount:</string>
+    <string name="doc_payment_blankNo">Blank ID:</string>
+    <string name="doc_payment_complete">Save</string>
+    <string name="doc_payment_comments">Comments:</string>
+    <string name="doc_payment_alertFinishTitle">Warning</string>
+    <string name="doc_payment_alertFinish">Document is not saved, data will be lost. Do you want to save document?</string>
+    <string name="doc_payment_alertChoiceOk">Ok</string>  
+    <string name="doc_payment_alertCannotFinish">Error saving document</string>
+    <string name="doc_payment_errorSumExceedsUnpaid">Limitation: cannot use amount which is bigger then unpaid sum.</string>
+    <string name="doc_payment_errorFullBlackDocPayments">Limitation: II-nd type documents should be paid completely</string>
+    <string name="doc_payment_errorBlankNoEmpty">Limitation: cannot save Payment with empty Blank ID field</string>
+    <string name="doc_payment_alertWarning">Warning!</string>
+    <string name="doc_payment_warningBlankNoEmpty">Warning: Blank ID field is empty</string>
+    <string name="doc_payment_exceptionOnCreate">Error creating document window</string>
+    <string name="doc_payment_exceptionOnCreateDialog">Error creating dialog</string>
+    <string name="doc_payment_exceptionFinish">Error closing document</string>
+
+	<string name="doc_debt_notification_calc_titleDebtSum">Input debt amount</string>
+	<string name="doc_debt_notification_calc_titlePromisedSum">Input amount of confirmed debt</string>
+	<string name="doc_debt_notification_contact">Contact</string>
+	<string name="doc_debt_notification_debtSum">Is informed about debt </string>
+	<string name="doc_debt_notification_date">Due date </string>
+	<string name="doc_debt_notification_promisedSum">Amount </string>
+	<string name="doc_debt_notification_comments">Comments:</string>
+	<string name="doc_list_newContact">New contact</string>  
+	<string name="doc_debt_notification_exceptionOnCreate">Error creating document window</string>
+    <string name="doc_debt_notification_exceptionOnCreateDialog">Error creating dialog</string>    
+    <string name="doc_debt_notification_exceptionFinish">Error closing document</string>
+    <string name="doc_debt_notification_alertFinishTitle">Warning</string>
+    <string name="doc_debt_notification_alertFinish">Document is not saved, data will be lost. Do you want to save document?</string>    
+        
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="calendar_month_january">january</string>
+    <string name="calendar_month_february">february</string>
+    <string name="calendar_month_march">march</string>
+    <string name="calendar_month_april">april</string>
+    <string name="calendar_month_may">may</string>
+    <string name="calendar_month_june">june</string>
+    <string name="calendar_month_july">july</string>
+    <string name="calendar_month_august">august</string>
+    <string name="calendar_month_september">september</string>
+    <string name="calendar_month_october">october</string>
+    <string name="calendar_month_november">november</string>
+    <string name="calendar_month_december">december</string>
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<string name="preferences_grid_row_height_key">gridRowHeight</string>
+	<string name="preferences_grid_row_height_title">Height of grid row</string>
+	<string name="preferences_grid_row_height_summary">Used when displaying data on grid (default value 40)</string>
+	<string name="preferences_grid_row_height_dialog_title">Enter height of grid row</string>
+	
+	<string name="preferences_grid_text_size_key">gridTextSize</string>
+	<string name="preferences_grid_text_size_title">Grid font size</string>
+	<string name="preferences_grid_text_size_summary">Used when dislaying data on grid (default value 16)</string>
+	<string name="preferences_grid_text_size_dialog_title">Enter grid font size</string>
+	
+	<string name="preferences_grid_fling_velocity_key">gridFlingVelocity</string>
+	<string name="preferences_grid_fling_velocity_title">Grid fling velocity</string>
+	<string name="preferences_grid_fling_velocity_summary">Used when scrolling grid (default value 15)</string>
+	<string name="preferences_grid_fling_velocity_dialog_title">Enter grid fling velocity</string>
+	
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="item_ext">Capacity:</string>
+    <string name="item_license">License ID:</string>
+    <string name="item_cashName">BO ID:</string>
+    <string name="item_perPall">Per pallet:</string>
+    <string name="item_perCase">Per case:</string>
+    <string name="item_volume">Volume:</string>
+    <string name="item_unitWeight">Weight:</string>
+    <string name="item_quantity">Stock:</string>
+    <string name="item_unitName">Unit:</string>
+    <string name="item_keepTime">Storage life:</string>
+    <string name="item_VATID">VAT(%)</string>
+    <string name="item_unitNameValue">pcs.</string>
+    <string name="item_kilograms">kg.</string>
+    <string name="item_month">mon.</string> 
+    <string name="item_EAN">EAN:</string>
+    <string name="item_extracode">Ext. ID:</string>   
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<string name="item_list_exceptionOnCreate">Error creating document window</string>
+	<string name="item_list_exceptionItemInfo">Error displaying item info</string>
+
+    <string name="item_list_filter_stock">Stock</string>
+    <string name="item_list_column_header_id">ID</string>
+    <string name="item_list_column_header_name">Name</string>
+    <string name="item_list_column_header_stock">Remains.</string>
+    <string name="item_list_column_header_price">Price</string>
+    <string name="item_list_column_header_minPrice">Min.price</string>    
+    <string name="item_list_column_header_EAN">Scancode</string>
+    <string name="item_list_column_header_sortID">SortID</string>
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <string name="sync_send_data">Send data</string>
+    <string name="sync_receive_data">Receive data</string>
+   	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   	
+   	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   	<string name="report_day_summaries_totals">Summary</string>
+   	<string name="report_day_summaries_visit_count">Visits</string>
+   	<string name="report_day_summaries_effective_visit_count">Efficient visits</string>
+   	<string name="report_day_summaries_sum">Amount</string>
+   	<string name="report_day_summaries_docCount">Document qnt.</string>
+   	<string name="report_day_summaries_orders">Units</string>
+   	<string name="report_day_summaries_msu">MSU</string>
+   	<string name="report_day_summaries_items">Items</string>
+   	<string name="report_day_summaries_documents">Documents</string>
+   	<string name="report_day_summaries_ordersSuffix">pcs.</string>
+   	<string name="report_day_summaries_sumSuffix">uah</string>
+   	<string name="report_day_summaries_MSUSuffix">MSU</string>
+   	<string name="report_day_summaries_itemFormTitle">Group summaries</string>
+   	<string name="report_day_summaries_exceptionPrepareReport">Error calculating report</string>
+   	<string name="report_day_summaries_docTypeAll">All</string>
+   	<string name="report_day_summaries_plan_visits">Visit plans</string>
+   	<string name="report_day_summaries_plans">Plans</string>
+   	<string name="report_day_summaries_debts">Debts</string>
+   	<string name="report_day_summaries_plan">Plan</string>
+   	<string name="report_day_summaries_salary">Salary</string>
+   	<string name="report_day_summaries_initiatives">Initiative sales</string>
+   	<string name="report_day_summaries_powerSKU">Power SKU sales</string>
+   	<string name="report_day_summaries_filling">Saturability</string>
+   	<string name="report_day_summaries_filling_month">Saturability month</string>
+   	<string name="report_day_summaries_filling_day">Saturability day</string>
+   	<string name="report_day_summaries_golden">Golden outlet plan</string>
+   	<string name="report_day_summaries_debt">General</string>
+   	<string name="report_day_summaries_debt_expired">Overdued</string>
+   	<string name="report_day_summaries_debt_seven_days">Nearest 7 day payment</string>
+   	<string name="gps_warning">Warning</string>
+   	<string name="gps_warning_text">You should enable GPS to proceed</string>
+   	<string name="gps_warning_ok">Enable</string>
+   	<string name="gps_warning_cancel">Exit</string>
+   	
+   	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   	
+<string name="sync_success">Synchronization is successful!</string>
+<string name="sync_falied">Synchronization failed!</string>
+<string name="sync_server_url_col_name">ServerUrl</string>
+<string name="sync_server_name_col_name">ServerName</string>
+<string name="sync_syncronize">Synchronization</string>
+<string name="sync_cancel">Cancel</string>
+<string name="sync_recieve_full">all</string>
+<string name="sync_recieve_incr">new</string>
+<string name="sync_recieve_select">remains</string>
+<string name="sync_send_full">all</string>
+<string name="sync_send_incr">new</string>
+<string name="sync_device_id">DEVICE ID : </string>
+<string name="sync_update_version">Version update</string>
+<string name="app_info">v 1.0</string>
+<string name="inputpopup_backspace">&lt;-</string>
+<string name="sync_no_network">Network is not accessible!</string>
+<string name="sync_no_selection">Please select sync target</string>
+<string name="sync_connecting">Connecting ...</string>
+<string name="sync_transfer_data">Data transfer ...</string>
+<string name="sync_close_connection">Finalization ...</string>
+<string name="sync_db_creating">Creating temporary database ...</string>
+<string name="sync_db_version_is_falied">Database version does not correspond to app version. Should update application version and perform full synchronization.</string>
+<string name="sync_actual_version">Installed up-to-date app version!</string>
+<string name="sync_processing_data">Processing data ... </string>
+<string name="menu_feedback">Feedback</string>
+<string name="menu_messages">One Page</string>
+<string name="menu_about">About</string>
+<string name="form_title_feedback">Feedback</string>
+<string name="form_title_messages_proactive">Proactive massage</string>
+<string name="feedback_message">Message:</string>
+<string name="feedback_theme">Theme:</string>
+<string name="feedback_send">Send</string>
+<string name="feedback_sent">Message saved and will be delivered on next sync!</string>
+
+<string name="preferences_grid_category_name">Grid preferences</string>
+<string name="preferences_category_name_other">Other</string>
+<string name="preferences_cetegory_name_sync">Syncronization</string>
+
+<string name="preference_title_last_sync_date">Last sync date</string>
+<string name="preference_key_last_sync_date">lastSyncDate</string>
+
+<string name="preference_key_last_sync_size_recieve">lastSyncSizeRecieve</string>
+<string name="preference_title_last_sync_size_recieve">Last download</string>
+<string name="preference_key_last_sync_size_send">lastSyncSizeSend</string>
+<string name="preference_title_last_sync_size_send">Last send</string>
+
+<string name="preference_key_month_sync_size_recieve">monthSyncSyzeRecieve</string>
+<string name="preference_title_month_sync_size_recieve">Downloaded this month</string>
+<string name="preference_key_month_sync_size_send">monthSyncSyzeSend</string>
+<string name="preference_title_month_sync_size_send">Sent this month</string>
+<string name="sync_statistic">Statistics</string>
+<string name="sync_recieve_media_files">mediafiles</string>
+
+<string name="preferences_cetegory_name_lang">Language settings</string>
+<string name="preference_key_lang">lang</string>
+<string name="preference_title_lang">Language</string>
+<string name="preference_dialog_title_lang">Select language:</string>
+<string name="preference_summary_lang">Application language.\nNeed application restart</string>
+
+<string name="form_title_about">About</string>
+
+<string name="preferences_cetegory_name_document_form">Document form preferences</string>
+<string name="preference_key_document_quick_keyboard_key">quickKeyb</string>
+<string name="preference_title_document_quick_keyboard">Quick keyboard</string>
+<string name="preference_dialog_title_document_quick_keyboard">Use quick keyboard</string>
+<string name="preference_summary_document_quick_keyboard">Use quick keyboard</string>
+
+<string name="about_version">Version: </string>
+<string name="about_device_id">Device ID: </string>
+<string name="about_saler_name">Seller: </string>
+<string name="about_history_of_changes">Changelist </string>
+
+<string name="currency_name"> uah. </string>
+
+<string name="report_day_summaries_total_salary">Total bunus: </string>
+<string name="report_day_summaries_total_salary_plus_salary_rate">Total salary: </string>
+
+<string name="message_box_warning">Warning!</string>
+<string name="message_box_error">Error!</string>
+
+<string name="sync_documents_not_sended">There is unsent documents!</string>
+<string name="sync_need_sync">Need synchronization!</string>
+<string name="client_addr_header_attributes">Address classification</string>
+<string name="client_addr_header_gps">GPS</string>
+<string name="client_addr_header_other">Additional information</string>
+
+<string name="client_addr_gps_long">Longtitude:</string>
+<string name="client_addr_gps_lat">Latitude:</string>
+
+<string name="itemizedoverlay_move_notification">SalePoint move</string>	    
+<string name="itemizedoverlay_move_notification_text">Press the button below to save new salepoint position</string>
+
+</resources>

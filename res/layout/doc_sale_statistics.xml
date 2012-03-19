@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.app.ant"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="1" 
+    android:padding="5dp"
+    android:id="@+id/docSaleStats"
+    >
+
+		    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		   	>
+		   		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		        <TableRow    		
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:gravity="center_vertical"
+		    	>
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_sale_stat_sum"
+				   	android:textStyle="bold"
+				    />	
+
+				   	<TextView
+					android:id="@+id/textSum"  
+	    			android:layout_width="fill_parent" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_weight="1"
+	    			android:gravity="right" 
+	    			/>				    	    	
+	    							    	    	
+		    	</TableRow>
+
+		   		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		        <TableRow    		
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:gravity="center_vertical"
+		    	>
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_sale_stat_sumI"
+				   	android:textStyle="bold"
+				    />	
+
+				   	<TextView
+					android:id="@+id/textSumI"  
+	    			android:layout_width="fill_parent" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_weight="1"
+	    			android:gravity="right" 
+	    			/>				    	    	
+	    							    	    	
+		    	</TableRow>
+
+		   		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		        <TableRow    		
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:gravity="center_vertical"
+		    	>
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_sale_stat_sumII"
+				   	android:textStyle="bold"
+				    />	
+
+				   	<TextView
+					android:id="@+id/textSumII"  
+	    			android:layout_width="fill_parent" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_weight="1"
+	    			android:gravity="right" 
+	    			/>				    	    	
+	    							    	    	
+		    	</TableRow>
+
+		   		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		        <TableRow    		
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:gravity="center_vertical"
+		    	>
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_sale_stat_sumVAT"
+				   	android:textStyle="bold"
+				    />	
+
+				   	<TextView
+					android:id="@+id/textSumVAT"  
+	    			android:layout_width="fill_parent" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_weight="1"
+	    			android:gravity="right" 
+	    			/>				    	    	
+	    							    	    	
+		    	</TableRow>
+
+		   		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		        <TableRow    		
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:gravity="center_vertical"
+		    	>
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_sale_stat_sumWoVAT"
+				   	android:textStyle="bold"
+				    />	
+
+				   	<TextView
+					android:id="@+id/textSumWoVAT"  
+	    			android:layout_width="fill_parent" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_weight="1"
+	    			android:gravity="right" 
+	    			/>				    	    	
+	    							    	    	
+		    	</TableRow>
+
+		   		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		        <TableRow    		
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:gravity="center_vertical"
+		    		android:paddingTop="10dip"
+		    	>
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_sale_stat_cases"
+				   	android:textStyle="bold"
+				    />	
+
+				   	<TextView
+					android:id="@+id/textCases"  
+	    			android:layout_width="fill_parent" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_weight="1"
+	    			android:gravity="right" 
+	    			/>				    	    	
+	    							    	    	
+		    	</TableRow>
+
+		   		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		        <TableRow    		
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:gravity="center_vertical"
+		    	>
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_sale_stat_pallettes"
+				   	android:textStyle="bold"
+				    />	
+
+				   	<TextView
+					android:id="@+id/textPalettes"  
+	    			android:layout_width="fill_parent" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_weight="1"
+	    			android:gravity="right" 
+	    			/>				    	    	
+	    							    	    	
+		    	</TableRow>
+
+		   		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		        <TableRow    		
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:gravity="center_vertical"
+		    	>
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_sale_stat_units"
+				   	android:textStyle="bold"
+				    />	
+
+				   	<TextView
+					android:id="@+id/textUnits"  
+	    			android:layout_width="fill_parent" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_weight="1"
+	    			android:gravity="right" 
+	    			/>				    	    	
+	    							    	    	
+		    	</TableRow>		    	
+
+		   		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		        <TableRow    		
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:gravity="center_vertical"
+		    		android:paddingTop="10dip"
+		    	>
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_sale_stat_sumSUF"
+				   	android:textStyle="bold"
+				    />	
+
+				   	<TextView
+					android:id="@+id/textSumSUF"  
+	    			android:layout_width="fill_parent" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_weight="1"
+	    			android:gravity="right" 
+	    			/>				    	    	
+	    							    	    	
+		    	</TableRow>   
+
+		   		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		        <TableRow    		
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:gravity="center_vertical"
+		    	>
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_sale_stat_sumFUF"
+				   	android:textStyle="bold"
+				    />	
+
+				   	<TextView
+					android:id="@+id/textSumFUF"  
+	    			android:layout_width="fill_parent" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_weight="1"
+	    			android:gravity="right" 
+	    			/>				    	    	
+	    							    	    	
+		    	</TableRow>
+		    	
+		   		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		        <TableRow    		
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:gravity="center_vertical"
+		    		android:paddingTop="10dip"
+		    	>
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_sale_stat_orderItems"
+				   	android:textStyle="bold"
+				    />	
+
+				   	<TextView
+					android:id="@+id/textOrderItems"  
+	    			android:layout_width="fill_parent" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_weight="1"
+	    			android:gravity="right" 
+	    			/>				    	    	
+	    							    	    	
+		    	</TableRow>
+		    	
+		   		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		        <TableRow    		
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:gravity="center_vertical"
+		    	>
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_sale_stat_formItems"
+				   	android:textStyle="bold"
+				    />	
+
+				   	<TextView
+					android:id="@+id/textFormItems"  
+	    			android:layout_width="fill_parent" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_weight="1"
+	    			android:gravity="right" 
+	    			/>				    	    	
+	    							    	    	
+		    	</TableRow>
+		    	
+		   		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		        <TableRow    		
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:gravity="center_vertical"
+		    	>
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_sale_stat_allItems"
+				   	android:textStyle="bold"
+				    />	
+
+				   	<TextView
+					android:id="@+id/textAllItems"  
+	    			android:layout_width="fill_parent" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_weight="1"
+	    			android:gravity="right" 
+	    			/>				    	    	
+	    							    	    	
+		    	</TableRow>		    			    			    	
+		
+			</TableLayout>
+
+</LinearLayout>

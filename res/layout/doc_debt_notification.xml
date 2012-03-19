@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.app.ant"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    >
+    
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   	<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background = "@drawable/header_background"
+    android:paddingLeft="5dip"
+    >
+    	<ImageView
+		android:paddingRight="5dip"
+	   	android:layout_width="wrap_content" 
+	   	android:layout_height="wrap_content"
+	   	android:src="@drawable/debt"
+	   	android:layout_marginTop="5dip"
+	   	/>
+
+	   	<LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"
+        android:paddingTop="2dip"	    
+	    >
+			<TextView
+			android:id="@+id/textClient"  
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"			
+			android:textColor="#FFFFFF"
+			android:textStyle="bold"
+			android:maxLines="1"
+			/>
+        
+	  		<TextView
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:textColor="#FFFFFF"
+			android:textStyle="bold"
+	    	android:paddingBottom="10dip"
+	    	android:text="@string/form_title_debtNotification"
+	    	android:layout_weight="1"
+			/>		
+		</LinearLayout>
+<!-- 		
+   		<ImageButton
+   		style="@style/CustomButton"
+		android:id="@+id/buttonBack"
+   		android:layout_width="wrap_content" 
+   		android:layout_height="45dp" 
+   		android:src="@drawable/back_arrow"
+   		android:gravity="center_vertical"   		
+   		/>
+			 -->
+	</LinearLayout>
+    
+    
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="1" 
+    >
+		    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		   	>
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		        <TableRow    		
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:gravity="center_vertical"
+		    		android:padding="2dp"
+		    	>
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_debt_notification_contact"
+				   	android:textStyle="bold"
+				    />
+				    
+					<Spinner
+					android:id="@+id/spPaymentConditions"
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"					
+	    			android:layout_weight="1"
+	    			android:gravity="right"
+	    			android:textColor="#FF000000"
+	    			android:background="@drawable/custom_button_light" 					
+					/>
+	    			
+		    	</TableRow>
+			    	
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		        <TableRow    		
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:gravity="center_vertical"
+		    		android:padding="2dp"
+		    	>
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_debt_notification_debtSum"
+				   	android:textStyle="bold"
+				   	android:paddingRight="5dp"
+				    />
+				    
+				   	<TextView
+					android:id="@+id/textDebtSum"  
+	    			android:layout_width="fill_parent" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_weight="1"
+	    			android:gravity="right" 
+	    			android:background="@drawable/custom_button_light"
+	    			/>
+		    	</TableRow>
+
+		   		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		        <TableRow    		
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:gravity="center_vertical"
+		    		android:padding="2dp"
+		    	>
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_debt_notification_date"
+				   	android:textStyle="bold"
+				    />	
+
+				   	<TextView
+					android:id="@+id/textDocDate"  
+	    			android:layout_width="fill_parent" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_weight="1"
+	    			android:gravity="right" 
+	    			android:editable="false"
+	    			android:background="@drawable/custom_button_light"
+	    			/>
+		    	</TableRow>
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		        <TableRow    		
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:gravity="center_vertical"
+		    		android:padding="2dp"
+		    	>
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_debt_notification_promisedSum"
+				   	android:textStyle="bold"
+				    />
+				    
+				   	<TextView
+					android:id="@+id/textPromisedSum"  
+	    			android:layout_width="fill_parent" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_weight="1"
+	    			android:gravity="right" 
+	    			android:background="@drawable/custom_button_light"
+	    			/>
+		    	</TableRow>
+			</TableLayout>
+			
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<TextView
+		   	android:layout_width="fill_parent" 
+		   	android:layout_height="wrap_content" 
+		   	android:text="@string/doc_debt_notification_comments"
+		   	android:textStyle="bold"
+		   	android:paddingTop="10dip"
+		   	android:paddingBottom="5dip"
+		    />					   	    	
+			
+		   	<EditText
+				android:id="@+id/textComments"  
+	  			android:layout_width="fill_parent" 
+	  			android:layout_height="wrap_content"
+	  			android:lines="5" 	  			
+	  		/>
+			
+           	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			
+			
+</LinearLayout>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Just to make empty horizontal strip ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+	<TextView
+   	android:layout_width="fill_parent" 
+   	android:layout_height="wrap_content" 
+   	android:text=""
+   	style="@style/ToolPanel"
+   	android:layout_gravity="bottom"
+   	android:layout_weight="0"
+   	android:padding = "0dip"
+   	android:textSize="5sp"   	
+    />   
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<LinearLayout style="@style/StepButtonPlacement" android:id="@+id/stepButtonPlacement" />	
+	<LinearLayout style="@style/TabsPlacement"  android:id="@+id/tabsPlacement" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+</LinearLayout>

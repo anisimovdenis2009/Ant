@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<PreferenceCategory android:title="@string/preferences_cetegory_name_sync" android:shouldDisableView="true">
+	<Preference android:key="@string/preference_key_last_sync_date"
+		android:title="@string/preference_title_last_sync_date"
+		android:selectable="false" android:persistent="true"></Preference>
+	<Preference android:key="@string/preference_key_last_sync_size_recieve"
+		android:selectable="false" android:title="@string/preference_title_last_sync_size_recieve"
+		android:persistent="true"></Preference>
+	<Preference android:key="@string/preference_key_last_sync_size_send"
+		android:selectable="false" android:title="@string/preference_title_last_sync_size_send"
+		android:persistent="true"></Preference>
+	<Preference android:key="@string/preference_key_month_sync_size_recieve"
+		android:selectable="false" android:title="@string/preference_title_month_sync_size_recieve"
+		android:persistent="true"></Preference>
+	<Preference android:key="@string/preference_key_month_sync_size_send"
+		android:selectable="false" android:title="@string/preference_title_month_sync_size_send"
+		android:persistent="true"></Preference>
+</PreferenceCategory>
+</PreferenceScreen>

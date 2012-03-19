@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.app.ant"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="1" 
+    android:padding="5dp"
+    >
+
+	<LinearLayout
+	   android:orientation="horizontal"
+	   android:layout_width="fill_parent"
+	   android:layout_height="wrap_content"	   
+	 >	   
+	 	<TextView
+		android:id="@+id/textDialogTitle"  
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:textColor="#FFFFFF"
+		android:textStyle="bold"
+		android:text="@string/addr_contact_header"
+	   	android:paddingBottom="10dip"
+	   	android:layout_weight="1"
+		/>		
+	</LinearLayout>
+
+
+	<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/addrContact"
+    >
+	
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"    
+	    android:padding="5dp" 
+	    >
+	    
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	
+		<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="horizontal">
+	
+			<TextView
+		   	android:layout_width="wrap_content" 
+		   	android:layout_height="wrap_content" 
+		   	android:text="@string/addr_contact_person"
+		   	android:textStyle="bold"
+		   	android:paddingRight="5dp"
+		   	android:textColor="#FFFFFF"
+		    />	
+		
+		   	<EditText
+			android:id="@+id/textPerson"  
+			android:layout_width="fill_parent" 
+			android:layout_height="38dp" 
+			android:layout_weight="1"
+			android:gravity="right" 
+			android:padding="2dp"		
+			android:singleLine="true"
+			/>
+	
+		</LinearLayout>
+	
+	    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	   	>
+	
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	        <TableRow    		
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:gravity="center_vertical"
+	    	>
+				<TextView
+			   	android:layout_width="fill_parent" 
+			   	android:layout_height="wrap_content" 
+			   	android:text="@string/addr_contact_position"
+			   	android:textStyle="bold"
+			   	android:textColor="#FFFFFF"
+			    />	
+	
+			   	<EditText
+				android:id="@+id/textPosition"  
+	   			android:layout_width="fill_parent" 
+	   			android:layout_height="38dp"
+	   			android:layout_weight="1"
+	   			android:gravity="right" 
+	   			android:singleLine="true"
+	   			/>
+	
+	    	</TableRow>
+	    	
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	        <TableRow    		
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:gravity="center_vertical"
+	    	>
+				<TextView
+			   	android:layout_width="fill_parent" 
+			   	android:layout_height="wrap_content" 
+			   	android:text="@string/addr_contact_email"
+			   	android:textStyle="bold"
+			   	android:textColor="#FFFFFF"
+			    />	
+	
+			   	<EditText
+				android:id="@+id/textEmail"  
+	   			android:layout_width="fill_parent" 
+	   			android:layout_weight="1"
+	   			android:gravity="right" 
+	   			android:layout_height="38dp"
+	   			android:singleLine="true"
+	   			/>
+	
+	    	</TableRow>
+	
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	        <TableRow    		
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:gravity="center_vertical"
+	    	>
+				<TextView
+			   	android:layout_width="fill_parent" 
+			   	android:layout_height="wrap_content" 
+			   	android:text="@string/addr_contact_phone"
+			   	android:textStyle="bold"
+			   	android:textColor="#FFFFFF"
+			    />	
+	
+			   	<EditText
+				android:id="@+id/textPhone1"  
+	   			android:layout_width="fill_parent" 
+	   			android:layout_weight="1"
+	   			android:gravity="right" 
+	   			android:layout_height="38dp"
+	   			android:singleLine="true"
+	   			/>
+	
+	    	</TableRow>
+	
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	        <TableRow    		
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:gravity="center_vertical"
+	    	>
+				<TextView
+			   	android:layout_width="fill_parent" 
+			   	android:layout_height="wrap_content" 
+			   	android:text="@string/addr_contact_phone"
+			   	android:textStyle="bold"
+			   	android:textColor="#FFFFFF"
+			    />	
+	
+			   	<EditText
+				android:id="@+id/textPhone2"  
+	   			android:layout_width="fill_parent" 
+	   			android:layout_weight="1"
+	   			android:gravity="right"
+	   			android:layout_height="38dp"
+	   			android:singleLine="true" 
+	   			/>
+	
+	    	</TableRow>
+	
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	        <!--TableRow    		
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:gravity="center_vertical"
+	    	>
+				<TextView
+			   	android:layout_width="fill_parent" 
+			   	android:layout_height="wrap_content" 
+			   	android:text="@string/addr_contact_dateOfBirth"
+			   	android:textStyle="bold"
+			    />	
+	
+			   	<EditText
+				android:id="@+id/textDateOfBirth"  
+	   			android:layout_width="fill_parent" 
+	   			android:layout_height="wrap_content"
+	   			android:layout_weight="1"
+	   			android:gravity="right" 
+	   			/>
+	
+	    	</TableRow-->
+	
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	        <!--TableRow    		
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:gravity="center_vertical"
+	    	>
+				<TextView
+			   	android:layout_width="fill_parent" 
+			   	android:layout_height="wrap_content" 
+			   	android:text="@string/addr_contact_needs"
+			   	android:textStyle="bold"
+			    />	
+	
+			   	<EditText
+				android:id="@+id/textNeeds"  
+	   			android:layout_width="fill_parent" 
+	   			android:layout_height="wrap_content"
+	   			android:layout_weight="1"
+	   			android:gravity="right" 
+	   			/>
+	
+	    	</TableRow-->
+	
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	        <!--TableRow    		
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:gravity="center_vertical"
+	    	>
+				<TextView
+			   	android:layout_width="fill_parent" 
+			   	android:layout_height="wrap_content" 
+			   	android:text="@string/addr_contact_hobbies"
+			   	android:textStyle="bold"
+			    />	
+	
+			   	<EditText
+				android:id="@+id/textHobbies"  
+	   			android:layout_width="fill_parent" 
+	   			android:layout_height="wrap_content"
+	   			android:layout_weight="1"
+	   			android:gravity="right" 
+	   			/>
+	
+	    	</TableRow-->
+	
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	        <!--TableRow    		
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:gravity="center_vertical"
+	    	>
+				<TextView
+			   	android:layout_width="fill_parent" 
+			   	android:layout_height="wrap_content" 
+			   	android:text="@string/addr_contact_comment"
+			   	android:textStyle="bold"
+			    />	
+	
+			   	<EditText
+				android:id="@+id/textComments"  
+	   			android:layout_width="fill_parent" 
+	   			android:layout_height="wrap_content"
+	   			android:layout_weight="1"
+	   			android:gravity="right" 
+	   			/>
+	 			
+	    	</TableRow-->
+	
+		</TableLayout>
+		
+	    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	   	>
+	
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	        <!--TableRow    		
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:gravity="center_vertical"
+	    	>
+				<TextView
+			   	android:layout_width="fill_parent" 
+			   	android:layout_height="wrap_content" 
+			   	android:text="@string/addr_contact_decides"
+			   	android:textStyle="bold"
+			    />	
+	
+				<CheckBox
+				android:id="@+id/chkBoxDesides"  
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:checked = "false" 
+				/>
+	   			
+	    	</TableRow-->
+	
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	        <!--TableRow    		
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:gravity="center_vertical"
+	    	>
+				<TextView
+			   	android:layout_width="fill_parent" 
+			   	android:layout_height="wrap_content" 
+			   	android:text="@string/addr_contact_USD"
+			   	android:textStyle="bold"
+			    />	
+	
+				<CheckBox
+				android:id="@+id/chkBoxUSD"  
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:checked = "false" 
+				/>
+	   			
+	    	</TableRow-->
+		
+		</TableLayout>
+	
+	</LinearLayout>
+	
+	</ScrollView>
+</LinearLayout>

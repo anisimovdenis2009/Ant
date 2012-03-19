@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background = "@drawable/header_background"
+            android:paddingLeft="5dip"
+            >
+        <ImageView
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/store_check"
+                />
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="2dip"
+                >
+            <TextView
+                    android:id="@+id/textClient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    />
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:text="Документы по долям полок"
+                    android:layout_weight="1"
+                    />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Doc-->
+    <ListView android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/store_check_doc_list_view"
+              />
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <LinearLayout style="@style/StepButtonPlacement" android:id="@+id/stepButtonPlacement" />
+    <TextView style="@style/TabsPlacement" android:gravity="bottom" android:layout_weight = "1" android:background="@android:color/white"/>
+    <LinearLayout style="@style/TabsPlacement"  android:id="@+id/tabsPlacement" android:gravity="bottom" android:layout_weight = "1" />
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+</LinearLayout>

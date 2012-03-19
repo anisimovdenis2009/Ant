@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.app.ant"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="1" 
+    android:padding="5dp"
+    android:id="@+id/synchronizationForm"
+    >
+
+    <ScrollView 
+    	android:orientation="vertical"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1">    	
+   		<LinearLayout 
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1">
+		    
+		    <TextView
+		    	android:id="@+id/sync_message"
+		    	android:layout_width="fill_parent" 
+	   			android:layout_height="wrap_content"
+	   			android:textColor="#FFFFFFFF"
+	   			android:gravity="center"
+	   			android:paddingBottom="3dp"
+		    	/>
+		    		    
+	   		<Spinner 
+	   			android:id="@+id/spnServerToSync" 
+	   			android:layout_width="fill_parent" 
+	   			android:layout_height="wrap_content"
+	   			android:layout_marginBottom="3dip"
+	   			android:drawSelectorOnTop="true">
+	   		</Spinner>
+   		   	
+	   		<EditText 
+	   			android:text="" 
+	   			android:id="@+id/editTextServerToSync" 
+	   			android:layout_width="fill_parent" 
+	   			android:layout_height="wrap_content"
+	   			android:singleLine="true"
+	   			android:visibility="gone"
+	   			/>	   		
+	   		<Button
+				android:id="@+id/sync_btn_update_version"
+				android:layout_gravity="center_vertical" 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/sync_update_version"
+				android:textSize="16dp"
+				/>
+					   		
+	   		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:stretchColumns="1">
+				<TextView android:id="@+id/sync_lbl_send_data" android:text="@string/sync_send_data" android:textSize="15dp" android:padding="3dip" android:background="#FFFFFFFF" />
+			    <TableRow>  
+			    	<RadioGroup
+					   android:layout_width="fill_parent"
+					   android:layout_height="wrap_content"
+					   android:orientation="horizontal">
+					   <RadioButton
+					    android:id="@+id/sync_send_full_option"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="@string/sync_send_full"
+					    android:textColor="#FFFFFFFF" />
+					   <RadioButton
+					    android:id="@+id/sync_send_incr_option"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="@string/sync_send_incr"
+					    android:textColor="#FFFFFFFF"/>
+					   <RadioButton
+					    android:id="@+id/sync_send_media_files"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="@string/sync_recieve_media_files"
+					    android:textColor="#FFFFFFFF"/>
+					 </RadioGroup>    
+			    </TableRow>		
+			    <TextView android:id="@+id/sync_lbl_recieve_data" android:text="@string/sync_receive_data" android:textSize="15dp" android:padding="3dip" android:background="#FFFFFFFF" />       
+			    <TableRow>
+			    	<RadioGroup
+					   android:layout_width="fill_parent"
+					   android:layout_height="wrap_content"
+					   android:orientation="horizontal">
+					   <RadioButton
+					    android:id="@+id/sync_receive_full_option"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="@string/sync_recieve_full"
+					    android:textColor="#FFFFFFFF" />
+					   <RadioButton
+					    android:id="@+id/sync_receive_incr_option"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="@string/sync_recieve_incr"
+					    android:textColor="#FFFFFFFF" />
+					   <RadioButton
+					    android:id="@+id/sync_receive_select_option"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="@string/sync_recieve_select"
+					    android:textColor="#FFFFFFFF"/>
+					 </RadioGroup>
+			    </TableRow>       
+			    <TableRow>
+			    	<RadioGroup
+					   android:layout_width="fill_parent"
+					   android:layout_height="wrap_content"
+					   android:orientation="horizontal"
+					   >
+					   <RadioButton
+					    android:id="@+id/sync_receive_media_files"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="@string/sync_recieve_media_files"
+					    android:textColor="#FFFFFFFF" />
+					 </RadioGroup>
+			    </TableRow>
+				<TableRow>
+	 				<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					    android:orientation="horizontal"
+					    android:layout_width="fill_parent"
+					    android:layout_height="fill_parent">
+			   				<CheckBox android:text="Saldo" 
+			   					android:textColor="#FFFFFFFF"   					
+								android:id="@+id/sync_checkBoxSaldo"
+								android:layout_width="wrap_content" 
+								android:layout_height="wrap_content"
+								android:checked="true"
+								android:visibility = "gone" 
+								/>
+							<CheckBox android:text="Rest" 
+								android:textColor="#FFFFFFFF"
+								android:id="@+id/sync_checkBoxRest"													
+								android:layout_width="wrap_content" 
+								android:layout_height="wrap_content"
+								android:checked="true"
+								android:visibility = "gone" 
+								/> 
+			    	</LinearLayout>
+			    </TableRow>
+			   <Button 	android:id="@+id/sync_btn_show_statistic"
+			    			android:layout_width="wrap_content"
+					    	android:layout_height="wrap_content"
+			    			android:text="@string/sync_statistic"
+		    				android:gravity="center"/>
+			 	<TextView 	android:id="@+id/saler_name" 
+							android:text="@string/login_sample_saler" 
+							android:textSize="10dp" 
+							android:textColor="#FFFFFFFF"
+							android:gravity="center"/> 
+			    <TextView 	android:id="@+id/sync_tv_device_id" 
+			    			android:text="@string/sync_device_id" 
+			    			android:textSize="10dp" 
+			    			android:textColor="#FFFFFFFF"
+			    			android:gravity="center"/>
+			</TableLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

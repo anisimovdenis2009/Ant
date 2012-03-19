@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/groupItemLayout"
+    >
+    
+	    <TextView android:id="@+id/textPadding"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:paddingLeft="40dip"
+	    />
+	    
+		<LinearLayout
+		android:id="@+id/itemLayout"
+	    android:orientation="vertical"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"
+	    android:paddingTop="10dip"
+	    android:paddingBottom="10dip"
+	    >	   
+
+		    <TextView android:id="@+id/textGroupName"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"	        
+		        android:textColor="#FF000000"
+		        android:background="#FFFFFFFF"
+		    />
+	    
+			<LinearLayout
+		    android:orientation="horizontal"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:id="@+id/statsLayout"
+		    android:gravity="right" 
+		    >		    
+			    
+			    <TextView android:id="@+id/textOrders"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#FF000000"
+			        android:textSize="10dp"
+			    />
+			    
+			    <TextView android:id="@+id/textOrdersSuffix"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#FF000000"
+				    android:paddingLeft="5dip"
+				    android:text="@string/report_day_summaries_ordersSuffix"
+				    android:textSize="10dp"	        
+			    />
+		
+			    <TextView android:id="@+id/textSum"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#FF000000"
+			        android:paddingLeft="10dip"
+				    android:minWidth="70dip"
+				    android:gravity="right"
+				    android:textSize="10dp"
+			    />	    
+		
+			    <TextView android:id="@+id/textSumSuffix"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#FF000000"
+				    android:paddingLeft="5dip"
+				    android:text="@string/report_day_summaries_sumSuffix"
+				    android:textSize="10dp"
+			    />
+			    
+			    <TextView android:id="@+id/textMSU"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#FF000000"
+			        android:paddingLeft="10dip"
+				    android:minWidth="50dip"
+				    android:gravity="right"
+				    android:textSize="10dp"
+			    />	    
+		
+			    <TextView android:id="@+id/textMSUSuffix"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textColor="#FF000000"
+				    android:paddingLeft="5dip"
+				    android:text="@string/report_day_summaries_MSUSuffix"
+				    android:textSize="10dp"
+			    />
+		    
+		    </LinearLayout>
+	</LinearLayout>	    
+</LinearLayout>

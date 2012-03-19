@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.app.ant"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    >
+    
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   	<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background = "@drawable/header_background"
+    android:paddingLeft="5dip"
+    >
+    	<ImageView
+		android:paddingRight="5dip"
+	   	android:layout_width="wrap_content" 
+	   	android:layout_height="wrap_content"
+	   	android:src="@drawable/step_doc_payment"
+	   	android:layout_marginTop="5dip"
+	   	/>
+
+	   	<LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"
+        android:paddingTop="2dip"	    
+	    >
+			<TextView
+			android:id="@+id/textClient"  
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"			
+			android:textColor="#FFFFFF"
+			android:textStyle="bold"
+			android:maxLines="1"
+			/>
+        
+	  		<TextView
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:textColor="#FFFFFF"
+			android:textStyle="bold"
+	    	android:paddingBottom="10dip"
+	    	android:text="@string/form_title_docPayment"
+	    	android:layout_weight="1"
+			/>		
+		</LinearLayout>
+<!-- 		
+   		<ImageButton
+   		style="@style/CustomButton"
+		android:id="@+id/buttonBack"
+   		android:layout_width="wrap_content" 
+   		android:layout_height="45dp" 
+   		android:src="@drawable/back_arrow"
+   		android:gravity="center_vertical"   		
+   		/>
+		 -->	
+	</LinearLayout>
+    
+    
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="1" 
+    android:padding="5dp"
+    >
+		    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		   	>
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		        <TableRow    		
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:gravity="center_vertical"
+		    	>
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_payment_num"
+				   	android:textStyle="bold"
+				    />
+				    
+					<TextView
+					android:id="@+id/textDocNum"
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content"
+	    			android:layout_weight="1"
+	    			android:gravity="right" 				   	 
+	    			android:textAppearance="?android:attr/textAppearanceMedium"
+				    />
+	    			
+		    	</TableRow>
+
+		   		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		        <TableRow    		
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:gravity="center_vertical"
+		    	>
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_payment_date"
+				   	android:textStyle="bold"
+				    />	
+
+				   	<TextView
+					android:id="@+id/textDocDate"  
+	    			android:layout_width="fill_parent" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_weight="1"
+	    			android:gravity="right" 
+	    			android:editable="false"
+	    			android:background="@drawable/custom_button_light"
+	    			/>
+	    			
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_payment_blankNo"
+				   	android:textStyle="bold"
+				   	android:layout_marginLeft="3dip"
+				    />
+				    
+				   	<EditText
+					android:id="@+id/textBlankNo"  
+	    			android:layout_width="fill_parent" 
+	    			android:layout_height="43dp"
+	    			android:layout_weight="1"
+	    			android:gravity="center"	    			
+	    			android:layout_marginLeft="3dip"	    			
+   					android:singleLine="true" 
+   					
+	    			/>
+	    							    	    	
+		    	</TableRow>
+			    	
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		        <TableRow    		
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:gravity="center_vertical"
+		    	>
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_payment_sum"
+				   	android:textStyle="bold"
+				    />
+				    
+				   	<TextView
+					android:id="@+id/textDocSum"  
+	    			android:layout_width="fill_parent" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_weight="1"
+	    			android:gravity="right" 
+	    			android:background="@drawable/custom_button_light"
+	    			/>
+
+		    	</TableRow>
+
+		    	
+			
+			</TableLayout>
+			
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<TextView
+		   	android:layout_width="fill_parent" 
+		   	android:layout_height="wrap_content" 
+		   	android:text="@string/doc_payment_comments"
+		   	android:textStyle="bold"
+		   	android:paddingTop="10dip"
+		   	android:paddingBottom="5dip"
+		    />					   	    	
+			
+		   	<EditText
+				android:id="@+id/textComments"  
+	  			android:layout_width="fill_parent" 
+	  			android:layout_height="wrap_content"
+	  			android:lines="5" 	  			
+	  		/>
+			
+           	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+           	
+           	
+</LinearLayout>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+<LinearLayout 
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   android:orientation="horizontal"
+   android:padding="5dp"
+   style="@style/ToolPanel"
+   >
+		<Button
+		android:id="@+id/buttonPrintCheck"
+		style="@style/CustomButton"
+		android:layout_width="wrap_content" 
+	 	android:layout_height="wrap_content" 
+	 	android:text="@string/doc_payment_check"
+	 	android:layout_weight="1"
+	 	android:textSize="12dp"
+	 	android:drawableLeft="@drawable/cash_register"
+	 	/>
+	 	
+</LinearLayout>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<LinearLayout style="@style/StepButtonPlacement" android:id="@+id/stepButtonPlacement" />	
+	<LinearLayout style="@style/TabsPlacement"  android:id="@+id/tabsPlacement" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+</LinearLayout>

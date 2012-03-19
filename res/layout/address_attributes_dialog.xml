@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.app.ant"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="1" 
+    android:padding="5dp"
+    android:id="@+id/selectAttributes"
+    >
+		<LinearLayout
+		   android:orientation="horizontal"
+		   android:layout_width="fill_parent"
+		   android:layout_height="wrap_content"	   
+		 >	   
+		 	<TextView
+			android:id="@+id/textDialogTitle"  
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="#FFFFFF"
+			android:textStyle="bold"
+			android:text="@string/form_title_filtersSelect"
+		   	android:paddingBottom="10dip"
+		   	android:layout_weight="1"
+			/>
+			
+			<ImageButton
+			android:id="@+id/buttonDeselectAll"
+			android:layout_gravity="right|center_vertical"
+			android:gravity="center_vertical" 
+			android:layout_width="50dp" 
+			android:layout_height="45dp"
+			android:src="@drawable/minus_big" />
+						
+		</LinearLayout>   
+    
+		<ListView android:id="@+id/itemList" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:paddingTop="8dip"
+	    android:background="#FFFFFFFF"
+	    />
+
+</LinearLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.app.ant"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    >
+    
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   	<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background = "@drawable/header_background"
+    android:paddingLeft="5dip"
+    >
+    	<ImageView
+		android:paddingRight="5dip"
+	   	android:layout_width="wrap_content" 
+	   	android:layout_height="wrap_content"
+	   	android:src="@drawable/step_doc_list"
+	   	android:layout_marginTop="5dip"
+	   	/>
+        
+	   	<LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"
+        android:paddingTop="2dip"	    
+	    >
+			<TextView
+			android:id="@+id/textClient"  
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"			
+			android:textColor="#FFFFFF"
+			android:textStyle="bold"
+			android:maxLines="1"
+			/>
+        
+	  		<TextView
+	  		android:id="@+id/textTitle"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:textColor="#FFFFFF"
+			android:textStyle="bold"
+	    	android:text="@string/form_title_docList"
+	    	android:layout_weight="1"
+			/>
+			
+		</LinearLayout>
+		
+   		<ImageButton
+   		style="@style/CustomButton"
+		android:id="@+id/buttonNextStep"
+   		android:layout_width="45dp" 
+   		android:layout_height="45dp" 
+   		android:src="@drawable/arrow_right"
+   		android:visibility="gone"
+   		/>	   		
+<!-- 			
+   		<ImageButton
+   		style="@style/CustomButton"
+		android:id="@+id/buttonBack"
+   		android:layout_width="wrap_content" 
+   		android:layout_height="45dp" 
+   		android:src="@drawable/back_arrow"
+   		android:gravity="center_vertical"
+   		/>	
+			 -->
+	</LinearLayout>
+    
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Entity ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   	<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/StepButtonPlacement"
+    >	
+		<ToggleButton				
+		style="@style/CustomToggleButton"
+		android:id="@+id/chkBoxUnpaid"
+		android:layout_width="60dp"  
+		android:layout_height="match_parent"
+		android:checked = "false"
+		android:textOn="@string/doc_list_unpaid"
+		android:textOff="@string/doc_list_unpaid"
+		android:textSize="11dp"				
+		android:drawableBottom="@drawable/toggle"
+		/>
+		
+    
+		<Spinner
+		android:id="@+id/spnAddresses"  
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:textColor="#FFFFFFFF"
+		android:background="@drawable/custom_button"
+		android:visibility="gone"
+		/>
+	
+	</LinearLayout>
+	
+	<com.app.ant.app.Controls.DataGrid	
+		android:id="@+id/dataGridDocList"
+	   	android:layout_width="match_parent"
+	   	android:layout_height="wrap_content"
+	   	android:scrollbarAlwaysDrawVerticalTrack="true"
+	   	android:scrollbarAlwaysDrawHorizontalTrack="true"
+	   	android:scrollbarSize = "20dip"
+	   	android:scrollbars="vertical"  
+	   	app:text="Black" 
+	   	app:textColor="#ffffffff"
+	   	android:layout_weight="1" 
+	/>
+	
+	<LinearLayout
+	android:id="@+id/infoPanelPlacement"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0"
+    android:layout_gravity="bottom"
+    style="@style/ToolPanel"
+    android:textColor="#FFFFFFFF"
+    android:visibility="gone"
+    android:padding="5dp"
+    >	    
+	    <TableLayout 
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginLeft="1dip"
+	    	android:layout_marginRight="1dip"
+	    	android:id="@+id/saldoTable"
+	    	android:paddingRight="3dp"
+	    	android:textColor="#FFFFFFFF"
+	   	>		
+		</TableLayout>        
+	</LinearLayout>    
+	
+	<LinearLayout style="@style/StepButtonPlacement" android:id="@+id/stepButtonPlacementDebts" android:visibility="gone">
+	
+		<LinearLayout  android:layout_width="wrap_content"  android:layout_height="wrap_content"  android:orientation="vertical" >	
+			<ImageButton
+			style="@style/CustomButton"		 
+			android:id="@+id/buttonPayment"
+			android:layout_gravity="center_vertical" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:src="@drawable/step_doc_payment"			
+			/>
+			
+		   	<TextView 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:textSize="10dp"
+		    android:gravity="center"
+		    android:text="@string/doc_list_button_payment"
+		    android:textColor="#FFFFFF"     
+		    />
+		</LinearLayout>
+
+		<LinearLayout  android:layout_width="wrap_content"  android:layout_height="wrap_content"  android:orientation="vertical" >	
+			<ImageButton
+			style="@style/CustomButton"		 
+			android:id="@+id/buttonDebtNotification"
+			android:layout_gravity="center_vertical" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:src="@drawable/debt"			
+			/>
+			
+		   	<TextView 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:textSize="10dp"
+		    android:gravity="center"
+		    android:text="@string/doc_list_button_debtNotification"
+		    android:textColor="#FFFFFF"     
+		    />
+		</LinearLayout>
+		
+		<LinearLayout  android:layout_width="wrap_content"  android:layout_height="wrap_content"  android:orientation="vertical" >	
+			<ImageButton
+			style="@style/CustomButton"		 
+			android:id="@+id/buttonEditDocument"
+			android:layout_gravity="center_vertical" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:src="@drawable/doc_edit"			
+			/>
+			
+		   	<TextView 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:textSize="10dp"
+		    android:gravity="center"
+		    android:text="@string/doc_list_button_editDoc"
+		    android:textColor="#FFFFFF"     
+		    />
+		</LinearLayout>
+		
+		<LinearLayout  android:layout_width="wrap_content"  android:layout_height="wrap_content"  android:orientation="vertical" >	
+			<ImageButton
+			style="@style/CustomButton"		 
+			android:id="@+id/buttonDeleteDocument"
+			android:layout_gravity="center_vertical" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:src="@drawable/doc_delete"			
+			/>
+			
+		   	<TextView 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:textSize="10dp"
+		    android:gravity="center"
+		    android:text="@string/doc_list_button_deleteDoc"
+		    android:textColor="#FFFFFF"     
+		    />
+		</LinearLayout>
+		
+	</LinearLayout>
+	
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<LinearLayout style="@style/StepButtonPlacement" android:id="@+id/stepButtonPlacement" />	
+	<LinearLayout style="@style/TabsPlacement"  android:id="@+id/tabsPlacement" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res/com.app.ant"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="horizontal"
+android:layout_weight="1" 
+android:id="@+id/stepButtonLayout"
+android:padding="3dp"
+>
+
+	<Button
+	style="@style/CustomButton"		 
+	android:id="@+id/buttonStep"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:layout_weight="1"	
+	android:gravity="left|center_vertical"
+	android:drawablePadding="15dp"
+	android:padding="8dp"
+	/>
+
+	<ImageButton
+  	style="@style/CustomButton"
+	android:id="@+id/buttonStepNotFulfilled"
+  	android:layout_width="wrap_content" 
+  	android:layout_height="fill_parent" 
+  	android:src="@drawable/step_not_fulfilled"
+  	android:gravity="center_vertical"
+  	android:clickable="false"
+  	/>
+  	
+	<ImageButton
+  	style="@style/CustomButton"
+	android:id="@+id/buttonStepFulfilled"
+  	android:layout_width="wrap_content" 
+  	android:layout_height="fill_parent" 
+  	android:src="@drawable/step_fulfilled"
+  	android:gravity="center_vertical"
+  	android:visibility="gone"
+  	android:clickable="false"
+  	/>
+  	
+</LinearLayout>

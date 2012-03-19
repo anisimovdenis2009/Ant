@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/feedback_layout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >         
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	   	<LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background = "@drawable/header_background"
+	    android:paddingLeft="5dip"
+	    >
+	    	<ImageView
+	    	android:id="@+id/imgCaption"
+			android:paddingRight="5dp"
+			android:paddingTop="3dp"
+			android:paddingBottom="2dp"		
+		   	android:layout_width="wrap_content" 
+		   	android:layout_height="wrap_content"
+		   	android:src="@drawable/step_doc_header"	   	
+		   	/>
+	    
+	  		<TextView
+			android:id="@+id/textCaption"  
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="#FFFFFF"
+			android:textStyle="bold"
+			android:text="@string/form_title_feedback"
+	    	android:paddingBottom="10dip"
+	    	android:layout_weight="1"
+			/>
+<!-- 			
+	   		<ImageButton
+	   		style="@style/CustomButton"
+			android:id="@+id/buttonBack"
+	   		android:layout_width="wrap_content" 
+	   		android:layout_height="45dp" 
+	   		android:src="@drawable/back_arrow"
+	   		android:gravity="center_vertical"
+	   		/>	
+			 -->	
+		</LinearLayout>
+	    
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Entity ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical"
+		    android:layout_weight="1" 
+		    android:padding="5dp"
+		    >
+		    
+		    <TextView
+			   	android:layout_width="fill_parent" 
+			   	android:layout_height="wrap_content" 
+			   	android:text="@string/feedback_theme"
+			   	android:textStyle="bold"
+			   	android:paddingTop="10dip"
+			   	android:paddingBottom="5dip"
+			    />					   	    	
+				
+		   	<EditText
+				android:id="@+id/textTheme"  
+	  			android:layout_width="fill_parent" 
+	  			android:layout_height="wrap_content"
+	  			android:lines="1" 	  			
+	  		/>
+		    
+			<TextView
+			   	android:layout_width="fill_parent" 
+			   	android:layout_height="wrap_content" 
+			   	android:text="@string/feedback_message"
+			   	android:textStyle="bold"
+			   	android:paddingTop="10dip"
+			   	android:paddingBottom="5dip"
+			    />					   	    	
+				
+		   	<EditText
+				android:id="@+id/textMessage"  
+	  			android:layout_width="fill_parent" 
+	  			android:layout_height="wrap_content"
+	  			android:lines="10" 	  			
+	  		/>
+	  		
+	  			
+			<Button
+			android:id="@+id/buttonSend"
+			style="@style/CustomButton"
+			android:layout_width="fill_parent" 
+		  	android:layout_height="40dp" 
+		  	android:text="@string/feedback_send"		  	
+		  	/>
+	  			  		
+		    
+   		
+</LinearLayout>
+       
+</LinearLayout>

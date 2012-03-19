@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp">
+    
+		<Button
+		style="@style/CustomButton"		 
+		android:id="@+id/buttonAim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:textAppearance="?android:attr/textAppearanceLarge"					
+		android:textStyle="bold"
+		android:lines = "2"
+		android:layout_weight="1"	
+		android:gravity="left|center_vertical"						        
+		/>
+	    
+		<Button
+		style="@style/CustomButton"		 
+		android:id="@+id/buttonSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceLarge"					
+		android:textColor="#FF909090"
+		android:textSize="35sp"
+		/>   
+
+</LinearLayout>

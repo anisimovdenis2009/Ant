@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/form_background"
+    >
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   	<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+    android:background = "@drawable/header_background"
+    >
+	   	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"
+	    >
+			<TextView
+			android:id="@+id/textClientName"  
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"			
+			android:textColor="#FFFFFF"
+			android:textStyle="bold"
+			android:textSize="16dp"
+			android:maxLines="1"
+			android:paddingLeft="5dip"
+			android:paddingTop="1dip"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			/>
+		</LinearLayout>
+		
+	   	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"
+	    >
+			<TextView
+			android:id="@+id/textAddrName"  
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"			
+			android:textColor="@color/item_info_color"
+			android:textStyle="bold"
+			android:textSize="12dp"
+			android:maxLines="2"
+			android:paddingLeft="5dip"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			/>    
+		</LinearLayout>	
+<!-- 	
+   		<ImageButton
+   		style="@style/CustomButton"
+		android:id="@+id/buttonBack"
+   		android:layout_width="wrap_content" 
+   		android:layout_height="45dp" 
+   		android:src="@drawable/back_arrow"
+   		android:gravity="center_vertical"
+   		/>
+	 -->
+	</LinearLayout>
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Entity ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
+	<ScrollView 
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+	   	<LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"
+        android:paddingTop="2dip"
+	    >	
+	
+		    <TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+			/>
+		
+			<LinearLayout android:orientation="vertical"
+			android:id="@+id/stepButtonPlacement"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="0"
+		    />				
+			
+		    <TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="2"
+			/>
+		</LinearLayout>	
+		
+	</ScrollView>	
+		
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Just to make empty horizontal strip ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+	<TextView
+   	android:layout_width="fill_parent" 
+   	android:layout_height="wrap_content" 
+   	android:text=""
+   	style="@style/ToolPanel"
+   	android:layout_gravity="bottom"
+   	android:layout_weight="0"
+   	android:padding = "0dip"
+   	android:textSize="5sp"   	
+    />    
+			
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->		
+	<LinearLayout style="@style/TabsPlacement"  android:id="@+id/tabsPlacement" />
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                
+</LinearLayout>

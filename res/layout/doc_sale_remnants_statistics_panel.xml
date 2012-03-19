@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.app.ant"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="1" 
+    android:padding="5dp"
+    android:id="@+id/docSaleStats"
+    >
+
+		    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		   	>
+		   		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		        <TableRow
+		        	android:id="@+id/docSaleStatsRow1"    		
+		    		android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+		    		android:gravity="center_vertical"
+		    	>
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_sale_stat_remnantsEntered"
+				   	android:textStyle="bold"
+				   	android:textColor="#FFFFFFFF"
+				    />	
+
+				   	<TextView
+					android:id="@+id/textRemnantsEntered"  
+	    			android:layout_width="fill_parent" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_weight="1"
+	    			android:gravity="right"
+	    			android:textColor="#FFFFFFFF" 
+	    			/>
+	    			
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_sale_stat_allItems"
+				   	android:textStyle="bold"
+				   	android:paddingLeft="10dp"
+				   	android:textColor="#FFFFFFFF"
+				    />	
+
+				   	<TextView
+					android:id="@+id/textAllItems"  
+	    			android:layout_width="fill_parent" 
+	    			android:layout_height="wrap_content"
+	    			android:layout_weight="1"
+	    			android:gravity="right"
+	    			android:textColor="#FFFFFFFF" 
+	    			/>				    	    	
+	    							    	    	
+		    	</TableRow>
+
+		   		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+			</TableLayout>
+
+</LinearLayout>

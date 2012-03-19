@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.app.ant"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"    
+    android:padding="5dp"
+    android:id="@+id/docSaleHeaderDialog" 
+    >
+
+	<LinearLayout
+	   android:orientation="horizontal"
+	   android:layout_width="fill_parent"
+	   android:layout_height="wrap_content"	   
+	 >	   
+	 	<TextView
+		android:id="@+id/textDialogTitle"  
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:textColor="#FFFFFF"
+		android:textStyle="bold"
+		android:text="@string/form_title_report_day_summaries"
+	   	android:paddingBottom="10dip"
+	   	android:layout_weight="1"
+		/>		
+	</LinearLayout>	
+    
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/addrContact"
+	    >
+
+		    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		   	>
+		   		<!-- ~~~~~~~ 1-st row ~~~~~~~~ -->
+		   	    <TableRow    		
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center_vertical"
+		    	>   
+		    		<!-- ~~~~~~~doc type combo ~~~~~~~~ -->	
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_sale_header_docType"
+				   	android:textStyle="bold"
+				   	android:paddingRight="5dp"
+				   	android:textColor="#FFFFFF"
+				    />			    
+				    
+		    		<EditText
+					android:id="@+id/textEditDocType"  
+					android:layout_width="wrap_content"
+					android:layout_height="38dp" 
+					android:layout_weight="1"
+					android:textColor="#FF000000"
+					android:text=""
+					android:layout_gravity="center_vertical"
+					android:padding="3dp"
+					android:editable="false"
+					android:focusable="false"							
+					/>							    					
+				    
+				</TableRow>
+				
+				<!-- ~~~~~~~ 2-nd row ~~~~~~~~ -->
+		   	    <TableRow    		
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center_vertical"
+		    	android:paddingTop="3dp"
+		    	>
+					<!-- ~~~~~~~ address combo ~~~~~~~~ -->
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_sale_header_address"
+				   	android:textStyle="bold"
+				   	android:paddingRight="5dp"
+				   	android:textColor="#FFFFFF"
+				    />
+
+					<Spinner
+					android:id="@+id/spnAddresses"  
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"					
+	    			android:layout_weight="1"
+	    			android:textColor="#FF000000"
+	    			android:gravity="left"
+					/>					
+				</TableRow>				
+				
+				
+				<!-- ~~~~~~~ 2-nd row ~~~~~~~~ -->
+		   	    <TableRow    		
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center_vertical"
+		    	android:paddingTop="3dp"
+		    	>
+					<!-- ~~~~~~~ price combo ~~~~~~~~ -->
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_sale_header_price"
+				   	android:textStyle="bold"
+				   	android:paddingRight="5dp"
+				   	android:textColor="#FFFFFF"
+				    />
+
+					<Spinner
+					android:id="@+id/spnPrices"  
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"					
+	    			android:layout_weight="1"
+	    			android:textColor="#FF000000"
+	    			android:gravity="left"
+					/>
+					
+				</TableRow>				
+
+				<!-- ~~~~~~~ 3-rd row ~~~~~~~~ -->
+		   	    <TableRow    		
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center_vertical"
+		    	android:paddingTop="3dp"
+		    	>
+		    		<!-- ~~~~~~~ date box ~~~~~~~~ -->
+		    		<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_sale_header_date"
+				   	android:textStyle="bold"
+				   	android:paddingRight="5dp"
+				   	android:textColor="#FFFFFF"
+				    />
+				    
+		    		<EditText
+					android:id="@+id/textEditDate"  
+					android:layout_width="wrap_content"
+					android:layout_height="38dp" 
+					android:layout_weight="1"
+					android:textColor="#FF000000"
+					android:text=""
+					android:layout_gravity="center_vertical"
+					android:padding="3dp"
+					android:editable="false"
+					android:focusable="false"
+					/>
+					
+				</TableRow>
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="3dp"
+                        >
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Условия оплаты"
+                            android:textStyle="bold"
+                            android:paddingRight="5dp"
+                            android:textColor="#FFFFFF"
+                            />
+
+                    <Spinner
+                            android:id="@+id/spPaymentConditions"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:textColor="#FF000000"
+                            />
+
+                </TableRow>
+
+				<!-- ~~~~~~~ 4-th row ~~~~~~~~ -->
+		   	    <TableRow    		
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center_vertical"
+		    	android:paddingTop="3dp"
+		    	>
+					<!-- ~~~~~~~ respite ~~~~~~~~ -->					
+					<TextView
+				   	android:layout_width="fill_parent" 
+				   	android:layout_height="wrap_content" 
+				   	android:text="@string/doc_sale_header_wellcome"
+				   	android:textStyle="bold"
+				   	android:paddingRight="5dp"
+				   	android:textColor="#FFFFFF"
+				    />
+
+		    		<CheckBox
+					android:id="@+id/checkBoxWelcome"
+					android:layout_width="wrap_content"
+					android:layout_height="38dp" 
+					android:layout_weight="1"
+					android:textColor="#FF000000"
+					android:layout_gravity="center_vertical"
+					/>							    					
+						
+				</TableRow>		    
+    		
+    			<!-- ~~~~~~~ comments ~~~~~~~~ -->
+		   		<!-- ~~~~~~~ 1-st row ~~~~~~~~ -->
+		   	  <!--  <TableRow
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center_vertical"
+		    	android:paddingTop="3dp"
+
+
+		    	>
+					<TextView
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:text="@string/doc_sale_header_comments2_1"
+					android:textStyle="bold"
+					android:paddingRight="5dp"
+					android:textColor="#FFFFFF"										
+					/>		
+					
+					<EditText
+					android:id="@+id/textEditComments1"
+					android:layout_width="wrap_content"
+					android:layout_height="38dp" 
+					android:textColor="#FF000000"					
+					android:layout_weight="1"
+					android:editable="false"
+					android:focusable="false"
+					/>			
+		    	</TableRow>  -->
+		    	
+		   		<!-- ~~~~~~~ 2-nd row ~~~~~~~~ -->
+		   	   <!-- <TableRow
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center_vertical"
+		    	android:paddingTop="3dp"
+
+		    	>
+					<TextView
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:text="@string/doc_sale_header_comments2_2"
+					android:textStyle="bold"
+					android:paddingRight="5dp"
+					android:textColor="#FFFFFF"
+					/>		
+					
+					<EditText
+					android:id="@+id/textEditComments2"
+					android:layout_width="wrap_content"
+					android:layout_height="38dp" 
+					android:textColor="#FF000000"					
+					android:layout_weight="1"
+					android:editable="false"
+					android:focusable="false"
+					/>			
+		    	</TableRow>  -->
+
+
+		    	
+		    </TableLayout>
+	</ScrollView>
+</LinearLayout>
+
+

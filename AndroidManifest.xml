@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.app.ant"
+          android:installLocation="preferExternal" android:versionCode="2" android:versionName="2.1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/Theme.Ant"
+                 android:debuggable="true" android:allowClearUserData="true">
+
+        <uses-library android:name="com.google.android.maps"/>
+
+        <service android:name=".app.ServiceLayer.GPSLoggingService"
+                 android:enabled="true"
+                 android:exported="false"
+                 android:label="GPSLoggingService">
+            <intent-filter>
+                <action android:name="com.app.ant.app.ServiceLayer">
+                </action>
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.app.ant.app.Receivers.StartAtBootServiceReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED">
+                </action>
+                <category android:name="android.intent.category.HOME">
+                </category>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".app.Activities.LoginForm"
+                  android:label="@string/app_name"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait"
+                  android:multiprocess="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".app.Activities.HierarchicalItemGroupListDialog"
+                  android:label="@string/form_title_clientList"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.Activities.ClientListForm"
+                  android:label="@string/form_title_clientList"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.Activities.ClientForm"
+                  android:label="@string/form_title_client"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+
+        <activity android:name=".app.StoreCheck.StoreCheckController"
+                  android:label="Доли полок"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.Activities.AnalyticsForm"
+                  android:label="@string/form_title_contacts"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.Activities.DocSaleHeaderForm"
+                  android:label="@string/form_title_docSale"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.Activities.DocSaleForm"
+                  android:label="@string/form_title_docSale"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.Activities.PreferencesForm"
+                  android:label="@string/form_title_docSale"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".app.Activities.DocListForm"
+                  android:label="@string/form_title_docList"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.Activities.DocPaymentForm"
+                  android:label="@string/form_title_docPayment"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.Activities.ItemListForm"
+                  android:label="@string/form_title_itemList"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.Activities.VisitForm"
+                  android:label="@string/form_title_visit"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.Activities.AimsForm"
+                  android:label="@string/form_title_aims"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.Activities.ReportDaySummariesForm"
+                  android:label="@string/form_title_report_day_summaries"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.Activities.PlansForm"
+                  android:label="@string/form_title_plans"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.Activities.DocDebtNotificationForm"
+                  android:label="@string/form_title_GPS"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.Activities.MessageProactiveForm"
+                  android:label="@string/form_title_messages_proactive"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.Activities.FeedbackForm"
+                  android:label="@string/form_title_feedback"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.Activities.PreferencesSyncForm"
+                  android:label="@string/form_title_docSale"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.Activities.AboutForm"
+                  android:label="@string/form_title_about"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.Activities.GalleryForm"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.Activities.CashRegisterForm"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.Activities.BluetoothSelectDeviceForm"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.Activities.CameraPreview"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="landscape">
+        </activity>
+
+        <activity android:name=".app.Activities.QuestionnairesForm"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".app.Questions.QuestionsController"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.Activities.ClientAddressMapView"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".app.Activities.DebtorListForm"
+                  android:label="@string/form_title_itemList"
+                  android:configChanges="keyboardHidden|orientation|locale"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="com.app.ant.app.AddressBook.gui.StartActivity" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name="com.app.ant.app.AddressBook.gui.clientcard.ClientCardController"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/alidi"/>
+        <activity android:name="com.app.ant.app.AddressBook.gui.clientcard.lawaddress.LawAddressController"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/alidi"/>
+        <activity android:name="com.app.ant.app.AddressBook.gui.creditask.CreditAskController"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/alidi"/>
+        <activity android:name="com.app.ant.app.AddressBook.gui.settings.SettingsController"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/alidi"/>
+        <activity android:name="com.app.ant.app.AddressBook.gui.clientcard.lawcontacts.addcontact.AddContactsController"
+                  android:screenOrientation="portrait" android:theme="@style/alidi"/>
+        <activity android:name="com.app.ant.app.AddressBook.gui.clientcard.lawcontacts.LawContactController"
+                  android:screenOrientation="portrait" android:theme="@style/alidi"/>
+        <activity android:name="com.app.ant.app.AddressBook.gui.clientcard.jdeoptions.JDEDataController"/>
+        <activity android:name="com.app.ant.app.AddressBook.gui.clientcard.comments.CommentActivity"/>
+        <activity android:name="com.app.ant.app.AddressBook.gui.clientcard.deliveryaddress.DeliveryAddressController"/>
+        <activity
+                android:name="com.app.ant.app.AddressBook.gui.clientcard.pricesandlicenses.PriceAndLicenseController"/>
+        <activity android:name="com.app.ant.app.AddressBook.gui.viewcards.OpenFileActivity"/>
+        <activity android:name="com.app.ant.app.AddressBook.gui.report.ReportActivity"/>
+        <activity android:name="com.app.ant.app.AddressBook.gui.report.ReadedActivity"/>
+        <activity android:name="com.app.ant.app.AddressBook.gui.InfoActivity"/>
+        <activity android:name="com.app.ant.app.AddressBook.gui.clientcard.kladraddress.KladrActivity"/>
+
+
+    </application>
+
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true"
+                      android:largeScreens="true"/>
+
+    <uses-sdk android:minSdkVersion="7"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+</manifest> 

@@ -8,4 +8,5 @@ package com.app.ant.app.rt;
  * To change this template use File | Settings | File Templates.
  */
 public class A {
+   int a;
 }
